@@ -1,0 +1,73 @@
+.id {
+  color: #BC0000;
+}
+
+.ext {
+  color: #4400BC;
+  font-weight: bold;
+}
+
+.urlAPI {
+  color: #336600;
+}
+
+.baseUrl {
+  color: #D08708;
+}
+
+.login {
+  color: #BC0000;
+}
+
+.mdp {
+  color: #4400BC;
+}
+
+.mandParam {
+  font-weight: bold;
+  color: #AA0000;
+}
+
+.optParam {
+  font-weight: bold;
+  color: #6EA9FF;
+}
+
+.request {
+  color: #D08D5A;
+}
+
+.json {
+  font-size: 0.80em;
+  background-color: #272822;
+  color: #EAEAE4;
+  line-height: 1.2em;
+}
+
+.warning {
+  background: #fdeeee;
+  border: 2px solid #d24d4d;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.exemples {
+  background: #DAE8F3;
+  border: 2px solid #0E91EE;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.docutils {
+  background: #06b7f3;
+}
+
+.wy-table td,
+.rst-content table.docutils td,
+.rst-content table.field-list td {
+  background-color: #ccc;
+}
+
+td:nth-child(2n) {
+  white-space: nowrap;
+}
