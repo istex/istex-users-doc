@@ -3,6 +3,6 @@ pages:
 - Accueil: index.md
 - Configurer votre Discovery Tool: discovery.md
 theme: readthedocs
-docs_dir: doc/docs
+docs_dir: docs
 site_dir: public/documentation
-theme_dir: doc/istex_theme
+theme_dir: istex_theme
