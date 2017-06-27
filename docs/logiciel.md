@@ -11,7 +11,9 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 
 
 
-## ZOTERO ##
+## ZOTERO  
+
+
 
 ### Paramètrage du module Préférences ###
 
@@ -55,6 +57,7 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 
 
 ## ENDNOTE ##
+
 
 ### Paramètrage du module Préférences ###
 

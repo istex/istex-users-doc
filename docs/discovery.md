@@ -21,14 +21,6 @@ Ces réservoirs de métadonnées destinés aux bibliothèques permettent de fair
 - via une OpenURL au plein texte des articles des abonnements achetés dans le cadre des licences nationales ISTEX sur la plateforme ISTEX
 
 
-## EZ Proxy 
-
-
-Pour paramétrer l'EZproxy la stanza nécessaire pour la **Plateforme Istex** se trouve
-
-
-`https://github.com/ezproxy-config/french/blob/master/Istex.txt`
-
 
 ## EDS ##
 
