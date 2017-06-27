@@ -1,9 +1,16 @@
 # Bienvenue sur la documentation utilisateur de l'API ISTEX
 
-Cette présente documentation a une vocation technique et se destine à tous ceux qui souhaitent interroger directement l'API, que ce soit pour l'interfacer dans un site Web, ou pour la manipuler à partir d'un langage de programmation.
+Cette présente documentation a une vocation utilisateur afin de répondre au mieux à leurs interrogations.
 
-Cette documentation se veut la plus complète possible et contient un très grand nombre d'exemples. Avant toute question à l'équipe en charge du développement de l'API (<api-users@listes.istex.fr>), merci de bien vouloir consulter l'ensemble des pages qui la compose, et d'utiliser le champ de recherche en haut à gauche de la page.
+Cette documentation est classée par **Thématique** . Elle est amenée à évoluer en fonction de de vos besoins. N'hésitez pas à contacter l'équipe en charge de la documentation.
 
+ 
 La documentation est répartie selon les chapitres suivants :
 
+
 * [Configurer votre Discovery Tool](discovery)
+
+* [Configurer votre Logiciel de Gestion Bibliographique](logiciel)
+
+
+

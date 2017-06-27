@@ -5,16 +5,29 @@ Une fonctionnalité intéressante de l’API ISTEX est son résolveur de liens c
 
 Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement sont :
 
-- **EDS** (EBSCO Discovery Service)
-- **Primo** (ExLibris/Proquest)
-- **Summon** (Serial Solution/ Proquest)
+- **EDS** et son résolveur FTF (EBSCO Discovery Service)
+
+- **Primo** et son résolveur SFX (ExLibris/Proquest)_***En attente contact ex-libris USA***_
+
+- **Summon** et son résolveur de liens 360 links (Serial Solution/ Proquest) _***En attente contact ex-libris USA***_ 
+
 
 
 Ces réservoirs de métadonnées destinés aux bibliothèques permettent de faire une recherche à la "Google" et d’accéder :
 
-- via un résolveur de lien aux plein texte des articles des abonnements souscrits chez l'éditeur
+- via un résolveur de liens aux plein texte des articles des abonnements souscrits chez l'éditeur
+
+
 - via une OpenURL au plein texte des articles des abonnements achetés dans le cadre des licences nationales ISTEX sur la plateforme ISTEX
 
+
+## EZ Proxy 
+
+
+Pour paramétrer l'EZproxy la stanza nécessaire pour la **Plateforme Istex** se trouve
+
+
+`https://github.com/ezproxy-config/french/blob/master/Istex.txt`
 
 
 ## EDS ##
@@ -51,7 +64,7 @@ Cliquer sur **"Nouveau lien"**
 
 Remplir le formulaire **"Url\* de base"**
 
-Avec : https://api.istex.fr/document/openurl?rft_id=info:doi/{DOI}&sid=ebsco&auth=ip,fede
+Avec  `https://api.istex.fr/document/openurl?rft_id=info:doi/{DOI}&sid=ebsco&auth=ip,fede`
 
 ![Schéma renseigner openurlISTEX](img/openurlplateforme.png)
 
@@ -86,10 +99,11 @@ Les bouquets **Cambridge** , **Taylor Francis**, **Brill : New Pauly Online**, b
 
 
 
+## PRIMO et SUMMON ##
 
 
-
-
+Actuellement il est impossible de proposer le même service avec ces deux solutions de découvertes leurs résolveurs de liens ne permettant pas de sélectionner des bouquets de ressouces "Licences nationales ISTEX" et d'y associer un lien vers l'éditeur et un lien vers la plateforme ISTEX. 
+Le service Discovery et Delivery ex-libris USA a été contacté et étudie une solution.
 
 
 
