@@ -20,6 +20,8 @@ Ces réservoirs de métadonnées destinés aux bibliothèques permettent de fair
 
 - via une OpenURL au plein texte des articles des abonnements achetés dans le cadre des licences nationales ISTEX sur la plateforme ISTEX
 
+Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/documentation/openurl/)**
+
 
 
 ## EDS ##
@@ -30,9 +32,11 @@ Une recherche sur l’article suivant : *Tricuspid incompetence and right ventri
 
 ![Schéma interrogationbibcnrs](img/recherchebibcnrs.png)
 
-Deux propositions d'accès au PDF : 
+Deux propositions d'accès au PDF :
 
 - Directement à partir de la plateforme ISTEX par OpenURL avec pérennité de l’accès
+
+
 - Ou par rebond à partir du site de l'éditeur via le résolveur de lien FTF d'EBSCO
 
 ![Schéma des liens possible](img/lien.png)
@@ -50,22 +54,41 @@ Dans le HLM en cliquant sur **"Liens"**, l’administrateur peut visualiser les 
 
 #### Création d'un lien vers la plateforme ISTEX
 
+
 Cliquer sur **"Nouveau lien"**
+
+
 
 ![Schéma création lien ISTEX](img/CreationdelienISTEX.png)
 
+
+
 Remplir le formulaire **"Url\* de base"**
 
-Avec  `https://api.istex.fr/document/openurl?rft_id=info:doi/{DOI}&sid=ebsco&auth=ip,fede`
+
+
+Avec `https://api.istex.fr/document/openurl`
+
+
+
+Au niveau de la **"Chaîne de requête"** préciser le champ DOI et PMID plus le mode et l'ordre d'authentification : IP puis Fédération d'identité
+
+
+
+`?rft_id=info:doi/{DOI}&rft_id=info:pmid/{PMID}&sid=ebsco&auth=ip,fede`
+
 
 ![Schéma renseigner openurlISTEX](img/openurlplateforme.png)
 
-Puis le champ **"DOI"** sans oublier d'appliquer le proxy.
 
-![Schéma DOIProxy](img/doiproxy.png)
+Ainsi que les métadonnées prises en comptes : 
+
+`{IfNotEmpty({DOI}{PMID},ok,)}`
+
+Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est :
 
 
-Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est https://content-delivery.istex.fr/assets/img/istex-minilink.png
+`https://content-delivery.istex.fr/assets/img/istex-minilink.png`
 
 ![Schéma IconeIstex](img/IconeISTEX.png)
 

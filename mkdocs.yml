@@ -2,7 +2,6 @@ site_name: Documentation utilisateur ISTEX
 pages:
 - Accueil: index.md
 - Configurer votre Discovery Tool: discovery.md
-
 - Configurer votre Logiciel de Gestion Bibliographique: logiciel.md
 theme: readthedocs
 docs_dir: docs
