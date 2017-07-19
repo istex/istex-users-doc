@@ -7,9 +7,9 @@ Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement so
 
 - **EDS** et son résolveur FTF (EBSCO Discovery Service)
 
-- **Primo** et son résolveur SFX (ExLibris/Proquest)_***En attente contact ex-libris USA***_
+- **Primo** et son résolveur SFX (ExLibris/Proquest)_***En attente contact Ex-Libris USA***_
 
-- **Summon** et son résolveur de liens 360 links (Serial Solution/ Proquest) _***En attente contact ex-libris USA***_ 
+- **Summon** et son résolveur de liens 360 links (Serial Solution/ Proquest) _***En attente contact Ex-Libris USA***_ 
 
 
 
@@ -106,7 +106,9 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 
 **!!!ATTENTION!!!**
 
-Les bouquets **Cambridge** , **Taylor Francis**, **Brill : New Pauly Online**, bien que déjà accessibles via les plateformes éditeurs, ne sont pas encore disponibles dans la plateforme ISTEX.
+Seuls les 16 bouquets suivant sont concernés pour l'instant
+
+![bouquetsplateforme](img/bouquetsplateforme.PNG)
 
 
 
@@ -118,7 +120,7 @@ Les bouquets **Cambridge** , **Taylor Francis**, **Brill : New Pauly Online**, b
 
 
 Actuellement il est impossible de proposer le même service avec ces deux solutions de découvertes leurs résolveurs de liens ne permettant pas de sélectionner des bouquets de ressouces "Licences nationales ISTEX" et d'y associer un lien vers l'éditeur et un lien vers la plateforme ISTEX. 
-Le service Discovery et Delivery ex-libris USA a été contacté et étudie une solution.
+Le service Discovery et Delivery Ex-Libris USA a été contacté et étudie une solution.
 
 
 

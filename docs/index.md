@@ -10,6 +10,8 @@ La documentation est répartie selon les chapitres suivants :
 
 * [Configurer votre Discovery Tool](discovery/)
 * [Configurer votre Logiciel de Gestion Bibliographique](logiciel/)
+* [Configurer votre navigateur](navigateur/)
+
 
 
 

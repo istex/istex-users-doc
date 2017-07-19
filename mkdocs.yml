@@ -3,6 +3,7 @@ pages:
 - Accueil: index.md
 - Configurer votre Discovery Tool: discovery.md
 - Configurer votre Logiciel de Gestion Bibliographique: logiciel.md
+- Configurer votre navigateur: navigateur.md
 theme: readthedocs
 docs_dir: docs
 site_dir: public/documentation
