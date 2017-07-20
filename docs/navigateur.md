@@ -1,17 +1,16 @@
 
 # OpenURL et Extension ISTEX
 
- L’ajout d’une extension ISTEX dans un navigateur, Chrome ou Firefox, a comme vocation d’analyser l'ensemble des pages visitées à la recherche d'identifiants documentaires (DOI, PII, PMID...) et d’ajouter un bouton « ISTEX » d’accès au plein-texte PDF lorsque celui est disponible dans l’API ISTEX.
- 
-Le bouton « ISTEX » peut s’activer notamment sur les pages Wikipédia, Google Scholar ou Scopus, augmentant ainsi la visibilité et la diffusion des ressources ISTEX.
+L’ajout d’une extension ISTEX dans un navigateur, Chrome ou Firefox, a comme vocation d’analyser l'ensemble des pages visitées à la recherche d'identifiants documentaires (DOI, PII, PMID...) et d’ajouter un bouton « ISTEX » d’accès au plein-texte PDF lorsque celui est disponible dans l’API ISTEX.
 
-Comme pour tous les autres modes d’accès au PDF (widget, démonstrateur…) il est limité aux ayants droit ISTEX, c'est-à-dire les personnels de l'Enseignement Supérieur et de la Recherche.
+Le bouton « ISTEX » peut s’activer notamment sur les pages Wikipédia, Google Scholar, Scopus, ou même HAL augmentant ainsi la visibilité et la diffusion des ressources ISTEX.
 
-Cette extension fait un usage intensif du service de résolution OpenURL de l’API.
+Comme pour tous les autres modes d’accès au PDF ([widgets](https://widgets.istex.fr), [démonstrateur](http://demo.istex.fr)…) il est limité aux ayants droit ISTEX, c'est-à-dire les personnels de l'Enseignement Supérieur et de la Recherche.
 
-Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/documentation/openurl/)**
+Cette extension fait un usage intensif du **[service de résolution OpenURL de l’API ISTEX](https://api.istex.fr/documentation/openurl/)**.
 
-
+L'extension ISTEX est disponibles pour les navigateurs web Firefox et Chrome ici : https://addons.istex.fr  
+Vous trouverez ci-dessous comment l'installer étape par étape pour les différents navigateurs web.
 
 ## Firefox ##
 
