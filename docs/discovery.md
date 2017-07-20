@@ -1,6 +1,8 @@
 ﻿
 # OpenURL et Discovery Tool #
 
+Cette documentation est à destination des gestionnaire de documentations (SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.
+
 Une fonctionnalité intéressante de l’API ISTEX est son résolveur de liens compatible avec la norme OpenURL. Cette fonctionnalité permet de savoir, à partir de métadonnées simples (titre, auteurs…) ou d’identifiants standards (DOI, PMID…) si un document est présent dans la base de documents ISTEX. Si le document est trouvé, un rebond vers le texte plein est possible.
 
 Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement sont :
