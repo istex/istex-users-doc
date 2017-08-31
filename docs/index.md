@@ -7,10 +7,9 @@ Cette documentation est classée par **Thématique** . Elle est amenée à évol
  
 La documentation est répartie selon les chapitres suivants :
 
-
-* [Configurer votre Discovery Tool](discovery/)
-* [Configurer votre Logiciel de Gestion Bibliographique](logiciel/)
-* [Configurer votre navigateur](navigateur/)
+* [Configurer votre navigateur web](navigateur/)
+* [Configurer votre logiciel de Gestion Bibliographique](logiciel/)
+* [Configurer votre Discovery Tool](discovery/) (à destination des gestionnaires de la doc)
 
 
 
