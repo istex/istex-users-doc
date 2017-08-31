@@ -46,13 +46,13 @@ Deux propositions d'accès au PDF :
 
 Le Holdings Management (HLM) dans EBSCOADMIN permet à l’administrateur du compte de gérer les collections ou abonnements et leur associer un résolveur de liens permettant l’accès au plein texte sur le site de l’éditeur.
 
-#### Liens éditeurs pour Bouquets ou Titres de ressources  
+#### 1- Liens éditeurs pour Bouquets ou Titres de ressources  
 
 Dans le HLM en cliquant sur **"Liens"**, l’administrateur peut visualiser les liens éditeurs disponibles dans le module d'administration qu'il faudra associer à un **"Titres"** ou un **"Bouquets"** de ressources pour aller jusqu'au plein texte. Dans notre exemple : 51 liens sont disponibles
 
 ![Schéma HLMliens](img/Liens.png)
 
-#### Création d'un lien vers la plateforme ISTEX
+#### 2- Création d'un lien vers la plateforme ISTEX
 
 
 Cliquer sur **"Nouveau lien"**
@@ -85,6 +85,14 @@ Ainsi que les métadonnées prises en comptes :
 
 `{IfNotEmpty({DOI}{PMID},ok,)}`
 
+
+
+Ne pas oublier de cocher l'affichage du lien "Pour mes fonds documentaires associés" 
+
+![Schéma liensuite](img/liensuite.PNG)
+
+
+
 Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est :
 
 
@@ -94,7 +102,36 @@ Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est 
 
 
 
-#### Assigner le lien aux bouquets concernés
+
+
+
+#####**Open URL : erreur 404 et Istex View**
+
+ 
+Il peut y avoir une différence de contenu entre la liste des revues négociées avec les éditeurs, disponible au format Kbart sur le site des licences nationales, et les documents, réellement livrés en xml, disponibles sur la plateforme ISTEX.
+
+ 
+ 		
+=> Un message code 404 peu **user friendly** s’affiche :
+
+![Schéma istexview1](img/istexview1.jpg)
+
+ 
+=> **Une couche IHM** (pour interface Homme-Machine) a été développée et rajoutée au-dessus de l'API ISTEX et en particulier de son OpenURL pour permettre l’affichage  d’un message plus explicite pour l’utilisateur. 		
+Il suffit pour le voir de remplacer 
+`https://api.istex.fr/document/openurl` par `https://view.istex.fr/document/openurl` dans le champ **« URL* de base »**  de la fenêtre de paramétrage du lien ISTEX plateforme.
+
+
+![Schéma istexview2](img/istexview2.jpg)
+ 
+
+=>Le message devient :
+
+
+![Schéma istexview3](img/istexview3.png)
+
+
+#### 3- Assigner le lien aux bouquets concernés
 
 Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nationales ISTEX déjà présents dans la plateforme ISTEX :
 
@@ -104,9 +141,9 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 - Les associer au lien OpenURL 
 ![Schéma associerbouquetsISTEX](img/associerbouquetsISTEX.png)
 
-**!!!ATTENTION!!!**
+#####**!!!ATTENTION!!!**
 
-Seuls les 16 bouquets suivant sont concernés pour l'instant
+Seuls les 16 bouquets suivant sont déjà disponibles sur la plateforme ISTEX
 
 ![bouquetsplateforme](img/bouquetsplateforme.PNG)
 
