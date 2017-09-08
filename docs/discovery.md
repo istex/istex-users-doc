@@ -24,7 +24,7 @@ Ces réservoirs de métadonnées destinés aux bibliothèques permettent de fair
 
 Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/documentation/openurl/)**
 
-
+====================================================================================
 
 => Si vous utilisez **un reverse proxy tel qu’EZproxy**, vous pouvez créer **une Stanza**  pour « l'api d'ISTEX » en utilisant les données suivantes :
 
@@ -39,7 +39,7 @@ Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/doc
 
 _Pour en savoir plus sur la configuration de l’EZproxy consulter le_ **[GitHub EZproxy de l’ESR](https://github.com/ezproxy-config/french/blob/master/Istex.txt)** 
 
-
+====================================================================================
 
 
 ## EDS ##
@@ -161,7 +161,9 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 
 #####**!!!ATTENTION!!!**
 
-Seuls les 18 bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
+Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
+
+18 négociations mais 19 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
 
 ![bouquetsept2017](img/bouquetsept2017.JPG)
 
