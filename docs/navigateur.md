@@ -9,14 +9,14 @@ Comme pour tous les autres modes d’accès au PDF ([widgets](https://widgets.is
 
 Cette extension fait un usage intensif du **[service de résolution OpenURL de l’API ISTEX](https://api.istex.fr/documentation/openurl/)**.
 
-L'extension ISTEX est disponibles pour les navigateurs web Firefox et Chrome ici : https://addons.istex.fr  
+L'extension ISTEX est disponibles pour les navigateurs web Firefox et Chrome ici : **[https://addons.istex.fr](https://addons.istex.fr/)**. 
 Vous trouverez ci-dessous comment l'installer étape par étape pour les différents navigateurs web.
 
 ## Firefox ##
 
 
 
-=> La recherche sur Wikipédia  **[d’« Hélium »]( https://fr.wikipedia.org/wiki/Hélium)** donne la bibliographie suivante :
+=> La recherche sur Wikipédia d’**[« Hélium »]( https://fr.wikipedia.org/wiki/Hélium)** donne la bibliographie suivante :
 
 ![Firefox1](img/Firefox1.PNG)
 
@@ -52,7 +52,7 @@ _Retrouver l’extension dans « Ouvrir le menu/Modules/Extensions »_
 
 
 
-=> La recherche sur Wikipédia  **[d’« Hélium »]( https://fr.wikipedia.org/wiki/Hélium)** donne la bibliographie suivante :
+=> La recherche sur Wikipédia d’**[« Hélium »]( https://fr.wikipedia.org/wiki/Hélium)** donne la bibliographie suivante :
 
 ![chrome1](img/chrome1.PNG)
 

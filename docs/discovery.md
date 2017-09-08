@@ -1,7 +1,7 @@
 ﻿
 # OpenURL et Discovery Tool #
 
-Cette documentation est à destination des gestionnaire de documentations (SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.
+Cette documentation est à destination des gestionnaires de documentation (SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.
 
 Une fonctionnalité intéressante de l’API ISTEX est son résolveur de liens compatible avec la norme OpenURL. Cette fonctionnalité permet de savoir, à partir de métadonnées simples (titre, auteurs…) ou d’identifiants standards (DOI, PMID…) si un document est présent dans la base de documents ISTEX. Si le document est trouvé, un rebond vers le texte plein est possible.
 
@@ -17,12 +17,28 @@ Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement so
 
 Ces réservoirs de métadonnées destinés aux bibliothèques permettent de faire une recherche à la "Google" et d’accéder :
 
-- via un résolveur de liens aux plein texte des articles des abonnements souscrits chez l'éditeur
+- via un résolveur de liens au plein texte des articles des abonnements souscrits chez l'éditeur
 
 
 - via une OpenURL au plein texte des articles des abonnements achetés dans le cadre des licences nationales ISTEX sur la plateforme ISTEX
 
 Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/documentation/openurl/)**
+
+
+
+=> Si vous utilisez **un reverse proxy tel qu’EZproxy**, vous pouvez créer **une Stanza**  pour « l'api d'ISTEX » en utilisant les données suivantes :
+
+**Title** Plateforme Istex (API)
+
+**URL**   http://api.istex.fr/
+
+**HJ**    https://api.istex.fr/
+
+**DJ**    istex.fr
+
+
+_Pour en savoir plus sur la configuration de l’EZproxy consulter le_ **[GitHub EZproxy de l’ESR](https://github.com/ezproxy-config/french/blob/master/Istex.txt)** 
+
 
 
 
@@ -145,9 +161,9 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 
 #####**!!!ATTENTION!!!**
 
-Seuls les 16 bouquets suivant sont déjà disponibles sur la plateforme ISTEX
+Seuls les 18 bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 
-![bouquetsplateforme](img/bouquetsplateforme.PNG)
+![bouquetsept2017](img/bouquetsept2017.JPG)
 
 
 
