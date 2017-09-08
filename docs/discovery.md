@@ -24,7 +24,7 @@ Ces réservoirs de métadonnées destinés aux bibliothèques permettent de fair
 
 Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/documentation/openurl/)**
 
-====================================================================================
+==============================================================================
 
 => Si vous utilisez **un reverse proxy tel qu’EZproxy**, vous pouvez créer **une Stanza**  pour « l'api d'ISTEX » en utilisant les données suivantes :
 
@@ -39,7 +39,7 @@ Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/doc
 
 _Pour en savoir plus sur la configuration de l’EZproxy consulter le_ **[GitHub EZproxy de l’ESR](https://github.com/ezproxy-config/french/blob/master/Istex.txt)** 
 
-====================================================================================
+==============================================================================
 
 
 ## EDS ##
