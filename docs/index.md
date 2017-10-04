@@ -10,6 +10,7 @@ La documentation est répartie selon les chapitres suivants :
 * [Configurer votre navigateur web](navigateur/)
 * [Configurer votre logiciel de Gestion Bibliographique](logiciel/)
 * [Configurer votre Discovery Tool](discovery/) (à destination des gestionnaires de la doc)
+* [FAQ](fac/)
 
 
 
