@@ -1,4 +1,4 @@
-# Bienvenue sur la documentation utilisateur de l'API ISTEX
+# Bienvenue sur la documentation utilisateur de la plateforme ISTEX
 
 Cette présente documentation a une vocation utilisateur afin de répondre au mieux à leurs interrogations.
 
@@ -7,7 +7,7 @@ Cette documentation est classée par **Thématique** . Elle est amenée à évol
  
 La documentation est répartie selon les chapitres suivants :
 
-* [Configurer votre navigateur web](navigateur/)
+* [Configurer votre navigateur web pour un accès direct aux documents ISTEX](navigateur/) ("bouton ISTEX")
 * [Configurer votre logiciel de Gestion Bibliographique](logiciel/)
 * [Configurer votre Discovery Tool](discovery/) (à destination des gestionnaires de la doc)
 * [FAQ](fac/)
