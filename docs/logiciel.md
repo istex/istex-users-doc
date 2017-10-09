@@ -1,5 +1,5 @@
 
-# OpenURL et Logiciel de Gestion Bibliographique
+# OpenURL et Logiciels de Gestion Bibliographique
 
 Les logiciels de gestion de bibliographie sont destinés à établir et gérer des listes de références bibliographiques afin de rédiger des articles, des ouvrages ou des thèses de doctorat. Dans ses références bibliographiques il est intéressant, pour faciliter le travail, d'y ranger le PDF de l'article ou du chapitre. L'OpenURL est une solution.
 

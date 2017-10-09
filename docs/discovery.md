@@ -17,10 +17,10 @@ Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement so
 
 Ces réservoirs de métadonnées destinés aux bibliothèques permettent de faire une recherche à la "Google" et d’accéder :
 
-- via un résolveur de liens au plein texte des articles des abonnements souscrits chez l'éditeur
+- via un résolveur de liens, au plein texte des articles des abonnements souscrits chez l'éditeur
 
 
-- via une OpenURL au plein texte des articles des abonnements achetés dans le cadre des licences nationales ISTEX sur la plateforme ISTEX
+- via une OpenURL, au plein texte des articles des abonnements achetés dans le cadre des licences nationales ISTEX sur la plateforme ISTEX
 
 Pour en savoir plus sur le **[résolveur OpenURL ISTEX](https://api.istex.fr/documentation/openurl/)**
 
@@ -55,7 +55,7 @@ Le Holdings Management (HLM) dans EBSCOADMIN permet à l’administrateur du com
 
 #### 1- Liens éditeurs pour Bouquets ou Titres de ressources  
 
-Dans le HLM en cliquant sur **"Liens"**, l’administrateur peut visualiser les liens éditeurs disponibles dans le module d'administration qu'il faudra associer à un **"Titres"** ou un **"Bouquets"** de ressources pour aller jusqu'au plein texte. Dans notre exemple : 51 liens sont disponibles
+Dans le HLM en cliquant sur **"Liens"**, l’administrateur peut visualiser les liens éditeurs disponibles dans le module d'administration qu'il faudra associer à un **"Titres"** ou un **"Bouquet"** de ressources pour aller jusqu'au plein texte. Dans notre exemple : 51 liens sont disponibles
 
 ![Schéma HLMliens](img/Liens.png)
 
@@ -88,7 +88,7 @@ Au niveau de la **"Chaîne de requête"** préciser le champ DOI et PMID plus le
 ![Schéma renseigner openurlISTEX](img/openurlplateforme.png)
 
 
-Ainsi que les métadonnées prises en comptes : 
+Ainsi que les métadonnées prises en compte : 
 
 `{IfNotEmpty({DOI}{PMID},ok,)}`
 
@@ -101,7 +101,7 @@ Ne pas oublier de cocher l'affichage du lien "Pour mes fonds documentaires assoc
 
 
 Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est :
-
+ 
 
 `https://content-delivery.istex.fr/assets/img/istex-minilink.png`
 
@@ -165,8 +165,8 @@ Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 ## PRIMO et SUMMON ##
 
 
-Actuellement il est impossible de proposer le même service avec ces deux solutions de découvertes leurs résolveurs de liens ne permettant pas de sélectionner des bouquets de ressouces "Licences nationales ISTEX" et d'y associer un lien vers l'éditeur et un lien vers la plateforme ISTEX. 
-Le service Discovery et Delivery Ex-Libris USA a été contacté et étudie une solution.
+Actuellement il est impossible de proposer le même service avec ces deux solutions de découvertes, leurs résolveurs de liens ne permettant pas de sélectionner des bouquets de ressources "Licences nationales ISTEX" et d'y associer un lien vers l'éditeur et un lien vers la plateforme ISTEX. 
+Ex-Libris USA a été contacté et étudie une solution.
 
 
 

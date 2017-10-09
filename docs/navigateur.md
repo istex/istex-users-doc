@@ -9,7 +9,7 @@ Comme pour tous les autres modes d’accès au PDF ([widgets](https://widgets.is
 
 Cette extension fait un usage intensif du **[service de résolution OpenURL de l’API ISTEX](https://api.istex.fr/documentation/openurl/)**.
 
-L'extension ISTEX est disponibles pour les navigateurs web Firefox et Chrome ici : **[https://addons.istex.fr](https://addons.istex.fr/)**. 
+L'extension ISTEX est disponible pour les navigateurs web Firefox et Chrome ici : **[https://addons.istex.fr](https://addons.istex.fr/)**. 
 Vous trouverez ci-dessous comment l'installer étape par étape pour les différents navigateurs web.
 
 ## Firefox ##

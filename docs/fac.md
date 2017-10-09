@@ -1,7 +1,7 @@
 # A quoi sert ISTEX ? Quel est l'apport de ce service par rapport à BiblioInserm, BibCnrs, NCBI ou PubMed ?
 
 
-C’est tout à fait normal de ce poser ce genre de questions car pour beaucoup d’utilisateurs ISTEX c’est uniquement des archives en licences nationales avec accès sur  site éditeur via un portail institutionnel (BibCnrs, BiblioInserm, lien ressources portail <=> PubMed....).
+C’est tout à fait normal de se poser ce genre de questions car pour beaucoup d’utilisateurs ISTEX c’est uniquement des archives en licences nationales avec accès sur  site éditeur via un portail institutionnel (BibCnrs, BiblioInserm, lien ressources portail <=> PubMed....).
  
 Mais Le projet **[ISTEX](https://www.istex.fr/ )** a pour vocation :
  
@@ -39,7 +39,7 @@ Exemple : les archives de la revue **Europeen Journal of Cardio-Thoracic Surgery
  
  *Le 1er accès du pdf se fait directement sur la plateforme ISTEX
 
- *Le 2éme accès qui est le même est consultable sur la plateforme éditeur, car l'accès éditeur et pour l'instant toujours disponible
+ *Le 2ème accès qui est le même est consultable sur la plateforme éditeur, car l'accès éditeur et pour l'instant toujours disponible
 
 
 
@@ -49,7 +49,7 @@ Exemple : les archives de la revue **Europeen Journal of Cardio-Thoracic Surgery
 => Via NCBI - PubMed 
 
 
-Accès au texte intégral se fait en cliquant sur le logo du portail directement à partir de la notice bibliographique 
+L'accès au texte intégral se fait en cliquant sur le logo du portail directement à partir de la notice bibliographique 
 
 
 
