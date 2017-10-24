@@ -4,7 +4,7 @@ pages:
 - Configurer votre Discovery Tool: discovery.md
 - Configurer votre Logiciel de Gestion Bibliographique: logiciel.md
 - Configurer votre navigateur: navigateur.md
-- FAQ: fac.md
+- FAQ: faq.md
 theme: readthedocs
 docs_dir: docs
 site_dir: public/documentation

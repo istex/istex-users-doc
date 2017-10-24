@@ -10,7 +10,7 @@ La documentation est répartie selon les chapitres suivants :
 * [Configurer votre navigateur web pour un accès direct aux documents ISTEX](navigateur/) ("bouton ISTEX")
 * [Configurer votre logiciel de Gestion Bibliographique](logiciel/)
 * [Configurer votre Discovery Tool](discovery/) (à destination des gestionnaires de la documentation)
-* [FAQ](fac/)
+* [FAQ](faq/)
 
 
 
