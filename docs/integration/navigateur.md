@@ -18,33 +18,33 @@ Vous trouverez ci-dessous comment l'installer étape par étape pour les différ
 
 => La recherche sur Wikipédia d’**[« Hélium »]( https://fr.wikipedia.org/wiki/Hélium)** donne la bibliographie suivante :
 
-![Firefox1](img/Firefox1.PNG)
+![Firefox1](../img/Firefox1.PNG)
 
 => Aller sur **[https://addons.istex.fr](https://addons.istex.fr/)**
 
-![Firefox2](img/Firefox2.PNG)
+![Firefox2](../img/Firefox2.PNG)
 
 => Cliquer sur « Ajouter l’extension à Firefox »
 
-![Firefox3](img/Firefox3.PNG)
+![Firefox3](../img/Firefox3.PNG)
 
 => Autoriser l’installation
 
 _Retrouver l’extension dans « Ouvrir le menu/Modules/Extensions »_
 
-![Firefox4](img/Firefox4.PNG)
+![Firefox4](../img/Firefox4.PNG)
 
 => Un écran propose alors la possibilité d’avoir un lien vers la bibliothèque ISTEX sur Google Scholar en cliquant sur «Oui» sans avoir besoin de l’installer
 
- ![Firefox5](img/Firefox5.PNG)
+ ![Firefox5](../img/Firefox5.PNG)
 
 => En cliquant «Passer » pas de lien vers la bibliothèque ISTEX
 
- ![Firefox6](img/Firefox6.PNG)
+ ![Firefox6](../img/Firefox6.PNG)
 
 => Recharger la page de Wikipédia « Ctrl F5 »
 
-![Firefox7](img/Firefox7.PNG)
+![Firefox7](../img/Firefox7.PNG)
 
 
 
@@ -54,34 +54,34 @@ _Retrouver l’extension dans « Ouvrir le menu/Modules/Extensions »_
 
 => La recherche sur Wikipédia d’**[« Hélium »]( https://fr.wikipedia.org/wiki/Hélium)** donne la bibliographie suivante :
 
-![chrome1](img/chrome1.PNG)
+![chrome1](../img/chrome1.PNG)
 
 => Aller sur **[https://addons.istex.fr](https://addons.istex.fr/)**
 
-![chrome2](img/chrome2.PNG)
+![chrome2](../img/chrome2.PNG)
 
 
 => Cliquer sur « Ajouter l’extension à Chrome »
 
-![chrome3](img/chrome3.PNG)
+![chrome3](../img/chrome3.PNG)
 
 => Autoriser l’installation
 
 _Retrouver l’extension dans « Personnaliser et contrôler Google Chrome/Plus d'outils/Extensions »_
 
-![chrome4](img/chrome4.PNG)
+![chrome4](../img/chrome4.PNG)
 
 => Un écran propose alors la possibilité d’avoir un lien vers la bibliothèque ISTEX sur Google Scholar en cliquant sur «Oui» sans avoir besoin de l’installer
 
-![chrome5](img/chrome5.PNG)
+![chrome5](../img/chrome5.PNG)
 
 => En cliquant «Passer » pas de lien vers la bibliothèque ISTEX
 
-![chrome6](img/chrome6.PNG)
+![chrome6](../img/chrome6.PNG)
 
 => Recharger la page de Wikipédia « Ctrl F5 »
 
-![chrome7](img/chrome7.PNG)
+![chrome7](../img/chrome7.PNG)
 
 
 

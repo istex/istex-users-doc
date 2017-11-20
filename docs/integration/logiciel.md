@@ -27,7 +27,7 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 - Cliquer sur **"Avancées"**
 
 - Sélectioner l'onglet **"Générales"**
-![Schéma moduleprefZotero1](img/Zotero1.png)
+![Schéma moduleprefZotero1](../img/Zotero1.png)
 
 - Renseigner au niveau de **"Résolveur de liens"** l'OpenURL ISTEX
   `https://api.istex.fr/document/openurl?rft`
@@ -45,14 +45,14 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 - Cliquer sur la flèche verte **"Localiser"**
 
 - Choisir **"Recherche dans la bibliothèque"** qui permet de rechercher le ou les documents sélectionnés en utilisant le résolveur de liens OpenURL renseigné dans le module **"Préférences"** de Zotéro.
-![Schéma modulebibZotero2](img/Zotero2.png)
+![Schéma modulebibZotero2](../img/Zotero2.png)
 
 - **"Enregistrer dans Zotero"** le PDF
-![Schéma moduleenregZotero3](img/Zotero3.png)
-![Schéma moduledansbibZotero4](img/Zotero4.PNG)
+![Schéma moduleenregZotero3](../img/Zotero3.png)
+![Schéma moduledansbibZotero4](../img/Zotero4.PNG)
 
 - Faire glisser le PDF dans la notice
-![Schéma moduledansnoticeZotero5](img/Zotero5.PNG)
+![Schéma moduledansnoticeZotero5](../img/Zotero5.PNG)
 
 
 
@@ -68,7 +68,7 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 
 - Choisir **"Preference"**
 
-![Schéma moduleeditEndnote1](img/Endnote1.PNG)
+![Schéma moduleeditEndnote1](../img/Endnote1.PNG)
 
 - Dans "**EndNote Preferences"** aller dans **"Find Full Text"**
 
@@ -77,7 +77,7 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 
 
 - Cliquer sur **"Appliquer"**
-![Schéma moduleprefEndNote2](img/EndNote2.PNG)
+![Schéma moduleprefEndNote2](../img/EndNote2.PNG)
 
 
 ### Accès au PDF après une recherche ###
@@ -86,20 +86,20 @@ Exemple d'un logiciel libre et d'un logiciel propriétaire :
 
 - Clic droit /**"URL"**/**"Open URL Link"**
 
-![Schéma modulebibEndNote3](img/Endnote3.PNG)
+![Schéma modulebibEndNote3](../img/Endnote3.PNG)
 
 - **"Enregistrer dans EndNote"** le PDF trouvé
-![Schéma modulenoticeEndNote4](img/EndNote4.PNG) 
+![Schéma modulenoticeEndNote4](../img/EndNote4.PNG) 
 
 - Ouvrir la **"Reference"** concernée
 
 - Dans le champ **"File Attachments"**/**"Attach file"**
 
 - Chercher le PDF et **"Enregistrer"**
-![Schéma modulenoticebibEndNote5](img/EndNote5.PNG)
+![Schéma modulenoticebibEndNote5](../img/EndNote5.PNG)
 
 - Un trombone signale la présence du PDF
-![Schéma modulefichierEndNote6](img/EndNote6.PNG)
+![Schéma modulefichierEndNote6](../img/EndNote6.PNG)
 
 
 

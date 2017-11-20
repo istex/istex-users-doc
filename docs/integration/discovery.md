@@ -37,7 +37,7 @@ Si vous utilisez **un reverse proxy tel qu'EZproxy** pour donner accès à la do
 
 Une recherche sur l’article suivant : *Tricuspid incompetence and right ventricular output in congestive heart failure*  de la revue **British Heart Journal  Janvier 1957, Vol. 19 Issue 1**,  du bouquet BMJ ISTEX
 
-![Schéma interrogationbibcnrs](img/recherchebibcnrs.png)
+![Schéma interrogationbibcnrs](../img/recherchebibcnrs.png)
 
 Deux propositions d'accès au PDF :
 
@@ -46,7 +46,7 @@ Deux propositions d'accès au PDF :
 
 - Ou par rebond à partir du site de l'éditeur via le résolveur de lien FTF d'EBSCO
 
-![Schéma des liens possible](img/lien.png)
+![Schéma des liens possible](../img/lien.png)
 
 ### Paramétrage du Holdings Management###
 
@@ -57,7 +57,7 @@ Le Holdings Management (HLM) dans EBSCOADMIN permet à l’administrateur du com
 
 Dans le HLM en cliquant sur **"Liens"**, l’administrateur peut visualiser les liens éditeurs disponibles dans le module d'administration qu'il faudra associer à un **"Titres"** ou un **"Bouquet"** de ressources pour aller jusqu'au plein texte. Dans notre exemple : 51 liens sont disponibles
 
-![Schéma HLMliens](img/Liens.png)
+![Schéma HLMliens](../img/Liens.png)
 
 #### 2- Création d'un lien vers la plateforme ISTEX
 
@@ -66,7 +66,7 @@ Cliquer sur **"Nouveau lien"**
 
 
 
-![Schéma création lien ISTEX](img/CreationdelienISTEX.png)
+![Schéma création lien ISTEX](../img/CreationdelienISTEX.png)
 
 
 
@@ -85,7 +85,7 @@ Au niveau de la **"Chaîne de requête"** préciser le champ DOI et PMID plus le
 `?rft_id=info:doi/{DOI}&rft_id=info:pmid/{PMID}&sid=ebsco&auth=ip,fede`
 
 
-![Schéma renseigner openurlISTEX](img/openurlplateforme.png)
+![Schéma renseigner openurlISTEX](../img/openurlplateforme.png)
 
 
 Ainsi que les métadonnées prises en compte : 
@@ -96,7 +96,7 @@ Ainsi que les métadonnées prises en compte :
 
 Ne pas oublier de cocher l'affichage du lien "Pour mes fonds documentaires associés" 
 
-![Schéma liensuite](img/liensuite.PNG)
+![Schéma liensuite](../img/liensuite.PNG)
 
 
 
@@ -105,11 +105,7 @@ Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est 
 
 `https://content-delivery.istex.fr/assets/img/istex-minilink.png`
 
-![Schéma IconeIstex](img/IconeISTEX.png)
-
-
-
-
+![Schéma IconeIstex](../img/IconeISTEX.png)
 
 
 #####**Open URL : erreur 404 et Istex View**
@@ -121,7 +117,7 @@ Il peut y avoir une différence de contenu entre la liste des revues négociées
  		
 => Un message code 404 peu **user friendly** s’affiche :
 
-![Schéma istexview1](img/istexview1.jpg)
+![Schéma istexview1](../img/istexview1.jpg)
 
  
 => **Une couche IHM** (pour interface Homme-Machine) a été développée et rajoutée au-dessus de l'API ISTEX et en particulier de son OpenURL pour permettre l’affichage  d’un message plus explicite pour l’utilisateur. 		
@@ -129,13 +125,13 @@ Il suffit pour le voir de remplacer
 `https://api.istex.fr/document/openurl` par `https://view.istex.fr/document/openurl` dans le champ **« URL* de base »**  de la fenêtre de paramétrage du lien ISTEX plateforme.
 
 
-![Schéma istexview2](img/istexview2.jpg)
+![Schéma istexview2](../img/istexview2.jpg)
  
 
 =>Le message devient :
 
 
-![Schéma istexview3](img/istexview3.png)
+![Schéma istexview3](../img/istexview3.png)
 
 
 #### 3- Assigner le lien aux bouquets concernés
@@ -143,10 +139,10 @@ Il suffit pour le voir de remplacer
 Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nationales ISTEX déjà présents dans la plateforme ISTEX :
 
 - Les rechercher
-![Schéma Bouquetsressourcesàassocier](img/Bouquetsressourcesàassocier.png)
+![Schéma Bouquetsressourcesàassocier](../img/Bouquetsressourcesàassocier.png)
 
 - Les associer au lien OpenURL 
-![Schéma associerbouquetsISTEX](img/associerbouquetsISTEX.png)
+![Schéma associerbouquetsISTEX](../img/associerbouquetsISTEX.png)
 
 #####**!!!ATTENTION!!!**
 
@@ -154,12 +150,7 @@ Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 
 18 négociations mais 19 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
 
-![bouquetsept2017](img/bouquetsept2017.JPG)
-
-
-
-
-
+![bouquetsept2017](../img/bouquetsept2017.JPG)
 
 
 ## PRIMO et SUMMON ##

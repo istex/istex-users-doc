@@ -1,10 +1,13 @@
 site_name: Documentation utilisateur ISTEX
 pages:
 - Accueil: index.md
-- Configurer votre Discovery Tool: discovery.md
-- Configurer votre Logiciel de Gestion Bibliographique: logiciel.md
-- Configurer votre navigateur: navigateur.md
-- FAQ: faq.md
+- INTEGRATION D'ISTEX:
+  - Configurer votre Discovery Tool: integration/discovery.md
+  - Configurer votre Logiciel de Gestion Bibliographique: integration/logiciel.md
+  - Configurer votre navigateur: integration/navigateur.md
+- FAQ:
+  - A quoi sert ISTEX ?: faq/aquoisertISTEX.md
+  - Mais pourquoi mettre un ARK ?: faq/ark.md 
 theme: readthedocs
 docs_dir: docs
 site_dir: public/documentation
