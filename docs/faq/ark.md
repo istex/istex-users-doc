@@ -27,9 +27,8 @@
 
 
  
- ** => Dorénavant les notices vont se voir attribuer progressivement un ARK (Archival Resource Key)**
+ ** => Dorénavant toutes les notices ont également un identifiant pérenne ARK (Archival Resource Key)**
 
-Seuls les corpus **« Cambridge »** et **« Nature »** sont déjà traités.
 Sachant que les 2 types d’accès au document perdureront.
  
  _« Theatre in the Arab World: A Difficult Birth »_ qui provient de “Cambridge” l’accès au document se fait maintenant, également, avec cette url :
