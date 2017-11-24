@@ -78,7 +78,6 @@ Voici alors comment procéder au niveau de votre page HTML en reprenant l'exempl
         btn.attr('class', "v-button-link block");
         btn.attr('style', "margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:8px;");
         $('#istex-button-hook').append(btn);
-
       }
     });
   </script>
@@ -105,7 +104,7 @@ Des intégrations similaires sont réalisées dans différents établissements e
 
 L'[extension pour navigateur ISTEX](../../usage/button/) permet de venir afficher des boutons ISTEX ![](../../img/istex-button.png) au sein de vos pages web lorsque des références bibliographiques y sont trouvées et qu'elles correspondent à des ressources présentes dans la plateforme ISTEX. Pour que cette technique fonctionne cela nécessite bien entendu d'[installer dans son navigateur web l'extension ISTEX](../../usage/button/).
 
-Ces références bibliographiques sont le plus souvent des identifiants de document comme des DOI ou des PMID. Elles peuvent apparaitre dans la page HTML sous différentes formes.
+Ces références bibliographiques sont le plus souvent des identifiants forts de documents comme des DOI ou des PMID mais elle peuvent également être des OpenURL que le bouton ISTEX sera aussi capable de repérer. Ces métadonnées peuvent apparaitre dans la page HTML sous différentes formes.
 
 Par exemple par la présence d'une ancre HTML :
 
