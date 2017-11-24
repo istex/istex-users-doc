@@ -4,6 +4,6 @@ which mkdocs
 if [ $? -ne 0 ]; then
   echo "Veuillez installer mkdocs pour pouvoir générer la documentation (sudo pip install mkdocs)"
 else
-  mkdocs serve --config-file=mkdocs.yml
+  exec mkdocs serve --config-file=mkdocs.yml
 fi
 exit 0
