@@ -17,9 +17,9 @@ Les technologies des sites web où ISTEX peut venir s'intégrer sont les suivant
 - CMS Drupal
 - Tout autre site web divers en HTML/CSS
 
-Attention car ces intégrations avancées nécessites des compétences plus où moins techniques : du webmestre à l'informaticien codeur.
+Attention car ces intégrations avancées nécessites des compétences plus où moins techniques : du webmaster à l'informaticien codeur.
 
-Un webmestre pourra sans problème intégrer ISTEX en utilisant les techniques suivantes :
+Un webmaster pourra sans problème intégrer ISTEX en utilisant les techniques suivantes :
 
 - Le widget ISTEX
 - Le bouton ISTEX intégré
@@ -27,7 +27,7 @@ Un webmestre pourra sans problème intégrer ISTEX en utilisant les techniques s
 
 Un informaticien codeur (peu importe le language de programmation) pourra intégrer ISTEX en utilisant les techniques suivantes :
 
-- Toute les techniques lister plus haut adaptées au webmestre.
+- Toute les techniques lister plus haut adaptées au webmaster.
 - Intégration directe par API ISTEX
 
 # Widget génériques
@@ -51,15 +51,15 @@ Disponible sous peu.
 
 # Bouton ISTEX intégré
 
-Vous disposez d'un portail documentaire (exemple : base de données bibliographiques, archive institutionnelle ...) proposant des ressources documentaires ayant un recoupement avec celles présentes dans la plateforme ISTEX. Vous souhaitez alors afficher un bouton d'accès ISTEX aux fulltext de ces ressources lorsque ces dernières sont présentes dans la plateforme ISTEX.
+Vous disposez d'un portail documentaire (exemple : base de données bibliographiques, archive institutionnelle ...) proposant des ressources documentaires ayant un recoupement avec celles présentes dans la plateforme ISTEX. Vous souhaitez alors afficher un bouton d'accès ISTEX aux *fulltexts* de ces ressources lorsque ces dernières sont présentes dans la plateforme ISTEX.
 
-C'est par exemple ce que fait la base de donnée bibliographique [LiSSa](http://www.lissa.fr). Lorsque vous arrivez sur [la page d'une ressources](http://www.lissa.fr/fr/rep/articles/11109591) et que cette dernière est présente dans la plateforme ISTEX le site propose alors un bouton d'accès au fulltext de la ressource sur la droite (le bouton n'est pas affiché dans le cas contraire) comme vous pouvez le voir sur cette copie d'écran :
+C'est par exemple ce que fait la base de donnée bibliographique [LiSSa](http://www.lissa.fr). Lorsque vous arrivez sur [la page d'une ressource](http://www.lissa.fr/fr/rep/articles/11109591) et que cette dernière est présente dans la plateforme ISTEX le site propose alors un bouton d'accès au *fulltext* de la ressource sur la droite (le bouton n'est pas affiché dans le cas contraire) comme vous pouvez le voir sur cette copie d'écran :
 
 ![Bouton ISTEX intégran dans LiSSa](../../img/lissa-btn-istex.png)
 
 
 
-Ce bouton peut être intégré dans n'importe quel site web similaire. Il est cependant nécessaire d'avoir des  compétences de webmester et que les ressources possèdent des métadonnées si possible de type identifiants (ex: PMID ou un DOI). 
+Ce bouton peut être intégré dans n'importe quel site web similaire. Il est cependant nécessaire d'avoir des  compétences de webmaster et que les ressources possèdent des métadonnées si possible de type identifiants (ex: PMID ou un DOI). 
 
 Voici alors comment procéder au niveau de votre page HTML en reprenant l'exemple de LiSSa et en utilisant la librairie Javascript jQuery :
 
@@ -85,21 +85,21 @@ Voici alors comment procéder au niveau de votre page HTML en reprenant l'exempl
 </div>
 ```
 
-Vous remarquez que l'[OpenURL de l'API ISTEX](https://api.istex.fr/documentation/openurl/) est appelée en AJAX en interrogant le DOI :
+Vous remarquez que l'[OpenURL de l'API ISTEX](https://api.istex.fr/documentation/openurl/) est appelée en AJAX en interrogeant le DOI :
 
 ``https://api.istex.fr/document/openurl?rft_id=info:doi/10.1016/S0248-8663(00)00250-2&noredirect=1&sid=lissa``
 
-Vous devrez alors rendre le paramétrage du DOI (sur notre exemple "10.1016/S0248-8663(00)00250-2") pour que la vérification de disponibilité de la ressource coté ISTEX puisse se faire en fonction de la ressources actuellement consultée par l'utilisateur.
+Vous devrez alors rendre le paramétrage du DOI (sur notre exemple "10.1016/S0248-8663(00)00250-2") pour que la vérification de disponibilité de la ressource côté ISTEX puisse se faire en fonction de la ressource actuellement consultée par l'utilisateur.
 
-Pensez également à ajuster votre HTML et le code jQuery pour venir ajouter le bon element HTML au bon endroit dans votre page web (notez l'ajout de l'attribut ``id="istex-button-hook"``)
+Pensez également à ajuster votre HTML et le code jQuery pour venir ajouter le bon élément HTML au bon endroit dans votre page web (notez l'ajout de l'attribut ``id="istex-button-hook"``)
 
-Si possible, merci également d'indiquer ``sid=lissa`` à la fin de l'appel à l'OpenURL ISTEX en adaptant le mot clé "lissa" à un petiti nom court décrivant votre portail. Ceci permettra à l'équipe ISTEX de récolter des statistiques d'utilisation de la plateforme ISTEX avec un peu de context.
+Si possible, merci également d'indiquer ``sid=lissa`` à la fin de l'appel à l'OpenURL ISTEX en adaptant le mot clé "lissa" à un petiti nom court décrivant votre portail. Ceci permettra à l'équipe ISTEX de récolter des statistiques d'utilisation de la plateforme ISTEX avec un peu de contexte.
 
 Des intégrations similaires sont réalisées dans différents établissements en France :
 
 - Université d'Aix-Marseille avec le [résolveur de lien SMASH](https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746).  Un grand merci à Laurent Lhuillier pour cette intégration !
 - [LiSSa](http://www.lissa.fr) "Base de donnée bibliographique en Santé". Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !
-- Vous très bientôt ? [dites le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté est très important.
+- Vous très bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.
 
 # COinS pour le bouton ISTEX
 
