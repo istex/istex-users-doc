@@ -101,9 +101,37 @@ Des intégrations similaires sont réalisées dans différents établissements e
 - [LiSSa](http://www.lissa.fr) "Base de donnée bibliographique en Santé". Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !
 - Vous très bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.
 
-# COinS pour le bouton ISTEX
+# Métadonnées pour le bouton ISTEX
 
-Disponible sous peu.
+L'[extension pour navigateur ISTEX](../../usage/button/) permet de venir afficher des boutons ISTEX ![](../../img/istex-button.png) au sein de vos pages web lorsque des références bibliographiques y sont trouvées et qu'elles correspondent à des ressources présentes dans la plateforme ISTEX. Pour que cette technique fonctionne cela nécessite bien entendu d'[installer dans son navigateur web l'extension ISTEX](../../usage/button/).
+
+Ces références bibliographiques sont le plus souvent des identifiants de document comme des DOI ou des PMID. Elles peuvent apparaitre dans la page HTML sous différentes formes.
+
+Par exemple par la présence d'une ancre HTML :
+
+```html
+<a href="http://dx.doi.org/10.1016/S0248-8663(00)00250-2">Accès à l'article</a>
+```
+
+Ou bien par sa présence directement dans le texte d'un paragraphe :
+
+```html
+<p>
+  Texte de mon article citant un DOI : 10.1016/S0248-8663(00)00250-2
+</p>
+```
+
+Et également par sa présence directement dans une [balise COinS](https://www.zotero.org/support/dev/exposing_metadata/coins) :
+
+```html
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;id=doi:10.1016/S0987-7053(05)80281-3"></span> 
+```
+
+Cette dernière manière de procéder permet d'afficher le bouton ISTEX synamiquement à la place de cette balise et seulement lorsque la ressource ISTEX est disponible.
+
+Toutes ces techniques sont des bonnes manière de procéder surtout lorsque vous avez des listes d'articles à présenter. C'est souvent le cas lorsqu'un portail documentaire ou une base de données bibliographique affiche une liste de résultats suite à une recherche.
+
+Donc si vous voulez que des ![accès aux ressources ISTEX](../../img/istex-button.png) apparaissent automatiquement dans vos listes de résultats **pensez à y indiquer d'une façon ou d'une autre le DOI ou le PMID des ressources en question**.
 
 # Intégration avancée avec l'API ISTEX
 
