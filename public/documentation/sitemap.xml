@@ -12,19 +12,29 @@
     
         
     <url>
-     <loc>None/integration/discovery/</loc>
+     <loc>None/usage/button/</loc>
      <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/integration/logiciel/</loc>
+     <loc>None/usage/bib/</loc>
+     <lastmod>2017-12-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/integration/discovery-tools/</loc>
      <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/integration/navigateur/</loc>
+     <loc>None/integration/ent-web/</loc>
      <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>

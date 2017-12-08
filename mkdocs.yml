@@ -30,8 +30,7 @@ pages:
 - FAQ:
   - A quoi sert ISTEX ?: faq/aquoisertISTEX.md
   - Mais pourquoi mettre un ARK ?: faq/ark.md 
-theme:
-  name: readthedocs
+theme: readthedocs
 docs_dir: docs
 site_dir: public/documentation
 extra_javascript:
