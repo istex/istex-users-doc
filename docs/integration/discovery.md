@@ -1,5 +1,5 @@
 ﻿
-# OpenURL et Discovery Tool #
+ **OpenURL et Discovery Tool**
 
 Cette documentation est à destination des gestionnaires de documentation (ex : SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.
 
@@ -33,7 +33,7 @@ Si vous utilisez **un reverse proxy tel qu'EZproxy** pour donner accès à la do
 
 ## EDS ##
 
-### Accès au PDF après une recherche ###
+** Accès au PDF après une recherche **
 
 Une recherche sur l’article suivant : *Tricuspid incompetence and right ventricular output in congestive heart failure*  de la revue **British Heart Journal  Janvier 1957, Vol. 19 Issue 1**,  du bouquet BMJ ISTEX
 
@@ -48,18 +48,29 @@ Deux propositions d'accès au PDF :
 
 ![Schéma des liens possible](../img/lien.png)
 
-### Paramétrage du Holdings Management###
+
+L'accès direct au document sur la plateforme ISTEX est possible de 2 façons en fonction des habitudes de travail.
+
+
+** 1- FTF/Résolveur de lien  : En créant un lien Open URL et en lui assignant des bouquets**
+
+** 2- EDS/Customlinks  :  En utilisant le CustomLink d'EBSCO **
+
+
+
+#### 1- FTF/Résolveur de lien : Lien ISTEX Plateforme ####
 
 
 Le Holdings Management (HLM) dans EBSCOADMIN permet à l’administrateur du compte de gérer les collections ou abonnements et leur associer un résolveur de liens permettant l’accès au plein texte sur le site de l’éditeur.
 
-#### 1- Liens éditeurs pour Bouquets ou Titres de ressources  
+
+** A- Liens éditeurs pour Bouquets ou Titres de ressources ** 
 
 Dans le HLM en cliquant sur **"Liens"**, l’administrateur peut visualiser les liens éditeurs disponibles dans le module d'administration qu'il faudra associer à un **"Titres"** ou un **"Bouquet"** de ressources pour aller jusqu'au plein texte. Dans notre exemple : 51 liens sont disponibles
 
 ![Schéma HLMliens](../img/Liens.png)
 
-#### 2- Création d'un lien vers la plateforme ISTEX
+** B- Création d'un lien vers la plateforme ISTEX **
 
 
 Cliquer sur **"Nouveau lien"**
@@ -74,7 +85,7 @@ Remplir le formulaire **"Url\* de base"**
 
 
 
-Avec `https://api.istex.fr/document/openurl`
+Avec `https://view.istex.fr/document/openurl`
 
 
 
@@ -85,7 +96,7 @@ Au niveau de la **"Chaîne de requête"** préciser le champ DOI et PMID plus le
 `?rft_id=info:doi/{DOI}&rft_id=info:pmid/{PMID}&sid=ebsco&auth=ip,fede`
 
 
-![Schéma renseigner openurlISTEX](../img/openurlplateforme.png)
+![Schéma istexview2](../img/istexview2.jpg)
 
 
 Ainsi que les métadonnées prises en compte : 
@@ -108,7 +119,42 @@ Pour personnifier l'affichage du lien, rajouter l’icône ISTEX dont l'URL est 
 ![Schéma IconeIstex](../img/IconeISTEX.png)
 
 
-#####**Open URL : erreur 404 et Istex View**
+** C- OpenURL sur le champ PMID**
+
+L'Open URL ne se fait pas que sur le champ DOI mais également sur le champ PMID et les résultats sont d'autant plus performants que 4 000 000 de PMID ont été ingérés dans la plateforme ISTEX.
+Il faut donc au préalable en plus de rajouter le PMID dans le paramétrage au moment de la création du lien "ISTEX Plateforme", modifier l'équation dans le résolveur de lien.
+
+
+
+=> EDS/Linking/Custom Links puis Modify
+
+![Schéma PMID1](../img/pmid1.png)
+
+
+=> Choisir SetUp MaintainCustomLink
+
+![Schéma PMID2](../img/pmid2.png)
+
+
+=> Sélectionner le résolver de lien FullTextFinder
+
+![Schéma PMID3](../img/pmid3.png)
+
+
+=> Dans  Query String, vérifier
+
+![Schéma PMID4](../img/pmid4.png)
+
+
+=> et complèter l'équation.
+
+![Schéma PMID5](../img/pmid5.png)
+
+
+
+
+
+** D- Open URL : erreur 404 et Istex View**
 
  
 Il peut y avoir une différence de contenu entre la liste des revues négociées avec les éditeurs, disponible au format Kbart sur le site des licences nationales, et les documents, réellement livrés en xml, disponibles sur la plateforme ISTEX.
@@ -122,7 +168,7 @@ Il peut y avoir une différence de contenu entre la liste des revues négociées
  
 => **Une couche IHM** (pour interface Homme-Machine) a été développée et rajoutée au-dessus de l'API ISTEX et en particulier de son OpenURL pour permettre l’affichage  d’un message plus explicite pour l’utilisateur. 		
 Il suffit pour le voir de remplacer 
-`https://api.istex.fr/document/openurl` par `https://view.istex.fr/document/openurl` dans le champ **« URL* de base »**  de la fenêtre de paramétrage du lien ISTEX plateforme.
+`https://api.istex.fr/document/openurl` (Pour ceux qui ont paramétré le lien avant ISTEX View) par `https://view.istex.fr/document/openurl` dans le champ **« URL* de base »**  de la fenêtre de paramétrage du lien ISTEX plateforme.
 
 
 ![Schéma istexview2](../img/istexview2.jpg)
@@ -134,7 +180,7 @@ Il suffit pour le voir de remplacer
 ![Schéma istexview3](../img/istexview3.png)
 
 
-#### 3- Assigner le lien aux bouquets concernés
+** E- Assigner le lien aux bouquets concernés**
 
 Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nationales ISTEX déjà présents dans la plateforme ISTEX :
 
@@ -148,10 +194,12 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 
 Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 
-18 négociations mais 19 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
+19 négociations mais 20 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
 
-![bouquetsept2017](../img/bouquetsept2017.JPG)
+![bouquetsept2017](../img/hlm20bouquets.JPG)
 
+
+#### 2- EDS/Customlinks  :  En utilisant le CustomLink d'EBSCO
 
 ## PRIMO et SUMMON ##
 

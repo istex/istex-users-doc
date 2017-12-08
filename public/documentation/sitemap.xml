@@ -4,41 +4,47 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2017-10-24</lastmod>
+     <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
-     <loc>None/discovery/</loc>
-     <lastmod>2017-10-24</lastmod>
+     <loc>None/integration/discovery/</loc>
+     <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>None/integration/logiciel/</loc>
+     <lastmod>2017-12-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/integration/navigateur/</loc>
+     <lastmod>2017-12-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
+        
     <url>
-     <loc>None/logiciel/</loc>
-     <lastmod>2017-10-24</lastmod>
+     <loc>None/faq/aquoisertISTEX/</loc>
+     <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>None/navigateur/</loc>
-     <lastmod>2017-10-24</lastmod>
+     <loc>None/faq/ark/</loc>
+     <lastmod>2017-12-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-    <url>
-     <loc>None/faq/</loc>
-     <lastmod>2017-10-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+        
     
 
 </urlset>
