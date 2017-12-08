@@ -84,3 +84,17 @@ td:nth-child(2n) {
 .wy-menu-vertical span {
     color: #c4d733;
 }
+
+/* titre de niveau 1 du menu */
+.toctree-l1 > .caption-text {
+    font-size: 110%;
+    text-decoration: bold;
+}
+
+/* permet de cacher les sous-niveaux dans le menu
+   qui font apparaitre des sous section reliées au titres des pages */
+/*
+a.current + ul.subnav {
+    display: none;
+}
+*/

@@ -1,4 +1,5 @@
-ISTEX-USERS-DOC
-=============
+# istex-users-doc
 
-L'ensemble de la documentation utilisateur de l'API ISTEX
+[![Build Status](https://travis-ci.org/istex/istex-users-doc.svg?branch=master)](https://travis-ci.org/istex/istex-users-doc)
+
+Documentation ISTEX au format [mkdocs](http://www.mkdocs.org/).

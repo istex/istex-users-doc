@@ -1,17 +1,47 @@
-site_name: Documentation utilisateur ISTEX
+site_name: Documentation ISTEX
 pages:
 - Accueil: index.md
-- INTEGRATION D'ISTEX:
-  - Configurer votre Discovery Tool: integration/discovery.md
-  - Configurer votre Logiciel de Gestion Bibliographique: integration/logiciel.md
-  - Configurer votre navigateur: integration/navigateur.md
+- Utilisation d'ISTEX:
+#  - Recherche documentaire:
+#    - Explorer ISTEX: blank.md
+    - Bouton ISTEX: usage/button.md
+#    - Google Scholar: blank.md
+    - Logiciel de Gestion Bib: usage/bib.md
+#  - Fouille de text, TDM:
+#    - Télécharger un corpus ISTEX: blank.md
+#    - Utiliser des corpus préparés: blank.md
+- Intégration d'ISTEX:
+  - Outil de découverte: integration/discovery-tools/index.md
+  - ENT et/ou site web: integration/ent-web/index.md
+#- Documentation de l'API ISTEX:
+#  - Intro: api/index.md
+#  - Tutoriels: blank.md
+#  - Accès à l'API: blank.md
+#  - Recherche de documents: blank.md
+#  - Options d'affichage des résultats: blank.md
+#  - Facettes: blank.md
+#  - Accès aux données indexées: blank.md
+#  - Accès aux fichiers: blank.md
+#  - Accès aux enrichissements: blank.md
+#  - Identification pérenne ARK: blank.md
+#  - OpenURL 1.0: blank.md
+#  - OpenURL et Discovery Tool: blank.md
+#  - FAQ: blank.md
 - FAQ:
   - A quoi sert ISTEX ?: faq/aquoisertISTEX.md
   - Mais pourquoi mettre un ARK ?: faq/ark.md 
-theme: readthedocs
+theme:
+  name: readthedocs
 docs_dir: docs
 site_dir: public/documentation
 extra_javascript:
   - //content-delivery.istex.fr/web-header/main.js
 extra_css:
   - css/docs.css
+repo_url: https://github.com/istex/istex-users-doc/
+
+# permet d'avoir des petites ancres clicables a coté des grandes section pour
+# pouvoir pointer un element précis dans la doc
+markdown_extensions:
+    - toc:
+        permalink: True
