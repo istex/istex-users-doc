@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>ENT et/ou site web - Documentation ISTEX</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/docs.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ENT et/ou site web";
+    var mkdocs_page_input_path = "integration/ent-web/index.md";
+    var mkdocs_page_url = "/integration/ent-web/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+  <script src="//content-delivery.istex.fr/web-header/main.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Documentation ISTEX</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Accueil</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Utilisation d'ISTEX</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../usage/button/">Bouton ISTEX</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../usage/bib/">Logiciel de Gestion Bib</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Intégration d'ISTEX</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../discovery-tools/">Outil de découverte</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">ENT et/ou site web</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#integrer-istex-dans-un-ent-ou-dans-un-site-web">Intégrer ISTEX dans un ENT ou dans un site web</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#widget-generiques">Widget génériques</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ent-uportal">ENT uPortal</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#drupal">Drupal</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#bouton-istex-integre">Bouton ISTEX intégré</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#metadonnees-pour-le-bouton-istex">Métadonnées pour le bouton ISTEX</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#integration-avancee-avec-lapi-istex">Intégration avancée avec l'API ISTEX</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>FAQ</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/aquoisertISTEX/">A quoi sert ISTEX ?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/ark/">Mais pourquoi mettre un ARK ?</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Documentation ISTEX</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Intégration d'ISTEX &raquo;</li>
+        
+      
+    
+    <li>ENT et/ou site web</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/istex/istex-users-doc/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="integrer-istex-dans-un-ent-ou-dans-un-site-web">Intégrer ISTEX dans un ENT ou dans un site web<a class="headerlink" href="#integrer-istex-dans-un-ent-ou-dans-un-site-web" title="Permanent link">&para;</a></h1>
+<p>ISTEX a vocation à venir s'intégrer dans les outils documentaires des établissements. Il peut s'y intégrer de différentes manières.</p>
+<p>Dans cette section nous détaillons les <strong>intégrations d'ISTEX de type "Site web"</strong>. 
+Les typologies de sites web visés sont :</p>
+<ul>
+<li>Les ENT car ils permettent de proposer des points d'accès à tous les service d'une université, service de documentation compris.</li>
+<li>Les portails documentaires car ce sont les vitrines des services de la documentation de l'établissement, la bibliothèque numérique ISTEX peut logiquement venir s'y insérer.</li>
+<li>Les OPAC car ils proposent des ressources documentaires aux usagers de façon directe ou indirecte. ISTEX peut venir s'y insérer pour proposer un accès directe à la ressources lorsque cette dernière est présente dans ISTEX.</li>
+</ul>
+<p>Remarque : les <a href="./../discovery-tools/">intégrations dans les outils de découvertes et les résolveur de lien</a> sont expliquées dans la section voisine.</p>
+<p>Les technologies des sites web où ISTEX peut venir s'intégrer sont les suivantes :</p>
+<ul>
+<li>ENT uPortal</li>
+<li>CMS Drupal</li>
+<li>Tout autre site web divers en HTML/CSS</li>
+</ul>
+<p>Attention car ces intégrations avancées nécessites des compétences plus où moins techniques : du webmaster à l'informaticien codeur.</p>
+<p>Un webmaster pourra sans problème intégrer ISTEX en utilisant les techniques suivantes :</p>
+<ul>
+<li>Le widget ISTEX</li>
+<li>Le bouton ISTEX intégré</li>
+<li>COinS pour le bouton ISTEX</li>
+</ul>
+<p>Un informaticien codeur (peu importe le language de programmation) pourra intégrer ISTEX en utilisant les techniques suivantes :</p>
+<ul>
+<li>Toute les techniques lister plus haut adaptées au webmaster.</li>
+<li>Intégration directe par API ISTEX</li>
+</ul>
+<h1 id="widget-generiques">Widget génériques<a class="headerlink" href="#widget-generiques" title="Permanent link">&para;</a></h1>
+<p>Disponible sous peu.</p>
+<ul>
+<li><a href="https://widgets.istex.fr">https://widgets.istex.fr</a></li>
+<li><a href="https://github.com/istex/istex-widgets-angular">https://github.com/istex/istex-widgets-angular</a></li>
+</ul>
+<h1 id="ent-uportal">ENT uPortal<a class="headerlink" href="#ent-uportal" title="Permanent link">&para;</a></h1>
+<p>Disponible sous peu.</p>
+<ul>
+<li><a href="https://github.com/istex/istex-ent-uportal">https://github.com/istex/istex-ent-uportal</a></li>
+</ul>
+<h1 id="drupal">Drupal<a class="headerlink" href="#drupal" title="Permanent link">&para;</a></h1>
+<p>Disponible sous peu.</p>
+<ul>
+<li><a href="https://github.com/istex/istex-drupal">https://github.com/istex/istex-drupal</a></li>
+</ul>
+<h1 id="bouton-istex-integre">Bouton ISTEX intégré<a class="headerlink" href="#bouton-istex-integre" title="Permanent link">&para;</a></h1>
+<p>Vous disposez d'un portail documentaire (exemple : base de données bibliographiques, archive institutionnelle ...) proposant des ressources documentaires ayant un recoupement avec celles présentes dans la plateforme ISTEX. Vous souhaitez alors afficher un bouton d'accès ISTEX aux <em>fulltexts</em> de ces ressources lorsque ces dernières sont présentes dans la plateforme ISTEX.</p>
+<p>C'est par exemple ce que fait la base de donnée bibliographique <a href="http://www.lissa.fr">LiSSa</a>. Lorsque vous arrivez sur <a href="http://www.lissa.fr/fr/rep/articles/11109591">la page d'une ressource</a> et que cette dernière est présente dans la plateforme ISTEX le site propose alors un bouton d'accès au <em>fulltext</em> de la ressource sur la droite (le bouton n'est pas affiché dans le cas contraire) comme vous pouvez le voir sur cette copie d'écran :</p>
+<p><img alt="Bouton ISTEX intégran dans LiSSa" src="./../../img/lissa-btn-istex.png" /></p>
+<p>Ce bouton peut être intégré dans n'importe quel site web similaire. Il est cependant nécessaire d'avoir des  compétences de webmaster et que les ressources possèdent des métadonnées si possible de type identifiants (ex: PMID ou un DOI). </p>
+<p>Voici alors comment procéder au niveau de votre page HTML en reprenant l'exemple de LiSSa et en utilisant la librairie Javascript jQuery :</p>
+<pre><code class="html">&lt;div class=&quot;block&quot; id=&quot;istex-button-hook&quot;&gt;
+  &lt;a onclick=&quot;urlClick2Log(this,'FT_NLM','NLM_11109591','SYS_USER_254');&quot; href=&quot;http://dx.doi.org/10.1016/S0248-8663(00)00250-2&quot; target=&quot;_blank&quot; class=&quot;v-button-link block&quot; style=&quot;margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:8px;&quot;&gt;&lt;img src=&quot;../../../img/icons/article_access_doi.png&quot; alt=&quot; &quot;/&gt;&lt;/a&gt;
+  &lt;a onclick=&quot;urlClick2Log(this,'FT_NLM','NLM_11109591','SYS_USER_254');&quot; href=&quot;http://linkinghub.elsevier.com/retrieve/pii/S0248866300002502&quot; target=&quot;_blank&quot; class=&quot;v-button-link block&quot; style=&quot;margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:8px;&quot;&gt;&lt;img src=&quot;../../../img/icons/article_access.png&quot; alt=&quot; &quot;/&gt;&lt;/a&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  $.get('https://api.istex.fr/document/openurl?rft_id=info:doi/10.1016/S0248-8663(00)00250-2&amp;noredirect=1&amp;sid=lissa')
+    .done(function (res) {
+      if (res &amp;&amp; res.resourceUrl) {
+        var btn = $('&lt;a&gt;&lt;img src=&quot;../../../img/icons/article_access_istex.png&quot; alt=&quot; &quot;/&gt;&lt;/a&gt;');
+        btn.attr('onclick', &quot;urlClick2Log(this,\'FT_NLM\',\'NLM_11109591\',\'SYS_USER_254\');&quot;);
+        btn.attr('href', res.resourceUrl);
+        btn.attr('target', &quot;_blank&quot;);
+        btn.attr('class', &quot;v-button-link block&quot;);
+        btn.attr('style', &quot;margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:8px;&quot;);
+        $('#istex-button-hook').append(btn);
+      }
+    });
+  &lt;/script&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Vous remarquez que l'<a href="https://api.istex.fr/documentation/openurl/">OpenURL de l'API ISTEX</a> est appelée en AJAX en interrogeant le DOI :</p>
+<p><code>https://api.istex.fr/document/openurl?rft_id=info:doi/10.1016/S0248-8663(00)00250-2&amp;noredirect=1&amp;sid=lissa</code></p>
+<p>Vous devrez alors rendre la valeur du DOI paramétrable (sur notre exemple "10.1016/S0248-8663(00)00250-2") pour que la vérification de disponibilité de la ressource côté ISTEX puisse se faire en fonction de la ressource actuellement consultée par l'utilisateur.</p>
+<p>Pensez également à ajuster votre HTML et le code jQuery pour venir ajouter le bon élément HTML au bon endroit dans votre page web (notez l'ajout de l'attribut <code>id="istex-button-hook"</code>)</p>
+<p>Si possible, merci également d'indiquer <code>sid=lissa</code> à la fin de l'appel à l'OpenURL ISTEX en adaptant le mot clé "lissa" à un petiti nom court décrivant votre portail. Ceci permettra à l'équipe ISTEX de récolter des statistiques d'utilisation de la plateforme ISTEX avec un peu de contexte.</p>
+<p>Des intégrations similaires sont réalisées dans différents établissements en France :</p>
+<ul>
+<li>Université d'Aix-Marseille avec le <a href="http://sh2hh6qx2e.search.serialssolutions.com/?url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1108%2F17465261011016531&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Post%E2%80%90merger%20integration%20and%20change%20processes%20from%20a%20complexity%20perspective&amp;rft.jtitle=Baltic%20Journal%20of%20Management&amp;rft.volume=5&amp;rft.issue=1&amp;rft.aufirst=B%C3%A4rbel&amp;rft.aulast=Lauser&amp;rft.au=B%C3%A4rbel%20Lauser&amp;rft.date=2010-01-12&amp;rft.pages=6-27&amp;rft.spage=6&amp;rft.epage=27&amp;rft.issn=1746-5265&amp;rft.language=en">résolveur de lien SMASH</a>.  Un grand merci à Laurent Lhuillier pour cette intégration ! (<a href="https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746">code source</a>)</li>
+</ul>
+<p><a href="http://sh2hh6qx2e.search.serialssolutions.com/?url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1002%2Fanie.201306656&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Enantioselective%20Organocatalytic%20Multicomponent%20Synthesis%20of%202%2C6-Diazabicyclo%5B2.2.2%5Doctanones&amp;rft.jtitle=Angewandte%20Chemie%20International%20Edition&amp;rft.stitle=Angew.%20Chem.%20Int.%20Ed.&amp;rft.volume=52&amp;rft.issue=52&amp;rft.aufirst=Maria%20del%20Mar&amp;rft.aulast=Sanchez%E2%80%85Duque&amp;rft.au=Maria%20del%20Mar%20Sanchez%E2%80%85Duque&amp;rft.au=Olivier%20Basl%C3%A9&amp;rft.au=Yves%20G%C3%A9nisson&amp;rft.au=Jean-Christophe%20Plaquevent&amp;rft.au=Xavier%20Bugaut&amp;rft.au=Thierry%20Constantieux&amp;rft.au=Jean%20Rodriguez&amp;rft.date=2013-12-23&amp;rft.pages=14143-14146&amp;rft.spage=14143&amp;rft.epage=14146&amp;rft.issn=1521-3773&amp;rft.language=en"><img alt="" src="./../../img/istex-smash-small.png" /></a></p>
+<ul>
+<li>
+<p><a href="http://www.lissa.fr">LiSSa</a> "Base de donnée bibliographique en Santé". Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !</p>
+</li>
+<li>
+<p>Vous très bientôt ? <a href="mailto:contact@listes.istex.fr">dites-le à l'équipe ISTEX</a>, savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.</p>
+</li>
+</ul>
+<h1 id="metadonnees-pour-le-bouton-istex">Métadonnées pour le bouton ISTEX<a class="headerlink" href="#metadonnees-pour-le-bouton-istex" title="Permanent link">&para;</a></h1>
+<p>L'<a href="./../../usage/button/">extension pour navigateur ISTEX</a> permet de venir afficher des boutons ISTEX <img alt="" src="./../../img/istex-button.png" /> au sein de vos pages web lorsque des références bibliographiques y sont trouvées et qu'elles correspondent à des ressources présentes dans la plateforme ISTEX. Pour que cette technique fonctionne cela nécessite bien entendu d'<a href="./../../usage/button/">installer dans son navigateur web l'extension ISTEX</a>.</p>
+<p>Ces références bibliographiques sont le plus souvent des identifiants forts de documents comme des DOI ou des PMID mais elle peuvent également être des OpenURL que le bouton ISTEX sera aussi capable de repérer. Ces métadonnées peuvent apparaitre dans la page HTML sous différentes formes.</p>
+<p>Par exemple par la présence d'une ancre HTML :</p>
+<pre><code class="html">&lt;a href=&quot;http://dx.doi.org/10.1016/S0248-8663(00)00250-2&quot;&gt;Accès à l'article&lt;/a&gt;
+</code></pre>
+
+<p>Ou encore avec un PMID qui sera détecté dans le HTML (cf <a href="https://fr.wikipedia.org/wiki/Espace_dod%C3%A9ca%C3%A9drique_de_Poincar%C3%A9">exemple en bas de cette page</a>) :</p>
+<pre><code class="html">&lt;a rel=&quot;nofollow&quot; href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/14534579&quot;&gt;
+14534579
+&lt;/a&gt;
+ ```
+
+Ou bien par la présence d'un DOI directement dans le texte d'un paragraphe :
+
+```html
+&lt;p&gt;
+  Texte de mon article citant un DOI : 10.1016/S0248-8663(00)00250-2
+&lt;/p&gt;
+</code></pre>
+
+<p>Et également par la présence du DOI directement dans une <a href="https://www.zotero.org/support/dev/exposing_metadata/coins">balise COinS</a> :</p>
+<pre><code class="html">&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;id=doi:10.1016/S0987-7053(05)80281-3&quot;&gt;&lt;/span&gt; 
+</code></pre>
+
+<p>Et un peu plus complexe avec un set de métadonnées complet exprimé sous la forme d'un COinS OpenURL (cf <a href="https://fr.wikipedia.org/wiki/Espace_dod%C3%A9ca%C3%A9drique_de_Poincar%C3%A9">exemple en bas de cette page</a>) :</p>
+<pre><code class="html">&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;amp;rft.genre=article&amp;amp;rft.atitle=Dodecahedral+space+topology+as+an+explanation+for+weak+wide-angle+temperature+correlations+in+the+cosmic+microwave+background&amp;amp;rft.jtitle=Nature&amp;amp;rft.issue=6958&amp;amp;rft.aulast=Luminet&amp;amp;rft.aufirst=Jean-Pierre&amp;amp;rft.au=Jeff+Weeks&amp;amp;rft.date=2003-10-09&amp;amp;rft.volume=425&amp;amp;rft.pages=593%E2%80%93595&amp;amp;rft_id=info%3Adoi%2F10.1038%2Fnature01944&amp;amp;rft_id=info%3Apmid%2F14534579&amp;amp;rfr_id=info%3Asid%2Ffr.wikipedia.org%3AEspace+dod%C3%A9ca%C3%A9drique+de+Poincar%C3%A9&quot; id=&quot;COinS_47149&quot;&gt;&lt;/span&gt;
+</code></pre>
+
+<p>Ces deux dernière manières de procéder avec COinS couplé à une balise span vide permettent d'afficher le bouton ISTEX synamiquement à cet emplacement dans la page web et seulement lorsque la ressource ISTEX est disponible.</p>
+<p>Toutes ces techniques sont des bonnes manières de procéder surtout lorsque vous avez des listes d'articles à présenter. C'est souvent le cas lorsqu'un portail documentaire ou une base de données bibliographique affiche une liste de résultats suite à une recherche.</p>
+<p>Donc si vous voulez que des <img alt="accès aux ressources ISTEX" src="./../../img/istex-button.png" /> apparaissent automatiquement dans vos listes de résultats <strong>pensez à y indiquer d'une façon ou d'une autre le DOI ou le PMID des ressources en question</strong>.</p>
+<h1 id="integration-avancee-avec-lapi-istex">Intégration avancée avec l'API ISTEX<a class="headerlink" href="#integration-avancee-avec-lapi-istex" title="Permanent link">&para;</a></h1>
+<p>Disponible sous peu.</p>
+<ul>
+<li><a href="https://api.istex.fr">https://api.istex.fr</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../faq/aquoisertISTEX/" class="btn btn-neutral float-right" title="A quoi sert ISTEX ?">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../discovery-tools/" class="btn btn-neutral" title="Outil de découverte"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/istex/istex-users-doc/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../discovery-tools/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../faq/aquoisertISTEX/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
