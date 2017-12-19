@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2017-12-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,30 +12,14 @@
     
         
     <url>
-     <loc>None/usage/button/</loc>
-     <lastmod>2017-12-08</lastmod>
+     <loc>/usage/button/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/usage/bib/</loc>
-     <lastmod>2017-12-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/integration/discovery-tools/</loc>
-     <lastmod>2017-12-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/integration/ent-web/</loc>
-     <lastmod>2017-12-08</lastmod>
+     <loc>/usage/bib/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -44,14 +28,30 @@
     
         
     <url>
-     <loc>None/faq/aquoisertISTEX/</loc>
-     <lastmod>2017-12-08</lastmod>
+     <loc>/integration/discovery-tools/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/faq/ark/</loc>
-     <lastmod>2017-12-08</lastmod>
+     <loc>/integration/ent-web/</loc>
+     <lastmod>2017-12-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/faq/aquoisertISTEX/</loc>
+     <lastmod>2017-12-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faq/ark/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
