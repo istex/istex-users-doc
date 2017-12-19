@@ -92,7 +92,7 @@ Vous devrez alors rendre la valeur du DOI paramétrable (sur notre exemple "10.1
 
 Pensez également à ajuster votre HTML et le code jQuery pour venir ajouter le bon élément HTML au bon endroit dans votre page web (notez l'ajout de l'attribut ``id="istex-button-hook"``)
 
-Si possible, merci également d'indiquer ``sid=lissa`` à la fin de l'appel à l'OpenURL ISTEX en adaptant le mot clé "lissa" à un petiti nom court décrivant votre portail. Ceci permettra à l'équipe ISTEX de récolter des statistiques d'utilisation de la plateforme ISTEX avec un peu de contexte.
+Si possible, merci également d'indiquer ``sid=lissa`` à la fin de l'appel à l'OpenURL ISTEX en adaptant le mot clé "lissa" à un nom court décrivant votre portail. Ceci permettra à l'équipe ISTEX de récolter des statistiques d'utilisation de la plateforme ISTEX avec un peu de contexte.
 
 Des intégrations similaires sont réalisées dans différents établissements en France :
 

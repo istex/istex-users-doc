@@ -39,7 +39,7 @@ extra_css:
   - css/docs.css
 repo_url: https://github.com/istex/istex-users-doc/
 
-# permet d'avoir des petites ancres clicables a coté des grandes section pour
+# permet d'avoir des petites ancres clicables à coté des grandes sections pour
 # pouvoir pointer un element précis dans la doc
 markdown_extensions:
     - toc:
