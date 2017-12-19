@@ -1,4 +1,4 @@
-﻿
+
  **OpenURL et Discovery Tool**
 
 Cette documentation est à destination des gestionnaires de documentation (ex : SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.
@@ -199,7 +199,7 @@ Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 ![bouquetsept2017](../../img/hlm20bouquets.JPG)
 
 
-#### 2- EDS/Customlinks  
+#### 2- EDS/CustomLinks  
 
 
 Contrairement au cas précédent ou un lien plateforme est créé par l'utilisateur, cette fois c'est EBSCO qui gère le CustomLink l'utilisateur choisit d'associer des  System collections (champ Local collection for filter) au Customlink ISTEX Plateforme créé par EBSCO.
@@ -210,7 +210,7 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 
 ![Schéma customlink1](../../img/custom1.JPG)
 
-** A- Premier cas : ISTEX plateforme est déjà activé parmi les customlinks EDS**
+** A- Premier cas : ISTEX plateforme est déjà activé parmi les customLinks EDS**
 
 
 1. Cliquer sur SetUp/Maintain Customlinks
@@ -229,14 +229,14 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 6. Utiliser les flèches du champ de recherche pour naviguer d’occurrence en occurrence.
 7. Sans lâcher la touche ctrl, sélectionner la/les nouvelle(s) source(s) choisie(s) puis valider.
 
-![Schéma customlink4](../../img/custom4.JPG)
+![Schéma customlink4](../../img/Custom4.JPG)
 
 
 
 ** B - Deuxième cas : ISTEX plateforme n’est pas activé parmi les customlinks EDS**
 
 
-1. Cliquer sur SetUp/Maintain Customlinks
+1. Cliquer sur SetUp/Maintain CustomLinks
 2. Cliquer sur Add New CustomLink
 3. Cocher “Copy from existing CustomLink » et cliquer sur Continue
 4. Dans Choose Category, sélectionner Full Text et cliquer sur ++show other available CustomLinks
