@@ -10,12 +10,12 @@ pages:
 #  - Fouille de text, TDM:
 #    - Télécharger un corpus ISTEX: blank.md
 #    - Utiliser des corpus préparés: blank.md
-- "Utilisation d'ISTEX : Corpus": 
-    - Préambule: corpus/introduction.md
-    - Construction d'une requête: corpus/requetage.md
-    - Extraction d'un corpus: corpus/extraction.md
-    - Vérification et mise en forme des résultats: corpus/verification.md
-    - Annexes: corpus/annexes.md
+- "Utilisation d'ISTEX : TDM": 
+    - Préambule: tdm/introduction.md
+    - Construction d'une requête: tdm/requetage.md
+    - Extraction d'un corpus: tdm/extraction.md
+    - Vérification et mise en forme des résultats: tdm/verification.md
+    - Annexes: tdm/annexes.md
 - Intégration d'ISTEX:
   - Outil de découverte: integration/discovery-tools/index.md
   - ENT et/ou site web: integration/ent-web/index.md
