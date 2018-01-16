@@ -229,7 +229,9 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 6. Utiliser les flèches du champ de recherche pour naviguer d’occurrence en occurrence.
 7. Sans lâcher la touche ctrl, sélectionner la/les nouvelle(s) source(s) choisie(s) puis valider.
 
-![Schéma customlink4](../../img/Custom4.JPG)
+![Schéma customlink4](../../img/custom4.JPG)
+
+
 
 
 

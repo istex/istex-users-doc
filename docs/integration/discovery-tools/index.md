@@ -213,7 +213,7 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 ** A- Premier cas : ISTEX plateforme est déjà activé parmi les customlinks EDS**
 
 
-1. Cliquer sur SetUp/Maintain Customlinks
+1. Cliquer sur SetUp/Maintain CustomLinks
 2. Descendre jusqu’au lien ISTEX plateforme et cliquer sur le lien
 3. Descendre jusqu’à la fonction Local Collections for Filter
 
@@ -231,12 +231,10 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 
 ![Schéma customlink4](../../img/custom4.JPG)
 
+** B - Deuxième cas : ISTEX plateforme n’est pas activé parmi les customLinks EDS**
 
 
-** B - Deuxième cas : ISTEX plateforme n’est pas activé parmi les customlinks EDS**
-
-
-1. Cliquer sur SetUp/Maintain Customlinks
+1. Cliquer sur SetUp/Maintain CustomLinks
 2. Cliquer sur Add New CustomLink
 3. Cocher “Copy from existing CustomLink » et cliquer sur Continue
 4. Dans Choose Category, sélectionner Full Text et cliquer sur ++show other available CustomLinks

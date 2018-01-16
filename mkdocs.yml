@@ -1,7 +1,7 @@
 site_name: Documentation ISTEX
 pages:
 - Accueil: index.md
-- Utilisation d'ISTEX:
+- "Utilisation d'ISTEX : Doc":
 #  - Recherche documentaire:
 #    - Explorer ISTEX: blank.md
     - Bouton ISTEX: usage/button.md
@@ -10,6 +10,12 @@ pages:
 #  - Fouille de text, TDM:
 #    - Télécharger un corpus ISTEX: blank.md
 #    - Utiliser des corpus préparés: blank.md
+- "Utilisation d'ISTEX : Corpus": 
+    - Préambule: corpus/introduction.md
+    - Construction d'une requête: corpus/requetage.md
+    - Extraction d'un corpus: corpus/extraction.md
+    - Vérification et mise en forme des résultats: corpus/verification.md
+    - Annexes: corpus/annexes.md
 - Intégration d'ISTEX:
   - Outil de découverte: integration/discovery-tools/index.md
   - ENT et/ou site web: integration/ent-web/index.md

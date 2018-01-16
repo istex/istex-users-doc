@@ -10,3 +10,4 @@ La documentation est répartie selon les chapitres suivants :
 * [Configurer votre navigateur web pour un accès direct aux documents ISTEX](usage/button/) ("bouton ISTEX")
 * [Configurer votre logiciel de Gestion Bibliographique](usage/bib/)
 * [Configurer votre Discovery Tool](integration/discovery-tools/) (à destination des gestionnaires de la documentation)
+* [Constituer votre corpus](corpus/introduction/) (à destination des utilisateurs TAL/TDM entre autres)
