@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Extraction d'un corpus - Documentation ISTEX</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/docs.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Extraction d'un corpus";
+    var mkdocs_page_input_path = "corpus/extraction.md";
+    var mkdocs_page_url = "/corpus/extraction/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+  <script src="//content-delivery.istex.fr/web-header/main.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Documentation ISTEX</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Accueil</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Utilisation d'ISTEX : Doc</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../usage/button/">Bouton ISTEX</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../usage/bib/">Logiciel de Gestion Bib</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Utilisation d'ISTEX : Corpus</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../introduction/">Préambule</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../requetage/">Construction d'une requête</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Extraction d'un corpus</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#application-istex-dl-istex-download">Application ISTEX-dl (ISTEX download)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#fonction-extract">Fonction « Extract »</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#moissonneur-de-lapi-istex">Moissonneur de l’API Istex</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#programme-harvestcorpuspl">Programme « harvestCorpus.pl »</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../verification/">Vérification et mise en forme des résultats</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annexes/">Annexes</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Intégration d'ISTEX</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integration/discovery-tools/">Outil de découverte</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integration/ent-web/">ENT et/ou site web</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>FAQ</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/aquoisertISTEX/">A quoi sert ISTEX ?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/ark/">Mais pourquoi mettre un ARK ?</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Documentation ISTEX</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Utilisation d'ISTEX : Corpus &raquo;</li>
+        
+      
+    
+    <li>Extraction d'un corpus</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/istex/istex-users-doc/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Ce chapitre fait l'inventaire des différentes méthodes permettant d'extraire un corpus de documents correspondant à une requête.</p>
+<p>Tous ces outils proposent de télécharger un corpus de fichiers textes (PDF, TEI, TXT, etc.), de fichiers de métadonnées (Mods, XML) ou de fichiers d’enrichissement (TEI) depuis la base ISTEX à partir d’une requête.</p>
+<h2 id="application-istex-dl-istex-download">Application ISTEX-dl (ISTEX download)<a class="headerlink" href="#application-istex-dl-istex-download" title="Permanent link">&para;</a></h2>
+<p>Il s'agit d'une application Web permettant de télécharger très facilement, via une interface conviviale, un corpus de documents ISTEX sous forme d'archive zip à partir d’une requête.</p>
+<ul>
+<li><strong>Avantages :</strong>  <ul>
+<li>très simple d'emploi, l'application propose des exemples pour aider à la construction d'une requête </li>
+<li>elle peut être utilisée en dehors de l’Inist car gère l’authentification par la fédération d’identité </li>
+<li>elle offre également le téléchargement des annexes et couvertures disponibles.</li>
+</ul>
+</li>
+<li><strong>Inconvénients :</strong><ul>
+<li>la sauvegarde des requêtes n'est pas encore proposée</li>
+<li>les corpus ne peuvent être extraits actuellement que dans la limite de 10 000 documents</li>
+<li>l'extraction des enrichissements n'est pas encore opérationnelle</li>
+</ul>
+</li>
+<li><strong>Mode d'emploi :</strong> cette application est accessible à l’adresse suivante : <a href="https://dl.istex.fr/">https://dl.istex.fr/</a> </li>
+<li><strong>Astuces :</strong> <ul>
+<li>la requête ne nécessite pas d'opérateur booléen en majuscule</li>
+<li>
+<p>si l'on souhaite extraire tous les formats pour un type de fichier particulier, il suffit de cocher ce type de fichier sans autre précision</p>
+<ul>
+<li>exemple : <em>voir en page d'accueil le type de fichier "Métadonnées" (case cochée par défaut)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="fonction-extract">Fonction « Extract »<a class="headerlink" href="#fonction-extract" title="Permanent link">&para;</a></h2>
+<p>Il s'agit d'une fonction du moteur de recherche de l'API ISTEX permettant d’extraire un corpus correspondant à des critères de recherche. Celle-ci s’utilise directement dans l’URL de requêtage sur l’API.</p>
+<ul>
+<li>
+<p><strong>Avantages</strong> : simple à utiliser, elle ne nécessite aucune installation. Elle peut être utilisée en dehors de l’Inist car gère l’authentification par la fédération d’identité.  Elle offre également le téléchargement des annexes et couvertures disponibles. </p>
+</li>
+<li>
+<p><strong>Inconvénient : </strong>les corpus ne peuvent être extraits actuellement que dans la limite de 10 000 documents. L'extraction des annexes et des enrichissements n'est actuellement pas utilisable, mais le fichier JSON extrait par défaut reprend la totalité des enrichissements disponibles d'un document numérique donné.</p>
+</li>
+<li>
+<p><strong>Mode d'emploi :</strong> cette fonction et la syntaxe requise pour son utilisation sont décrites dans la rubrique <strong><a href="https://api.istex.fr/documentation/search/#extraction">"Extraction"</a></strong> de la documentation technique ISTEX.</p>
+</li>
+<li>
+<p><strong>Astuces :</strong> </p>
+<ul>
+<li>
+<p>pour que la fonction <code>extract</code> soit opérationnelle, il faut la faire suivre obligatoirement  par le signe "=" et une valeur quelconque, mais seuls les fichiers JSON sont extraits. Indiquer un (ou plusieurs) type de fichiers pour obtenir son extraction.</p>
+<ul>
+<li>Exemple</li>
+</ul>
+<p><em><a href="https://api.istex.fr/document/?q=abstract:%22by%20draconis%20stars%22&amp;extract=lhjd">https://api.istex.fr/document/?q=abstract:"by draconis stars"&amp;extract=lhjd</a></em></p>
+</li>
+<li>
+<p>sans indication de format, tous les formats disponibles pour un type de fichiers sont extraits</p>
+</li>
+<li>
+<p>la syntaxe pour extraire les enrichissements ne comporte pas de "s" (<em>enrichment</em>).</p>
+</li>
+<li>
+<p>indiquer une taille de corpus au moins égale au nombre de documents à extraire. Sans cette précision, 5 documents sont extraits par défaut.</p>
+<ul>
+<li>Exemple : <em>moissonnage du texte intégral au format pdf des 18 documents contenant le terme Groenland dans le titre</em></li>
+</ul>
+<p><em><a href="https://api.istex.fr/document/?q=title:groenland&amp;size=20&amp;extract=fulltext[pdf]">https://api.istex.fr/document/?q=title:groenland&amp;size=20&amp;extract=fulltext[pdf]</a></em></p>
+</li>
+</ul>
+<p>​</p>
+</li>
+</ul>
+<h2 id="moissonneur-de-lapi-istex">Moissonneur de l’API Istex<a class="headerlink" href="#moissonneur-de-lapi-istex" title="Permanent link">&para;</a></h2>
+<p>Il s'agit d'un utilitaire en ligne de commande permettant de moissonner les corpus requêtés par l'API de la plateforme ISTEX. Il est écrit en NodeJS. </p>
+<ul>
+<li>
+<p><strong>Avantage</strong> : il peut être utilisé en dehors de l’Inist car gère l’authentification par la fédération d’identité.</p>
+</li>
+<li>
+<p><strong>Inconvénient</strong> : son utilisation nécessite de disposer de Git et de NodeJs, ainsi que d'installer le moissonneur via un terminal de commande.</p>
+</li>
+<li>
+<p><strong>Mode d'emploi :</strong> ce programme est disponible sur <strong><a href="https://github.com/istex/istex-api-harvester">Github</a></strong>.</p>
+</li>
+<li>
+<p><strong>Installations :</strong> </p>
+<ul>
+<li>installation de Git pour Windows : https://git-for-windows.github.io/</li>
+<li>installation de NodeJS pour Windows : https://nodejs.org/en/download/</li>
+<li>lancement du terminal Git Bash : <code>Démarrer /Toutes les Applications / Git Bash</code></li>
+<li>installation du moissonneur : <code>npm install -g istex-api-harvester</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Astuces :</strong> </p>
+<ul>
+<li>
+<p>indiquer le nombre de documents à extraire. Sans précision, aucun document n'est moissonné</p>
+</li>
+<li>
+<p>les métadonnées étant extraites par défaut, si on ne souhaite que les fichiers textes, utiliser l'option -M avec une chaîne vide, c’est-à-dire un blanc entre doubles quotes : -M <strong>""</strong> </p>
+<ul>
+<li>Exemple : <em>moissonnage du texte intégral au format txt, sans les métadonnées, de 590 documents correspondants à la requête querya1.txt, à télécharger dans le répertoire « corpusAncien»</em> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="bash">    ​    `istex-api-harvester  -F txt -M &quot;&quot; -o corpusAncien -s 600 --query=&quot;cat querya1.txt&quot;`
+</code></pre>
+
+<ul>
+<li>
+<p>Si le corpus est volumineux, il faut augmenter la durée de vie de la fonction Scroll qui est de 30 s par défaut. Avec un tel délai, le parcours des 100 résultats de la "page courante" peut s’avérer trop long et entraîner une erreur 404 renvoyée par l'API.</p>
+<ul>
+<li>Exemple : <em>moissonnage du texte intégral au format pdf et des métadonnées associées de 17 257 documents contenant le terme "arctic" dans le titre ou le résumé, à télécharger dans le répertoire Polaris (la durée de vie de la fonction Scroll a été portée à 5 mn)</em>
+​</li>
+</ul>
+</li>
+</ul>
+<pre><code class="bash">        istex-api-harvester  -F txt -M &quot;&quot; -o corpusAncien -s 600 --query=&quot;`cat querya1.txt`&quot;
+</code></pre>
+
+<pre><code class="bash">        istex-api-harvester -t 5m -F pdf -o Polaris -s 17500 -q &quot;title:arctic OR abstract:arctic&quot;
+</code></pre>
+
+<h2 id="programme-harvestcorpuspl">Programme « harvestCorpus.pl »<a class="headerlink" href="#programme-harvestcorpuspl" title="Permanent link">&para;</a></h2>
+<p>Il s'agit d'un outil d’extraction de corpus ISTEX en ligne de commande. Il est écrit en Perl.</p>
+<p>Il permet de décharger un corpus depuis la base ISTEX à partir d’une requête ou d’un fichier <code>.corpus</code>. </p>
+<ul>
+<li>
+<p><strong>Avantages</strong> : </p>
+<ul>
+<li>Il permet de renommer les fichiers déchargés, de gérer l’arborescence des fichiers et de générer un fichier de notices bibliographiques et un fichier <code>.corpus</code> (contenant la liste des identifiants du corpus). </li>
+<li>Il permet également de traiter une requête de grande taille (9 000 caractères). </li>
+<li>De plus, il est associé à plusieurs <a href="https://git.istex.fr/scodex/harvest-corpus/tree/master/outils">outils</a> dont <code>statsCorpus.pl</code>, un programme de réalisation de statistiques sur le corpus, et <code>extraitXmlEditeur.pl</code>, un programme pour extraire à partir des archives ZIP les fichiers XML fournis par les éditeurs . </li>
+<li>Comme ce programme extrait d'abord la liste des identifiants des documents pertinents avant de décharger les fichiers correspondants, il ne devrait pas être affecté par les limitations de la méthode  <code>scroll</code>. Donc, même si la connexion Internet a un faible débit, l'extraction se déroulera sans problème. </li>
+<li>Il gère l'authentification au serveur en dehors du réseau interne de l'Inist. </li>
+<li>Il vérifie le type des fichiers déchargés, signale les problèmes d'authentification et relance le déchargement des fichiers concernés (pour plus de détails, voir la rubrique Détecter les problèmes d'authentification dans le chapitre Vérification et mise en forme des résultats). </li>
+</ul>
+</li>
+<li>
+<p><strong>Inconvénients</strong> : </p>
+<ul>
+<li>Il s'utilise en ligne de commande à partir d'un terminal. Sous Windows, cela peut se faire avec <a href="https://www.cygwin.com/">Cygwin</a>  (Git Bash ne convient pas). </li>
+<li>Il existe des solutions alternatives sous Windows avec <a href="http://strawberryperl.com/">Strawberry Perl</a> ou <a href="https://www.activestate.com/activeperl">ActivePerl</a>, mais elles n'ont pas été testées pour l'instant. </li>
+</ul>
+</li>
+<li>
+<p><strong>Mode d'emploi :</strong> ce programme est disponible sur <strong><a href="https://git.istex.fr/scodex/harvest-corpus">Gibucket</a></strong>. </p>
+</li>
+<li>
+<p><strong>Installations :</strong> </p>
+<ul>
+<li>
+<p>si besoin, installer GIT pour Windows : https://git-for-windows.github.io/</p>
+</li>
+<li>
+<p>cloner la distribution <code>harvest-corpus</code> :</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="bash">git clone https://git.istex.fr/git/scodex/harvest-corpus.git
+</code></pre>
+
+<ul>
+<li><strong>Exemples :</strong> pour récupérer les fichiers PDF et TEI à partir d'une requête et les placer dans le répertoire <code>Data/Fichiers</code> tout en générant un fichier de notices bibliographiques <code>oiseaux.txt</code> et un fichier d'identifiants <code>oiseaux.corpus</code> :</li>
+</ul>
+<pre><code class="bash">harvestCorpus.pl -r '/birds?/ OR (avian NOT flu)' -t pdf,tei -d Data/Fichiers -s oiseaux.corpus -n oiseaux.txt -p Oiseau_ -v
+</code></pre>
+
+<p>Tous les fichiers PDF et TEI seront renommés en <strong>Oiseaux_0<em>nnn</em>.pdf</strong> et <strong>Oiseaux_0<em>nnn</em>.tei</strong>. La chaîne de caractères « 0<em>nnn</em> »  représente un nombre séquentiel avec autant de chiffres que nécessaire. </p>
+<p>L'option <code>-v</code> permet de conserver toutes le métadonnées envoyées par l'API. Elles sont placées dans le fichier <code>logRequete.txt</code> dans le répertoire <code>Data/Fichiers</code>. </p>
+<ul>
+<li><strong>Astuce :</strong> l'intérêt des fichiers <code>.corpus</code> est de permettre de documenter et de référencer le corpus réalisé. Il permet aussi de refaire le même corpus ou de le compléter avec d'autres fichiers. Par exemple, pour décharger les métadonnées du corpus obtenu précédemment et placer les fichiers correspondants dans le répertoire <code>Data/Metadata</code>, il suffit de lancer :</li>
+</ul>
+<pre><code class="bash">harvestCorpus.pl -c oiseaux.corpus -m all -d Data/Metadata
+</code></pre>
+
+<p>Les fichiers au format MODS ou XML dans le répertoire <code>Data/Metadata</code> auront le même préfixe que les fichiers PDF et TEI correspondants dans le répertoire  <code>Data/Fichiers</code>. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../verification/" class="btn btn-neutral float-right" title="Vérification et mise en forme des résultats">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../requetage/" class="btn btn-neutral" title="Construction d'une requête"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/istex/istex-users-doc/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../requetage/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../verification/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -7,18 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  
   <title>Documentation ISTEX</title>
+  
+
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
   <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="./css/highlight.css">
   <link href="./css/docs.css" rel="stylesheet">
+
   
   <script src="./js/jquery-2.1.1.min.js"></script>
   <script src="./js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
+  <script type="text/javascript" src="./js/highlight.pack.js"></script>
+  <script src="./js/theme.js"></script>
+  <script>var base_url = '.';</script>
+  <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+
+  <script src="//content-delivery.istex.fr/web-header/main.js"></script>
+
   
 </head>
 
@@ -38,58 +50,123 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+        <ul class="current">
           
-            <li class="toctree-l1">
-		
-    <a class="" href=".">Accueil</a>
-	    </li>
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href=".">Accueil</a>
+        
+    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Utilisation d'ISTEX</span>
+            <li>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="usage/button/">Bouton ISTEX</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="usage/bib/">Logiciel de Gestion Bib</a>
-                </li>
+    <li><span>Utilisation d'ISTEX : Doc</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="usage/button/">Bouton ISTEX</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="usage/bib/">Logiciel de Gestion Bib</a>
+        
+    </li>
+
+        
     </ul>
-	    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Intégration d'ISTEX</span>
+            <li>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="integration/discovery-tools/">Outil de découverte</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="integration/ent-web/">ENT et/ou site web</a>
-                </li>
+    <li><span>Utilisation d'ISTEX : TDM</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tdm/introduction/">Préambule</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tdm/requetage/">Construction d'une requête</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tdm/extraction/">Extraction d'un corpus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tdm/verification/">Vérification et mise en forme des résultats</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tdm/annexes/">Annexes</a>
+        
+    </li>
+
+        
     </ul>
-	    </li>
+<li>
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">FAQ</span>
+            <li>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="faq/aquoisertISTEX/">A quoi sert ISTEX ?</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="faq/ark/">Mais pourquoi mettre un ARK ?</a>
-                </li>
+    <li><span>Intégration d'ISTEX</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="integration/discovery-tools/">Outil de découverte</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="integration/ent-web/">ENT et/ou site web</a>
+        
+    </li>
+
+        
     </ul>
-	    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>FAQ</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="faq/aquoisertISTEX/">A quoi sert ISTEX ?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="faq/ark/">Mais pourquoi mettre un ARK ?</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
           
         </ul>
       </div>
@@ -114,6 +191,10 @@
     
     <li class="wy-breadcrumbs-aside">
       
+        
+          <a href="https://github.com/istex/istex-users-doc/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
     </li>
   </ul>
   <hr/>
@@ -129,8 +210,8 @@
     <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus>
   </form>
 
-  <div id="mkdocs-search-results" class="search-results">
-    Searching...
+  <div id="mkdocs-search-results">
+    Sorry, page not found.
   </div>
 
 
@@ -148,7 +229,7 @@
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+	  
         </div>
       </div>
 
@@ -156,20 +237,15 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+<div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/istex/istex-users-doc/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/istex/istex-users-doc/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
       
     </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="./js/theme.js"></script>
-      <script src="//content-delivery.istex.fr/web-header/main.js"></script>
-      <script src="./search/require.js"></script>
-      <script src="./search/search.js"></script>
 
 </body>
 </html>
