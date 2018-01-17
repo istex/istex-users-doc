@@ -30,7 +30,7 @@ NB : Tous les exemples de requêtes donnés ici sont conçus pour être utilis�
 
 Lorsque l'utilisateur a bien identifié ses besoins par rapport aux corpus qu'il veut constituer, il reste à définir les modalités d’interrogation qui permettront de capter les documents correspondant au contenu et au périmètre identifiés pour le corpus.
 
-![Schemacontenurequete](../../img/tabl_contenu_req.png)
+![Schemacontenurequete](../img/tabl_contenu_req.png)
 
 
 La liste des différentes valeurs possibles dans les champs `language`, `host.genre` et `genre` est donnée dans le chapitre « Annexe ».
