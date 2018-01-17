@@ -35,7 +35,8 @@ pages:
 #  - FAQ: blank.md
 - FAQ:
   - A quoi sert ISTEX ?: faq/aquoisertISTEX.md
-  - Mais pourquoi mettre un ARK ?: faq/ark.md 
+  - Mais pourquoi mettre un ARK ?: faq/ark.md
+  - Liste des corpus chargés sur l'API en temps réel? : faq/corpusapi.md 
 theme: readthedocs
 docs_dir: docs
 site_dir: public/documentation
