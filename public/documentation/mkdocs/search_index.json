@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "Bienvenue sur la documentation utilisateur de la plateforme ISTEX\n\u00b6\n\n\nCette pr\u00e9sente documentation a une vocation utilisateur afin de r\u00e9pondre au mieux \u00e0 leurs interrogations.\n\n\nCette documentation est class\u00e9e par \nTh\u00e9matique\n . Elle est amen\u00e9e \u00e0 \u00e9voluer en fonction de vos besoins. N'h\u00e9sitez pas \u00e0 contacter l'\u00e9quipe en charge de la documentation.\n\n\nLa documentation est r\u00e9partie selon les chapitres suivants :\n\n\n\n\nConfigurer votre navigateur web pour un acc\u00e8s direct aux documents ISTEX\n (\"bouton ISTEX\")\n\n\nConfigurer votre logiciel de Gestion Bibliographique\n\n\nConfigurer votre Discovery Tool\n (\u00e0 destination des gestionnaires de la documentation)\n\n\nConstituer votre corpus\n (\u00e0 destination des utilisateurs TAL/TDM, entre autres)",
+            "text": "Bienvenue sur la documentation utilisateur de la plateforme ISTEX\n\u00b6\n\n\nCette pr\u00e9sente documentation a une vocation utilisateur afin de r\u00e9pondre au mieux \u00e0 leurs interrogations.\n\n\nCette documentation est class\u00e9e par \nTh\u00e9matique\n . Elle est amen\u00e9e \u00e0 \u00e9voluer en fonction de vos besoins. N'h\u00e9sitez pas \u00e0 contacter l'\u00e9quipe en charge de la documentation.\n\n\nLa documentation est r\u00e9partie selon les chapitres suivants :\n\n\n\n\nConfigurer votre navigateur web pour un acc\u00e8s direct aux documents ISTEX\n (\"Bouton ISTEX\")\n\n\nConfigurer Google Scholar pour un acc\u00e8s direct aux documents ISTEX\n (\"Google Scholar\")\n\n\nConfigurer votre logiciel de Gestion Bibliographique\n\n\nConfigurer votre Discovery Tool\n (\u00e0 destination des gestionnaires de la documentation)\n\n\nConstituer votre corpus\n (\u00e0 destination des utilisateurs TAL/TDM, entre autres)",
             "title": "Accueil"
         },
         {
             "location": "/#bienvenue-sur-la-documentation-utilisateur-de-la-plateforme-istex",
-            "text": "Cette pr\u00e9sente documentation a une vocation utilisateur afin de r\u00e9pondre au mieux \u00e0 leurs interrogations.  Cette documentation est class\u00e9e par  Th\u00e9matique  . Elle est amen\u00e9e \u00e0 \u00e9voluer en fonction de vos besoins. N'h\u00e9sitez pas \u00e0 contacter l'\u00e9quipe en charge de la documentation.  La documentation est r\u00e9partie selon les chapitres suivants :   Configurer votre navigateur web pour un acc\u00e8s direct aux documents ISTEX  (\"bouton ISTEX\")  Configurer votre logiciel de Gestion Bibliographique  Configurer votre Discovery Tool  (\u00e0 destination des gestionnaires de la documentation)  Constituer votre corpus  (\u00e0 destination des utilisateurs TAL/TDM, entre autres)",
+            "text": "Cette pr\u00e9sente documentation a une vocation utilisateur afin de r\u00e9pondre au mieux \u00e0 leurs interrogations.  Cette documentation est class\u00e9e par  Th\u00e9matique  . Elle est amen\u00e9e \u00e0 \u00e9voluer en fonction de vos besoins. N'h\u00e9sitez pas \u00e0 contacter l'\u00e9quipe en charge de la documentation.  La documentation est r\u00e9partie selon les chapitres suivants :   Configurer votre navigateur web pour un acc\u00e8s direct aux documents ISTEX  (\"Bouton ISTEX\")  Configurer Google Scholar pour un acc\u00e8s direct aux documents ISTEX  (\"Google Scholar\")  Configurer votre logiciel de Gestion Bibliographique  Configurer votre Discovery Tool  (\u00e0 destination des gestionnaires de la documentation)  Constituer votre corpus  (\u00e0 destination des utilisateurs TAL/TDM, entre autres)",
             "title": "Bienvenue sur la documentation utilisateur de la plateforme ISTEX"
         },
         {
@@ -29,6 +29,21 @@
             "location": "/usage/button/#chrome",
             "text": "=> La recherche sur Wikip\u00e9dia d\u2019 \u00ab\u00a0H\u00e9lium\u00a0\u00bb  donne la bibliographie suivante :   => Aller sur  https://addons.istex.fr   => Cliquer sur \u00ab\u00a0Ajouter l\u2019extension \u00e0 Chrome\u00a0\u00bb   => Autoriser l\u2019installation  Retrouver l\u2019extension dans \u00ab\u00a0Personnaliser et contr\u00f4ler Google Chrome/Plus d'outils/Extensions \u00bb   => Un \u00e9cran propose alors la possibilit\u00e9 d\u2019avoir un lien vers la biblioth\u00e8que ISTEX sur Google Scholar en cliquant sur \u00abOui\u00bb sans avoir besoin de l\u2019installer   => En cliquant \u00abPasser\u00a0\u00bb pas de lien vers la biblioth\u00e8que ISTEX   => Recharger la page de Wikip\u00e9dia \u00ab\u00a0Ctrl F5\u00a0\u00bb",
             "title": "Chrome"
+        },
+        {
+            "location": "/usage/google/",
+            "text": "OpenURL et diffusion d'ISTEX \u00e0 travers Google Scholar\n\u00b6\n\n\nIl est possible au cours d'une recherche sur Google Scholar d'avoir acc\u00e8s via une OpenURL au pdf du document pr\u00e9sent sur la plateforme ISTEX.\n\n\nA chaque chargement d'un nouveau corpus sur la plateforme ISTEX un formulaire est adress\u00e9 \u00e0 Google Scholar pour leur demander l'activation des liens OpenURL pour les ressources pr\u00e9sentes dans les fichiers Kbart disponibles sur le site le BACON en XML (fournis par ABES).\n\n\nGoogle Scholar indique que l'activation (et la mise \u00e0 jour) prend une \u00e0 deux semaines.\n\n\nParam\u00e8trage pour l'utilisateur\n\u00b6\n\n\nLe param\u00e8trage est \u00e0 faire une seule fois.\n\n\n=> Aller sur Google Scholar\n\n\n=> Cliquer en haut \u00e0 gauche pour voir les param\u00e8trages\n\n\n\n\n=> Choisir \"Param\u00e8tres\"\n\n\n=> Puis \"Liens vers des biblioth\u00e8ques\"\n\n\n\n\n=> Rechercher ISTEX\n\n\n=> S\u00e9lectionner \n\n\n=> Retourner \u00e0 votre recherche\n\n\n\n\n=> [PDF]ISTEX signale un lien disponible",
+            "title": "Google Scholar"
+        },
+        {
+            "location": "/usage/google/#openurl-et-diffusion-distex-a-travers-google-scholar",
+            "text": "Il est possible au cours d'une recherche sur Google Scholar d'avoir acc\u00e8s via une OpenURL au pdf du document pr\u00e9sent sur la plateforme ISTEX.  A chaque chargement d'un nouveau corpus sur la plateforme ISTEX un formulaire est adress\u00e9 \u00e0 Google Scholar pour leur demander l'activation des liens OpenURL pour les ressources pr\u00e9sentes dans les fichiers Kbart disponibles sur le site le BACON en XML (fournis par ABES).  Google Scholar indique que l'activation (et la mise \u00e0 jour) prend une \u00e0 deux semaines.",
+            "title": "OpenURL et diffusion d'ISTEX \u00e0 travers Google Scholar"
+        },
+        {
+            "location": "/usage/google/#parametrage-pour-lutilisateur",
+            "text": "Le param\u00e8trage est \u00e0 faire une seule fois.  => Aller sur Google Scholar  => Cliquer en haut \u00e0 gauche pour voir les param\u00e8trages   => Choisir \"Param\u00e8tres\"  => Puis \"Liens vers des biblioth\u00e8ques\"   => Rechercher ISTEX  => S\u00e9lectionner   => Retourner \u00e0 votre recherche   => [PDF]ISTEX signale un lien disponible",
+            "title": "Param\u00e8trage pour l'utilisateur"
         },
         {
             "location": "/usage/bib/",
