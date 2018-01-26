@@ -1,6 +1,3 @@
-# Vérification et mise en forme des résultats
-
- 
 
 Une fois extraits, les documents doivent subir un certain nombre de vérifications et d’interventions afin d'être exploités de manière optimale par des outils manipulant du texte intégral, tels que les outils de traitement automatique du langage ou de fouille de textes. 
 
@@ -8,9 +5,9 @@ Une fois extraits, les documents doivent subir un certain nombre de vérificatio
 
 Pendant l’extraction, il est possible que le programme perde la connexion avec le serveur et soit redirigé vers la page d’authentification de la fédération d’identité. C’est le cas lorsque le programme d’extraction fonctionne pendant la nuit, au moment où la liste des IP autorisés est rechargée par l’API, ce qui occasionne une non reconnaissance momentanée de l'adresse IP de la machine. Dans ce cas, le fichier extrait contient non pas le document souhaité, mais la page HTML d'authentification par la fédération d’identité. 
 
-Le texte du document ne correspond alors plus au document souhaité et peut ainsi générer du bruit dans les analyses thématiques ou dans l'analyse du silence dans les détection d'entités spécifiques.
+Le texte du document ne correspond alors plus au document souhaité et peut ainsi générer du bruit dans les analyses thématiques ou dans l'analyse du silence dans les détections d'entités spécifiques.
 
-Ci-dessous un exemple de fichier extrait (Vieil_00718.txt Corpus Vieillissement V2 old):
+Ci-dessous un exemple de fichier extrait (`Vieil_00718.txt` issu du Corpus Vieillissement V2 old):
 
 ![pbauthentification](../img/pbAuthentification.png)
 
@@ -18,7 +15,7 @@ Ce phénomène est aléatoire et peut survenir sur n'importe quel document, lors
 
 Dans ce cas, il faut simplement vérifier que le corpus ne contient pas de document HTML même si l'extension indique .txt, .zip, .pdf, etc. 
 
-Le programme suivant permet de réaliser cette action pour les fichiers extraits et renommés par l'outil harvestCorpus.pl (selon modèle de renommage « nomCorpus\_0*nn* » où « *0nn* » est un nombre) :
+Le programme suivant permet de réaliser cette action pour les fichiers extraits et renommés par l'outil `harvestCorpus.pl` (selon modèle de renommage « nomCorpus\_0*nn* » où « *0nn* » est un nombre) :
 
 ```bash
 for i in nomCorpus_0*
@@ -41,11 +38,11 @@ Cette procédure est utile si l'on souhaite exploiter les PDF pour faire de la f
 
 Pour cela, il faut d'abord calculer le nombre de mots par page contenus dans un document et ensuite vérifier s'il s'agit d'une image ou d'un texte. En-deçà d’un certain seuil (seuil qui est variable: voir étape 4), le document sera considéré comme un PDF image.
 
-Le programme « harvestCorpus.pl » génère un fichier « logRequete.txt » qui conserve les métadonnées des documents Istex extraits et un fichier « .corpus », lequel contient une mise en correspondance entre les identifiants Istex et les noms de fichiers.
+Le programme `harvestCorpus.pl` génère un fichier `logRequete.txt` qui conserve les métadonnées des documents Istex extraits et un fichier `.corpus`, lequel contient une mise en correspondance entre les identifiants Istex et les noms de fichiers.
 
-#### Etape 1 : Récupération des données de logRequete.txt (commande sur une seule ligne) 
+<span class="marrongras">Etape 1 : Récupération des données de `logRequete.txt`</span>
 
-Le programme ci-dessous calcule le ratio entre le nombre total de pages et le nombre total de mots pour un document.
+Le programme ci-dessous calcule le ratio entre le nombre total de pages et le nombre total de mots pour un document. Celui-ci s'effectue sur une seule ligne.
 
 ```bash
 perl -ne 'if (/^ {6}"id":"(\w+)"/o) {$id = $1;} 
@@ -65,7 +62,7 @@ perl -ne 'if (/^ {6}"id":"(\w+)"/o) {$id = $1;}
  sort > tmp01.txt
 ```
 
-Ce programme génère un fichier "tmp01.txt" qui contient les informations suivantes :
+Ce programme génère un fichier `tmp01.txt` qui contient les informations suivantes :
 
 - identifiant ISTEX
 - nombre total de pages
@@ -84,10 +81,9 @@ Exemple :
 ```
 
 
+<span class="marrongras">Etape 2 : Récupération des noms de fichiers correspondant aux identifiants ISTEX</span>
 
-#### Etape 2 : Récupération des noms de fichiers correspondant aux identifiants ISTEX
-
-Ce programme récupère les noms de fichiers dans le fichier « .corpus » et fait la jointure avec le fichier précédent sur l'identifiant ISTEX.
+Ce programme récupère les noms de fichiers dans le fichier `.corpus` et fait la jointure avec le fichier précédent sur l'identifiant ISTEX.
 
 ```bash
 perl -ne 'if (/^id /o) {
@@ -97,7 +93,7 @@ perl -ne 'if (/^id /o) {
 sort | join -t $'\t' - tmp01.txt > DistNbMotNbPage.txt
 ```
 
-Il génère ainsi un fichier "DistNbMotNbPage.txt" qui contient les informations suivantes :
+Il génère ainsi un fichier `DistNbMotNbPage.txt` qui contient les informations suivantes :
 
 - identifiant ISTEX
 - nom de fichier
@@ -117,33 +113,31 @@ Exemple :
 ```
 
 
+<span class="marrongras">Etape 3 : Nettoyage</span>
 
-#### Etape 3 : Nettoyage
-
-On supprime le fichier "tmp01.txt" qui n'a plus d'utilité.      
+On supprime le fichier `tmp01.txt` qui n'a plus d'utilité.      
 
 ```bash
 rm tmp01.txt
 ```
 
 
+<span class="marrongras">Etape 4 : Procédure de vérification</span>
 
-#### Etape 4 : Procédure de vérification
+Le fichier `DistNbMotNbPage.txt` ainsi obtenu indique, pour chaque document du corpus, le nombre de mots par page qui va servir à identifier les documents à vérifier manuellement :
 
-Le fichier « DistNbMotNbPage.txt » ainsi obtenu indique, pour chaque document du corpus, le nombre de mots par page qui va servir à identifier les documents à vérifier manuellement :
+- Si le nombre de mots par page est égal à 0, il s’agit d’un PDF image.  
 
-Si le nombre de mots par page est égal à 0, il s’agit d’un PDF image.  
+- Si ce nombre est supérieur à 0, il s’agit également potentiellement d’un PDF image. La valeur limite à partir de laquelle, le PDF peut être considéré comme textuel est variable : environ 80, 100, 140 mots par page.
 
-Si ce nombre est supérieur à 0, il s’agit également potentiellement d’un PDF image. La valeur limite à partir de laquelle, le PDF peut être considéré comme textuel est variable : environ 80, 100, 140 mots par page.
-
-Dans ce cas, il faut vérifier manuellement chaque PDF dans le démonstrateur.
+Dans le 2e cas, il faut vérifier manuellement chaque PDF dans le démonstrateur.
 
 La procédure de vérification est la suivante :
 
 -    Recherche dans le démonstrateur Istex : 
 
 ```
-     q=id:identifiant_Istex
+     id:identifiant_Istex
 ```
 
 -    Ouverture du PDF correspondant au résultat de cette requête
@@ -154,14 +148,13 @@ La procédure de vérification est la suivante :
      -         Si la sélection totale du texte est possible et si en collant le texte dans un document Word, ce texte est identique au texte sélectionné => il s’agit d’un PDF Texte
 
 
-
-#### Etape 5 : Procédure de suppression des PDF Image
+<span class="marrongras">Etape 5 : Procédure de suppression des PDF Image</span>
 
 Une fois les PDF Image identifiés, il faut les supprimer du corpus.
 
 La procédure de suppression est la suivante :
 
--         Préparer la liste d’identifiants Istex à supprimer et le fichier « .corpus » faisant la correspondance entre les identifiants et les noms de fichiers
+-         Préparer la liste d’identifiants Istex à supprimer et le fichier `corpus` faisant la correspondance entre les identifiants et les noms de fichiers
 
 
 ```bash
@@ -172,7 +165,7 @@ sort -u liste-PDF-a-supprimer.txt > tmp01.txt
 egrep '^id ' fichier.corpus | sort -u > tmp02.txt
 ```
 
--         Mettre les documents à supprimer dans un répertoire séparé nommé, par exemple, « rejets »
+-         Mettre les documents à supprimer dans un répertoire séparé nommé, par exemple, `rejets`
 
 ```bash
 join tmp01.txt tmp02.txt | 
@@ -184,7 +177,7 @@ mv corpus_requete_6_v2.3/$3.* rejets/
 done
 ```
 
--         Supprimer les fichiers "tmp01.txt" et "tmp02.txt"
+-         Supprimer les fichiers `tmp01.txt` et `tmp02.txt`
 
 
 
@@ -198,7 +191,7 @@ Les fichiers TXT résultent d’une transformation du PDF par l’API Istex via 
 
 Les fichiers OCR sont des documents issus d’un processus d’océrisation par l’équipe ISTEX-DATA lorsque le TXT est de mauvaise qualité (voir billet de blog **["OCR - production de plein texte"](http://blog.istex.fr/ocr-production-de-plein-texte/)**).
 
-Lorsqu’un fichier OCR est disponible pour un document et que l’on a pensé à l’extraire, il faut écraser le fichier TXT existant pour ce même document par le fichier OCR qui sera de meilleure qualité.
+Lorsqu’un fichier OCR est disponible pour un document et que l’on a pensé à l’extraire, il faut écraser le fichier TXT existant par le fichier OCR qui sera de meilleure qualité.
 
 La commande suivante permet de réaliser cette action :
 
@@ -241,9 +234,9 @@ A l’aide du script Perl **[extraitXmlEditeur.pl](https://git.istex.fr/scodex/h
 
 A ce stade, il reste encore quelques cas compliqués qui sont signalés, mais pas traités automatiquement. Il faut donc les extraire manuellement.
 
-#### Extraction manuelle
+<span class="marrongras">Extraction manuelle</span> 
 
-Pour expliciter la méthode, prenons comme exemple le corpus « Vieillissement » dont un fichier ZIP,  « Vieil_03555.zip », n'a pas pu être traité. Les différentes étapes sont :
+Pour expliciter la méthode, prenons comme exemple le corpus « Vieillissement » dont un fichier ZIP,  `Vieil_03555.zip`, n'a pas pu être traité. Les différentes étapes sont :
 
 - listage des fichiers de l'archive ZIP : pour cela, on utilise le programme `unzip` :
 
@@ -274,10 +267,10 @@ Archive:  Vieillissement/Vieil_03555.zip
 - extraction du fichier XML : également avec le programme `unzip`, mais en utilisant l'option `-j` pour ne pas créer le répertoire `ageing36_5xml` :
 
 ```bash
-unzip _j ageing36_5xml/afm068.xml
+unzip -j ageing36_5xml/afm068.xml
 ```
 
-- renommage du fichier XML extrait : le fichier extrait `afm068.xml` est présent dans le répertoire courant. Il faut donc le remettre dans le répertoire avec les autres fichier XML en lui donnant le préfixe du document correspondant dans ce corpus :
+- renommage du fichier XML extrait : le fichier extrait `afm068.xml` est présent dans le répertoire courant. Il faut donc le remettre dans le répertoire avec les autres fichiers XML en lui donnant le préfixe du document correspondant dans ce corpus :
 
 ```bash
 mv afm068.xml Vieillissement/Vieil_03555.xml

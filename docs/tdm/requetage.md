@@ -7,37 +7,42 @@ Pour plus de détails sur la syntaxe d’une requête, n’hésitez pas à consu
 
 La requête peut être construite dans le **[Démonstrateur ISTEX](http://demo.istex.fr/)**, en mode simple ou en mode avancé, afin de visualiser directement le nombre de documents retrouvés et de naviguer dans le corpus à travers les différentes facettes. Le démonstrateur permet également de tester certaines parties d’une requête complexe afin de détecter ses éventuelles incohérences.
 
-La requête est ensuite envoyée à l’API pour permettre d’extraire le corpus à l’aide de différents moyens qui sont décrits dans le chapitre suivant.
+La requête est ensuite envoyée à l’API pour permettre d’extraire le corpus à l’aide de différents moyens qui sont décrits dans le chapitre suivant (**[Extraction d'un corpus](extraction/)**).
 
 Une requête sur l'API ISTEX est constituée des éléments suivants :
 
-- l'URL de base : `https://api.istex.fr/document/?`
+- l'URL de base : 
+    - <span class="mandParam">https://api.istex.fr/document/?</span>
 - un paramètre obligatoire : 
-    - q={requête}
+    - <span class="lavandegras">q={requête}</span>
 - des paramètres optionnels : 
-    - output={liste des champs à afficher}
-    - size={nombre max. de documents affichés}
-    - from={numéro du premier document}
-- un séparateur de paramètres : &
+    - <span class="orangegras">output={liste des champs à afficher}</span>
+    - <span class="orangegras">size={nombre max. de documents affichés}</span>
+    - <span class="orangegras">from={numéro du premier document}</span>
+- un séparateur de paramètres : <span class="vertgras">&</span>
 
 > ***Exemple*** : *Recherche des documents issus de la revue dont le titre est "Biofutur" ou l'ISSN est "0294-3506", qui ont été publiés en 1955 et dont l'auteur est "Dodet". On souhaite visualiser le titre, l'auteur et les informations concernant la revue, pour les 100 premiers documents.*
 >
-> https://api.istex.fr/document/?q=(host.title:"Biofutur"+OR+host.issn:"0294-3506")+AND+host.publicationDate:1995+AND+author.name:"DODET"**&**output=title,author,host**&**size=100
+
+> <a href="https://api.istex.fr/document/?q=(host.title:"Biofutur"+OR+host.issn:"0294-3506")+AND+host.publicationDate:1995+AND+author.name:"DODET"&output=title,author,host&size=100"><span class="mandParam">https://api.istex.fr/document/?</span><span class="lavandegras">q=(host.title:"Biofutur"+OR+host.issn:"0294-3506")+AND+host.publicationDate:1995+AND+author.name:"DODET"</span><span class="vertgras">&</span><span class="orangegras">output=title,author,host</span><span class="vertgras">&</span><span class="orangegras">size=100</span></a>
 
 NB : Tous les exemples de requêtes donnés ici sont conçus pour être utilisés directement dans l'API en précisant l'URL `https://api.istex.fr/document/?`. Si l'on souhaite les utiliser dans le démonstrateur, il ne faut garder que la partie {requête}, c'est-à-dire, supprimer `q=` et tout ce qui se trouve après `&` inclus.
 
 # Le contenu de la requête
 
-Lorsque l'utilisateur a bien identifié ses besoins par rapport aux corpus qu'il veut constituer, il reste à définir les modalités d’interrogation qui permettront de capter les documents correspondant au contenu et au périmètre identifiés pour le corpus.
+Lorsque l'utilisateur a bien identifié ses besoins par rapport au corpus qu'il veut constituer, il reste à définir les modalités d’interrogation qui permettront de capter les documents correspondant au contenu et au périmètre identifiés pour le corpus.
 
 ![Schemacontenurequete](../img/tabl_contenu_req.png)
 
 
-La liste des différentes valeurs possibles dans les champs `language`, `host.genre` et `genre` est donnée dans le chapitre « Annexe ».
+La liste des différentes valeurs possibles dans les champs `language`, `host.genre` et `genre` est donnée dans le chapitre « **[Annexes](annexes/)** ».
 
 Le volume du corpus est apprécié en fonction des capacités de stockage, des capacités de traitement par l’outil auquel il est destiné et du degré de bruit et de silence toléré.
 
-**Facettes**
+
+
+<span class="marrongras">Facettes</span>
+
 
 Les facettes représentent une aide précieuse pour préciser le contenu du corpus.
 
@@ -45,10 +50,10 @@ En effet, leur utilisation sur le démonstrateur Istex ou sur l’API Istex peut
 
 La syntaxe de la requête à utiliser sur l’API Istex est la suivante : 
 
-> ​                      q=(...)&**facet=champ**&size=0
+> ​                      q=(...)&<span class="orangegras">facet=champ</span>&size=0
 >
 
-*​**Exemple** : si l’on souhaite connaître toutes les langues de publication des documents Istex de la revue « Astronomische Nachrichten », pour ne sélectionner par la suite que les langues intéressantes :*            
+*​**Exemple** : si l’on souhaite connaître toutes les langues de publication des documents Istex de la revue « Astronomische Nachrichten », pour ne sélectionner par la suite que les langues intéressantes :*
 
 ```
 q=host.title:"Astronomische Nachrichten"&facet=language[*]&size=0
@@ -58,13 +63,15 @@ Pour afficher toutes les valeurs possibles dans un champ donné, on fait suivre 
 
 L’argument facultatif `size=0` fait que l'on n’affiche que le résultat de la distribution par facette et pas les informations relatives aux documents pertinents.
 
-**Facettes imbriquées**
+
+
+<span class="marrongras">Facettes imbriquées</span>
 
 Les facettes imbriquées permettent de combiner plusieurs critères. 
 
 La syntaxe de la requête à utiliser sur l’API Istex est la suivante : 
 
-> ​                      q=(...)&**facet=champ1>champ2**&size=0
+> ​                      q=(...)&<span class="orangegras">facet=champ1>champ2</span>&size=0
 >
 
 *​**Exemple** : si l’on souhaite connaître toutes les langues de publication des documents Istex de la revue « Astronomische Nachrichten », avec pour chacune d’entre elles, le nombre de documents par année :*
@@ -73,8 +80,8 @@ La syntaxe de la requête à utiliser sur l’API Istex est la suivante :
 q=host.title:"Astronomische Nachrichten"&facet=language[*]>publicationDate[perYear]&size=0
 ```
 
-
-
+>
+>
 
 # Sur quel(s) champ(s) faire son interrogation ?
 
@@ -94,9 +101,10 @@ Dans ce cas, il faut répéter la requête en fonction des différents champs ch
 q=(title:(Arctic NOT (arctic AND /charr?/) OR Subarctic~1 OR Sub?arctic)) OR (abstract:(Arctic NOT (arctic AND /charr?/) OR Subarctic~1 OR Sub?arctic))
 ```
 
+>
+>
 
-
-**Quelques champs particuliers**
+<span class="marrongras">Quelques champs particuliers</span>
 
 ***Langues***
 
@@ -110,15 +118,15 @@ L’interrogation nécessite d’utiliser des codes langues (généralement 3 le
   q=language:moh
 ```
 
-Pour savoir quel code langue utiliser, vous pouvez consulter en annexe la liste des codes interrogeables dans Istex.
+Pour savoir quel code langue utiliser, vous pouvez consulter en **[annexe](annexes/)** la liste des codes interrogeables dans Istex.
 
 NB : La valeur « unknown » est présente lorsqu'aucun code langue ne renseigne ce champ. Le champ `host.language` contient quant à lui systématiquement la valeur « unknown » car il n'est actuellement pas renseigné.
 
 ***Dates de publication***
 
-Le champ `publicationDate` permet de retrouver les documents publiés au cours d’une année particulière ou bien d’un intervalle de temps grâce à l’emploi de **crochets ou d’accolades ** (voir à ce sujet le paragraphe « [Intervalles](Intervalles) »).
+Le champ `publicationDate` permet de retrouver les documents publiés au cours d’une année particulière ou bien d’un intervalle de temps grâce à l’emploi de **crochets ou d’accolades ** (voir à ce sujet le paragraphe « Intervalles » ci-dessous).
 
- **Quelques types de requêtes :**
+Quelques types de requêtes :
 
 - *Recherche de documents postérieurs à 2015* : 2 solutions
 
@@ -129,12 +137,9 @@ Le champ `publicationDate` permet de retrouver les documents publiés au cours d
 ```
   q=publicationDate:{2014 TO *]
 ```
-
 - Pour des statistiques concernant des publications sur plusieurs **périodes consécutives**, ne pas oublier d’exclure l’année frontière.
 
-      *Exemple : année 1400 incluse dans une requête de documents du 14e siècle, mais exclue du 15e siècle* 
-                           
-
+      ***Exemple** : année 1400 incluse dans une requête de documents du 14e siècle, mais exclue du 15e siècle*
 ```
   q=publicationDate:[1301 TO 1400] 
 ```
@@ -146,8 +151,7 @@ ou bien
 ```
   q=publicationDate:[1401 TO 1500]
 ```
-
-- *Pour récupérer des documents **sans** date de publication :*   
+- *Pour récupérer des documents **sans** date de publication :*
 
 ```
   q=NOT publicationDate:[* TO *]
@@ -159,11 +163,12 @@ ou bien
   q=copyrightDate:[* TO *] NOT publicationDate:[* TO *]
 ```
 
-  
+>
+>
 
 # Les principaux outils à manipuler 
 
-**Les opérateurs booléens**
+<span class="marrongras">Les opérateurs booléens</span>
 
 Les opérateurs à disposition sont : **OR**, **AND** et **NOT**. 
 
@@ -171,11 +176,11 @@ Les opérateurs à disposition sont : **OR**, **AND** et **NOT**.
 
 Si aucun opérateur n’est utilisé entre 2 champs ou 2 valeurs recherchées, l’opérateur par défaut OR s’applique.
 
-**Les opérateurs d’inclusion/exclusion**
+<span class="marrongras">Les opérateurs d’inclusion/exclusion</span>
 
-L’opérateur d’inclusion « **+** » équivaut à **OR** (et non pas AND)
+L’opérateur d’inclusion « **+** » équivaut à **OR** (et non pas AND).
 
-L’opérateur d’exclusion « **-** » équivaut à **NOT**
+L’opérateur d’exclusion « **-** » équivaut à **NOT**.
 
 À écrire **sans espace** entre le « + » ou le « - » et le terme de recherche à inclure ou à exclure.
 
@@ -194,9 +199,11 @@ q=Greenland +"Sub-arctic"
 q=Iceland -(Jan AND Mayen)
 ```
 
-**Les guillemets**
+<span class="marrongras">Les guillemets</span>
 
-Les guillemets permettent de considérer 2 ou plusieurs mots comme faisant partie d'une même expression à rechercher.
+Les guillemets permettent de faire une recherche extacte sur une chaîne de caractères donnée.
+
+Ils permettent de considérer 2 ou plusieurs mots comme faisant partie d'une même expression à rechercher.
 
 Sans les guillemets, ces mots sont considérés comme étant reliés par l'opérateur booléen OR et sont recherchés dans le document indépendamment les uns des autres. 
 
@@ -204,7 +211,7 @@ Sans les guillemets, ces mots sont considérés comme étant reliés par l'opér
 
 `q=speech therapy` ⇒ 2 813 753 résultats
 
-**Les troncatures**
+<span class="marrongras">Les troncatures</span>
 
 Les troncatures sont très utiles pour ramener plusieurs résultats correspondant à une chaîne de caractères commune sans énumérer toutes les variantes possibles :
 
@@ -236,9 +243,9 @@ Par contre :
 
 Pour une requête complète, il faut donc écrire : 
 
-​        `q=title:("speech therapy" "speech therapies" "speech therapist" "speech therapists")`  
+​        `q=title:("speech therapy" "speech therapies" "speech therapist" "speech therapists")`
 
-​          ⇒ 199 résultats
+⇒ 199 résultats
 
 
 La troncature avec jokers peut cependant générer beaucoup de bruit. 
@@ -248,7 +255,7 @@ La troncature avec jokers peut cependant générer beaucoup de bruit.
 ​       `q=title:fung*` ⇒ 24 612 résultats
 
 
-Pour ouvrir le choix des variantes recherchées sans toutefois générer trop de bruit, on utilisera alors des expressions régulières (voir chapitre correspondant).
+Pour ouvrir le choix des variantes recherchées sans toutefois générer trop de bruit, on utilisera alors des expressions régulières (voir chapitre correspondant ci-dessous).
 
 ​	Exemple :
 
@@ -256,7 +263,7 @@ Pour ouvrir le choix des variantes recherchées sans toutefois générer trop de
 
 Cette requête se concentre en effet sur des variantes comme « fungi » « fungus », « funguses » et ignore les mots comme « fungicide », « fungal », etc.
 
-**Le parenthésage**
+<span class="marrongras">Le parenthésage</span>
 
 L’utilisation de parenthèses permet de factoriser des valeurs dans des champs ou de faire des combinaisons d’associations entre opérateurs booléens.
 
@@ -284,20 +291,21 @@ En effet, dans le second cas, le champ n’est pas factorisé. Seul le 1er mot `
 
 Dans les parenthésages plus complexes, il est possible d’inclure un NOT dans un NOT afin d’autoriser la présence d’un mot lorsque l’on exclut la présence d’un autre mot : 
 
-- *Recherche des documents contenant les mots commençant par pyrophyt- ou sciaphyt- ou sclerophyt- ou xerophyt- ou "aquatic plant" dans le résumé*
+- ***Exemple :** Recherche des documents contenant les mots commençant par pyrophyt- ou sciaphyt- ou sclerophyt- ou xerophyt- ou "aquatic plant" dans le résumé*
 
 ```
 q=abstract:(pyrophyt* sciaphyt* sclerophyt* xerophyt* "aquatic plant")
 ```
 ​        ⇒ Résultat : 1 010
-- *Parmi les documents contenant les mots commençant par pyrophyt- ou sciaphyt- ou sclerophyt- ou xerophyt- ou "aquatic plant" dans le résumé, on exclut ceux qui contiennent le mot fungi*
+
+- ***Exemple:** Parmi les documents contenant les mots commençant par pyrophyt- ou sciaphyt- ou sclerophyt- ou xerophyt- ou "aquatic plant" dans le résumé, on exclut ceux qui contiennent le mot fungi*
 
 ```
 q=abstract:((pyrophyt* sciaphyt* sclerophyt* xerophyt* "aquatic plant") NOT fungi)
 ```
 ​        ⇒ Résultat : 1 000
 
-- *Parmi les documents contenant les mots commençant par pyrophyt- ou sciaphyt- ou sclerophyt- ou xerophyt- ou "aquatic plant" et ne contenant pas le mot fungi dans le résumé, on accepte les documents contenant le mot fungi s’ils contiennent aussi les mots commençant par mycorrhiz- ou ectomycorrhiz- ou endomycorrhiz-*
+- ***Exemple :** Parmi les documents contenant les mots commençant par pyrophyt- ou sciaphyt- ou sclerophyt- ou xerophyt- ou "aquatic plant" et ne contenant pas le mot fungi dans le résumé, on accepte les documents contenant le mot fungi s’ils contiennent aussi les mots commençant par mycorrhiz- ou ectomycorrhiz- ou endomycorrhiz-*
 
 ```
 q=abstract:(pyrophyt* sciaphyt* sclerophyt* xerophyt* "aquatic plant" NOT (fungi NOT (mycorrhiz* ectomycorrhiz* endomycorrhiz*)))
@@ -308,23 +316,23 @@ q=abstract:(pyrophyt* sciaphyt* sclerophyt* xerophyt* "aquatic plant" NOT (fungi
 
 # Quelques astuces pour peaufiner sa requête
 
-**Minuscule ou majuscule ?**
+<span class="marrongras">Minuscule ou majuscule ?</span>
 
 De manière générale, la recherche est **insensible à la casse**, c’est-à-dire que le moteur ne tient pas compte des majuscules ou des minuscules.
 
 Ainsi, la recherche sur "xxx" ramènera autant de résultats que celle sur "Xxx".
 
-**Mots composés**
+<span class="marrongras">Mots composés</span>
 
 Tout comme pour les minuscules et majuscules, le moteur de recherche n’est pas sensible aux tirets présents dans les mots composés.
 
 Ainsi, la recherche sur "disease-free plant" ramènera autant de résultats que celle sur "disease free plant".
 
-**Diacritiques**
+<span class="marrongras">Diacritiques</span>
 
 Le moteur de recherche est par contre sensible aux accents et autres caractères diacritiques et nécessite une indication de toutes les formes accentuées possibles si l’on veut prendre en compte des résultats de plusieurs langues.
 
-***Exemple** : recherche de documents avec « logop**é**d**ie** », « logop**è**d**e** », « logop**e**di**cs** », « Logop**ä**d**ie** »* 
+***Exemple** : recherche de documents avec « logop<span class="mandParam">é</span>d<span class="mandParam">ie</span> », « logop<span class="mandParam">è</span>d<span class="mandParam">e</span> », « logop<span class="mandParam">e</span>di<span class="mandParam">cs</span> », « Logop<span class="mandParam">ä</span>d<span class="mandParam">ie</span> »* 
 
 2 solutions :
 
@@ -358,7 +366,7 @@ q=title:(exploración OR exploracion OR exploracin)
 q=title:exploraci*n
 ```
 
-**Apostrophe**
+<span class="marrongras">Apostrophe</span>
 
 L’apostrophe qui sépare un nom et son déterminant marque la frontière entre les 2 mots. 
 
@@ -378,7 +386,7 @@ title:(orthophonie OR l’orthophonie)
 
 En attendant que cet aspect soit pris en compte dans l'API, il convient d’inclure cette particularité dans la requête, en pensant à ajouter les cas avec « l’ » ou « d’ » lors des recherches sur des noms en français.
 
-**Expressions régulières (//)**
+<span class="marrongras">Expressions régulières (//)</span>
 
 Lorsque l’on recherche des termes comportant plusieurs formes d’écriture, les expressions régulières permettent de raccourcir la requête.
 
@@ -401,7 +409,7 @@ Aucune majuscule n’est autorisée entre les délimiteurs //. Les lettres qui n
 
 Il est également possible d’employer la barre verticale « **|** » pour indiquer un choix entre plusieurs chaînes de caractères, ce qui permet de simplifier la syntaxe.
 
-- ***Exemples :***  
+- ***Exemples :*** 
     - _Fung**i** OR fung**us** OR fung**uses**_ : `q=/fung(i|us|uses)/` 
     - _Es**k**im**o** OR Es**qu**im**au** OR Es**k**im**os** OR Es**qu**im**aux**_ : `q=/es(k|qu)im(o|au)[sx]?/`
 
@@ -416,7 +424,7 @@ NB : L’utilisation des expressions régulières pour interroger les champs `.
 
 
 
-**Recherche floue (~)**  
+<span class="marrongras">Recherche floue (~)</span>
 
 Recherche sur les variantes d’écriture d’un **terme unique** ayant **au maximum 2 caractères de différence**, caractères en plus, en moins ou caractères différents.
 
@@ -440,7 +448,7 @@ Cas des termes contenant des **tirets** : les tirets ne sont pas compris comme 
 
 
 
-**Recherche de proximité (~)**
+<span class="marrongras">Recherche de proximité (~)</span>
 
 Recherche d’une expression comportant **deux termes** plus ou moins distants.
 
@@ -450,17 +458,16 @@ Une distance de 3, par exemple, ramène tous les résultats correspondants aux t
 
 Encadrer les termes de l’expression par des guillemets (pas d’usage de parenthèses). Les signes de ponctuation, les tirets, etc. sont considérés comme des espaces et ne sont pas comptabilisés.
 
-**L’ordre des termes** dans la requête impacte les résultats obtenus !
+L'**ordre des termes** dans la requête impacte les résultats obtenus !
 
 - _**Exemples :**_ comparer les résultats avec les requêtes suivantes 
     - `q=title:("Bering seas"~2 AND Soviet)` :  « …onto the Soviet continental shelf in the northern **Bering and Chukchi seas**… »
     - `q="Seas Bering"~2 AND Soviet`  : « …in Soviet Arctic **seas and the Bering** Sea… »
-
-***Les résultats sont inversés par rapport à Bering Seas !***
-
+    - ***Les résultats sont inversés par rapport à Bering Seas !***
 
 
-**Pondération (^)**
+
+<span class="marrongras">Pondération (^)</span>
 
 Donne plus de poids à un terme de recherche par rapport à un autre terme (ou à plusieurs autres). 
 
@@ -487,25 +494,25 @@ On peut **booster une expression de recherche multi-termes**, encadrée par des 
 
 On ne peut **pas booster un terme recherché dans un champ plutôt que dans un autre** (par exemple privilégier la recherche du terme « Asteroseismology» dans le champ titre plutôt que dans le champ résumé).
 
-**Intervalles**
+<span class="marrongras">Intervalles</span>
 
 Interrogation sur des intervalles de **nombres ou de mots** à l‘aide de **crochets (inclusifs) ou d’accolades (exclusives)**
 
 - _**Exemple :**_ recherche de documents antérieurs à 1407 :
-    - q=publicationDate:[\* TO **1406]**
-    - q=publicationDate:[\* TO **1407}**
+    - q=publicationDate:[\* TO <span class="mandParam">1406]</span>
+    - q=publicationDate:[\* TO <span class="mandParam">1407}</span>
 
 Si l’interrogation porte sur plusieurs intervalles **consécutifs**, ne pas oublier d’**exclure la valeur limite** entre les deux intervalles.
 
 - _**Exemple :**_ recherche de documents du 14e siècle, puis du 15e siècle :     
-    - *q=publicationDate:[1301 TO 1400]* 
-    - *puis q=publicationDate:**[**140**1** TO 1500] ou q=publicationDate:**{**1400 TO 1500]*
+    - q=publicationDate:[1301 TO 1400]
+    - puis q=publicationDate:<span class="mandParam">[</span>140<span class="mandParam">1</span> TO 1500] ou q=publicationDate:<span class="mandParam">{</span>1400 TO 1500]
 
 Une recherche sur un **intervalle de mots** équivaut à une recherche sur des mots dont les valeurs limites sont **tronquées par le métacaractère \***
 
 - _**Exemple :**_ `[seal TO seas]` ramène tous les mots de 4 lettres compris entre **seal** et **seas** mais aussi **sealant**, **seamen**, **seaport**, **search**, etc.
 
-**Utilisation de valeurs limites**
+<span class="marrongras">Utilisation de valeurs limites</span>
 
 Dans le **démonstrateur Istex** en mode « recherche avancée » : 
 
