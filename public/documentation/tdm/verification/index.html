@@ -92,7 +92,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../introduction/">Préambule</a>
+        <a class="" href="../introduction/">Préambule à la constitution de corpus</a>
         
     </li>
 
@@ -117,17 +117,19 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#verification-et-mise-en-forme-des-resultats">Vérification et mise en forme des résultats</a></li>
+                <li class="toctree-l3"><a href="#detecter-les-problemes-dauthentification">Détecter les problèmes d’authentification</a></li>
                 
-                    <li><a class="toctree-l4" href="#detecter-les-problemes-dauthentification">Détecter les problèmes d’authentification</a></li>
+            
+                <li class="toctree-l3"><a href="#detecter-les-pdf-image">Détecter les PDF image</a></li>
                 
-                    <li><a class="toctree-l4" href="#detecter-les-pdf-image">Détecter les PDF image</a></li>
+            
+                <li class="toctree-l3"><a href="#remplacer-les-documents-txt-par-les-documents-ocr">Remplacer les documents TXT par les documents OCR</a></li>
                 
-                    <li><a class="toctree-l4" href="#remplacer-les-documents-txt-par-les-documents-ocr">Remplacer les documents TXT par les documents OCR</a></li>
+            
+                <li class="toctree-l3"><a href="#detecter-les-ligatures-dans-le-txt">Détecter les ligatures dans le TXT</a></li>
                 
-                    <li><a class="toctree-l4" href="#detecter-les-ligatures-dans-le-txt">Détecter les ligatures dans le TXT</a></li>
-                
-                    <li><a class="toctree-l4" href="#extraire-les-documents-xml-des-fichiers-zip">Extraire les documents XML des fichiers ZIP</a></li>
+            
+                <li class="toctree-l3"><a href="#extraire-les-documents-xml-des-fichiers-zip">Extraire les documents XML des fichiers ZIP</a></li>
                 
             
             </ul>
@@ -236,16 +238,15 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="verification-et-mise-en-forme-des-resultats">Vérification et mise en forme des résultats<a class="headerlink" href="#verification-et-mise-en-forme-des-resultats" title="Permanent link">&para;</a></h1>
-<p>Une fois extraits, les documents doivent subir un certain nombre de vérifications et d’interventions afin d'être exploités de manière optimale par des outils manipulant du texte intégral, tels que les outils de traitement automatique du langage ou de fouille de textes. </p>
+                <p>Une fois extraits, les documents doivent subir un certain nombre de vérifications et d’interventions afin d'être exploités de manière optimale par des outils manipulant du texte intégral, tels que les outils de traitement automatique du langage ou de fouille de textes. </p>
 <h2 id="detecter-les-problemes-dauthentification">Détecter les problèmes d’authentification<a class="headerlink" href="#detecter-les-problemes-dauthentification" title="Permanent link">&para;</a></h2>
 <p>Pendant l’extraction, il est possible que le programme perde la connexion avec le serveur et soit redirigé vers la page d’authentification de la fédération d’identité. C’est le cas lorsque le programme d’extraction fonctionne pendant la nuit, au moment où la liste des IP autorisés est rechargée par l’API, ce qui occasionne une non reconnaissance momentanée de l'adresse IP de la machine. Dans ce cas, le fichier extrait contient non pas le document souhaité, mais la page HTML d'authentification par la fédération d’identité. </p>
-<p>Le texte du document ne correspond alors plus au document souhaité et peut ainsi générer du bruit dans les analyses thématiques ou dans l'analyse du silence dans les détection d'entités spécifiques.</p>
-<p>Ci-dessous un exemple de fichier extrait (Vieil_00718.txt Corpus Vieillissement V2 old):</p>
+<p>Le texte du document ne correspond alors plus au document souhaité et peut ainsi générer du bruit dans les analyses thématiques ou dans l'analyse du silence dans les détections d'entités spécifiques.</p>
+<p>Ci-dessous un exemple de fichier extrait (<code>Vieil_00718.txt</code> issu du Corpus Vieillissement V2 old):</p>
 <p><img alt="pbauthentification" src="../../img/pbAuthentification.png" /></p>
 <p>Ce phénomène est aléatoire et peut survenir sur n'importe quel document, lors d'une extraction de nuit.</p>
 <p>Dans ce cas, il faut simplement vérifier que le corpus ne contient pas de document HTML même si l'extension indique .txt, .zip, .pdf, etc. </p>
-<p>Le programme suivant permet de réaliser cette action pour les fichiers extraits et renommés par l'outil harvestCorpus.pl (selon modèle de renommage « nomCorpus_0<em>nn</em> » où « <em>0nn</em> » est un nombre) :</p>
+<p>Le programme suivant permet de réaliser cette action pour les fichiers extraits et renommés par l'outil <code>harvestCorpus.pl</code> (selon modèle de renommage « nomCorpus_0<em>nn</em> » où « <em>0nn</em> » est un nombre) :</p>
 <pre><code class="bash">for i in nomCorpus_0*
 do
 j=`file $i | egrep -c 'HTML document'`
@@ -260,9 +261,9 @@ done
 <h2 id="detecter-les-pdf-image">Détecter les PDF image<a class="headerlink" href="#detecter-les-pdf-image" title="Permanent link">&para;</a></h2>
 <p>Cette procédure est utile si l'on souhaite exploiter les PDF pour faire de la fouille de texte. Dans ce cas, il est nécessaire de vérifier que le PDF de départ ne soit pas du PDF image car celui-ci risque de bloquer le traitement de l'outil utilisé.</p>
 <p>Pour cela, il faut d'abord calculer le nombre de mots par page contenus dans un document et ensuite vérifier s'il s'agit d'une image ou d'un texte. En-deçà d’un certain seuil (seuil qui est variable: voir étape 4), le document sera considéré comme un PDF image.</p>
-<p>Le programme « harvestCorpus.pl » génère un fichier « logRequete.txt » qui conserve les métadonnées des documents Istex extraits et un fichier « .corpus », lequel contient une mise en correspondance entre les identifiants Istex et les noms de fichiers.</p>
-<h4 id="etape-1-recuperation-des-donnees-de-logrequetetxt-commande-sur-une-seule-ligne">Etape 1 : Récupération des données de logRequete.txt (commande sur une seule ligne)<a class="headerlink" href="#etape-1-recuperation-des-donnees-de-logrequetetxt-commande-sur-une-seule-ligne" title="Permanent link">&para;</a></h4>
-<p>Le programme ci-dessous calcule le ratio entre le nombre total de pages et le nombre total de mots pour un document.</p>
+<p>Le programme <code>harvestCorpus.pl</code> génère un fichier <code>logRequete.txt</code> qui conserve les métadonnées des documents Istex extraits et un fichier <code>.corpus</code>, lequel contient une mise en correspondance entre les identifiants Istex et les noms de fichiers.</p>
+<p><span class="marrongras">Etape 1 : Récupération des données de <code>logRequete.txt</code></span></p>
+<p>Le programme ci-dessous calcule le ratio entre le nombre total de pages et le nombre total de mots pour un document. Celui-ci s'effectue sur une seule ligne.</p>
 <pre><code class="bash">perl -ne 'if (/^ {6}&quot;id&quot;:&quot;(\w+)&quot;/o) {$id = $1;} 
             elsif (/^{8}&quot;pdfWordCount&quot;: (\d+)/o) {
                         $nW = $1; $ok = 1;} 
@@ -280,7 +281,7 @@ done
  sort &gt; tmp01.txt
 </code></pre>
 
-<p>Ce programme génère un fichier "tmp01.txt" qui contient les informations suivantes :</p>
+<p>Ce programme génère un fichier <code>tmp01.txt</code> qui contient les informations suivantes :</p>
 <ul>
 <li>identifiant ISTEX</li>
 <li>nombre total de pages</li>
@@ -296,8 +297,8 @@ done
 0007685B6CD6C8F51866F7BC893C5A5726B7A05B    11  3778    343.45
 </code></pre>
 
-<h4 id="etape-2-recuperation-des-noms-de-fichiers-correspondant-aux-identifiants-istex">Etape 2 : Récupération des noms de fichiers correspondant aux identifiants ISTEX<a class="headerlink" href="#etape-2-recuperation-des-noms-de-fichiers-correspondant-aux-identifiants-istex" title="Permanent link">&para;</a></h4>
-<p>Ce programme récupère les noms de fichiers dans le fichier « .corpus » et fait la jointure avec le fichier précédent sur l'identifiant ISTEX.</p>
+<p><span class="marrongras">Etape 2 : Récupération des noms de fichiers correspondant aux identifiants ISTEX</span></p>
+<p>Ce programme récupère les noms de fichiers dans le fichier <code>.corpus</code> et fait la jointure avec le fichier précédent sur l'identifiant ISTEX.</p>
 <pre><code class="bash">perl -ne 'if (/^id /o) {
                         @c = split(/\s+/); 
                         print&quot;$c[1]\t$c[3]\n&quot;;
@@ -305,7 +306,7 @@ done
 sort | join -t $'\t' - tmp01.txt &gt; DistNbMotNbPage.txt
 </code></pre>
 
-<p>Il génère ainsi un fichier "DistNbMotNbPage.txt" qui contient les informations suivantes :</p>
+<p>Il génère ainsi un fichier <code>DistNbMotNbPage.txt</code> qui contient les informations suivantes :</p>
 <ul>
 <li>identifiant ISTEX</li>
 <li>nom de fichier</li>
@@ -322,21 +323,27 @@ sort | join -t $'\t' - tmp01.txt &gt; DistNbMotNbPage.txt
 0007685B6CD6C8F51866F7BC893C5A5726B7A05B    Syst_veg6_v2_004392 11  3778    343.45
 </code></pre>
 
-<h4 id="etape-3-nettoyage">Etape 3 : Nettoyage<a class="headerlink" href="#etape-3-nettoyage" title="Permanent link">&para;</a></h4>
-<p>On supprime le fichier "tmp01.txt" qui n'a plus d'utilité.      </p>
+<p><span class="marrongras">Etape 3 : Nettoyage</span></p>
+<p>On supprime le fichier <code>tmp01.txt</code> qui n'a plus d'utilité.      </p>
 <pre><code class="bash">rm tmp01.txt
 </code></pre>
 
-<h4 id="etape-4-procedure-de-verification">Etape 4 : Procédure de vérification<a class="headerlink" href="#etape-4-procedure-de-verification" title="Permanent link">&para;</a></h4>
-<p>Le fichier « DistNbMotNbPage.txt » ainsi obtenu indique, pour chaque document du corpus, le nombre de mots par page qui va servir à identifier les documents à vérifier manuellement :</p>
+<p><span class="marrongras">Etape 4 : Procédure de vérification</span></p>
+<p>Le fichier <code>DistNbMotNbPage.txt</code> ainsi obtenu indique, pour chaque document du corpus, le nombre de mots par page qui va servir à identifier les documents à vérifier manuellement :</p>
+<ul>
+<li>
 <p>Si le nombre de mots par page est égal à 0, il s’agit d’un PDF image.  </p>
+</li>
+<li>
 <p>Si ce nombre est supérieur à 0, il s’agit également potentiellement d’un PDF image. La valeur limite à partir de laquelle, le PDF peut être considéré comme textuel est variable : environ 80, 100, 140 mots par page.</p>
-<p>Dans ce cas, il faut vérifier manuellement chaque PDF dans le démonstrateur.</p>
+</li>
+</ul>
+<p>Dans le 2e cas, il faut vérifier manuellement chaque PDF dans le démonstrateur.</p>
 <p>La procédure de vérification est la suivante :</p>
 <ul>
 <li>Recherche dans le démonstrateur Istex : </li>
 </ul>
-<pre><code>     q=id:identifiant_Istex
+<pre><code>     id:identifiant_Istex
 </code></pre>
 
 <ul>
@@ -351,11 +358,11 @@ sort | join -t $'\t' - tmp01.txt &gt; DistNbMotNbPage.txt
 </ul>
 </li>
 </ul>
-<h4 id="etape-5-procedure-de-suppression-des-pdf-image">Etape 5 : Procédure de suppression des PDF Image<a class="headerlink" href="#etape-5-procedure-de-suppression-des-pdf-image" title="Permanent link">&para;</a></h4>
+<p><span class="marrongras">Etape 5 : Procédure de suppression des PDF Image</span></p>
 <p>Une fois les PDF Image identifiés, il faut les supprimer du corpus.</p>
 <p>La procédure de suppression est la suivante :</p>
 <ul>
-<li>Préparer la liste d’identifiants Istex à supprimer et le fichier « .corpus » faisant la correspondance entre les identifiants et les noms de fichiers</li>
+<li>Préparer la liste d’identifiants Istex à supprimer et le fichier <code>corpus</code> faisant la correspondance entre les identifiants et les noms de fichiers</li>
 </ul>
 <pre><code class="bash">export LC_COLLATE=C
 
@@ -365,7 +372,7 @@ egrep '^id ' fichier.corpus | sort -u &gt; tmp02.txt
 </code></pre>
 
 <ul>
-<li>Mettre les documents à supprimer dans un répertoire séparé nommé, par exemple, « rejets »</li>
+<li>Mettre les documents à supprimer dans un répertoire séparé nommé, par exemple, <code>rejets</code></li>
 </ul>
 <pre><code class="bash">join tmp01.txt tmp02.txt | 
 while read x
@@ -377,13 +384,13 @@ done
 </code></pre>
 
 <ul>
-<li>Supprimer les fichiers "tmp01.txt" et "tmp02.txt"</li>
+<li>Supprimer les fichiers <code>tmp01.txt</code> et <code>tmp02.txt</code></li>
 </ul>
 <h2 id="remplacer-les-documents-txt-par-les-documents-ocr">Remplacer les documents TXT par les documents OCR<a class="headerlink" href="#remplacer-les-documents-txt-par-les-documents-ocr" title="Permanent link">&para;</a></h2>
 <p>Cette procédure est utile si l'on souhaite exploiter les documents TXT pour faire de la fouille de textes. </p>
 <p>Les fichiers TXT résultent d’une transformation du PDF par l’API Istex via PDF-to-text.</p>
 <p>Les fichiers OCR sont des documents issus d’un processus d’océrisation par l’équipe ISTEX-DATA lorsque le TXT est de mauvaise qualité (voir billet de blog <strong><a href="http://blog.istex.fr/ocr-production-de-plein-texte/">"OCR - production de plein texte"</a></strong>).</p>
-<p>Lorsqu’un fichier OCR est disponible pour un document et que l’on a pensé à l’extraire, il faut écraser le fichier TXT existant pour ce même document par le fichier OCR qui sera de meilleure qualité.</p>
+<p>Lorsqu’un fichier OCR est disponible pour un document et que l’on a pensé à l’extraire, il faut écraser le fichier TXT existant par le fichier OCR qui sera de meilleure qualité.</p>
 <p>La commande suivante permet de réaliser cette action :</p>
 <pre><code class="bash">for i in *.ocr
 do
@@ -408,8 +415,8 @@ done
 <li>Extraction du fichier XML sélectionné et renommage</li>
 </ul>
 <p>A ce stade, il reste encore quelques cas compliqués qui sont signalés, mais pas traités automatiquement. Il faut donc les extraire manuellement.</p>
-<h4 id="extraction-manuelle">Extraction manuelle<a class="headerlink" href="#extraction-manuelle" title="Permanent link">&para;</a></h4>
-<p>Pour expliciter la méthode, prenons comme exemple le corpus « Vieillissement » dont un fichier ZIP,  « Vieil_03555.zip », n'a pas pu être traité. Les différentes étapes sont :</p>
+<p><span class="marrongras">Extraction manuelle</span> </p>
+<p>Pour expliciter la méthode, prenons comme exemple le corpus « Vieillissement » dont un fichier ZIP,  <code>Vieil_03555.zip</code>, n'a pas pu être traité. Les différentes étapes sont :</p>
 <ul>
 <li>listage des fichiers de l'archive ZIP : pour cela, on utilise le programme <code>unzip</code> :</li>
 </ul>
@@ -440,11 +447,11 @@ Archive:  Vieillissement/Vieil_03555.zip
 <p>extraction du fichier XML : également avec le programme <code>unzip</code>, mais en utilisant l'option <code>-j</code> pour ne pas créer le répertoire <code>ageing36_5xml</code> :</p>
 </li>
 </ul>
-<pre><code class="bash">unzip _j ageing36_5xml/afm068.xml
+<pre><code class="bash">unzip -j ageing36_5xml/afm068.xml
 </code></pre>
 
 <ul>
-<li>renommage du fichier XML extrait : le fichier extrait <code>afm068.xml</code> est présent dans le répertoire courant. Il faut donc le remettre dans le répertoire avec les autres fichier XML en lui donnant le préfixe du document correspondant dans ce corpus :</li>
+<li>renommage du fichier XML extrait : le fichier extrait <code>afm068.xml</code> est présent dans le répertoire courant. Il faut donc le remettre dans le répertoire avec les autres fichiers XML en lui donnant le préfixe du document correspondant dans ce corpus :</li>
 </ul>
 <pre><code class="bash">mv afm068.xml Vieillissement/Vieil_03555.xml
 </code></pre>

@@ -92,7 +92,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../introduction/">Préambule</a>
+        <a class="" href="../introduction/">Préambule à la constitution de corpus</a>
         
     </li>
 
@@ -240,7 +240,7 @@
 <h2 id="application-istex-dl-istex-download">Application ISTEX-dl (ISTEX download)<a class="headerlink" href="#application-istex-dl-istex-download" title="Permanent link">&para;</a></h2>
 <p>Il s'agit d'une application Web permettant de télécharger très facilement, via une interface conviviale, un corpus de documents ISTEX sous forme d'archive zip à partir d’une requête.</p>
 <ul>
-<li><strong>Avantages :</strong>  <ul>
+<li><strong>Avantages :</strong><ul>
 <li>très simple d'emploi, l'application propose des exemples pour aider à la construction d'une requête </li>
 <li>elle peut être utilisée en dehors de l’Inist car gère l’authentification par la fédération d’identité </li>
 <li>elle offre également le téléchargement des annexes et couvertures disponibles.</li>
@@ -255,10 +255,8 @@
 <li><strong>Mode d'emploi :</strong> cette application est accessible à l’adresse suivante : <a href="https://dl.istex.fr/">https://dl.istex.fr/</a> </li>
 <li><strong>Astuces :</strong> <ul>
 <li>la requête ne nécessite pas d'opérateur booléen en majuscule</li>
-<li>
-<p>si l'on souhaite extraire tous les formats pour un type de fichier particulier, il suffit de cocher ce type de fichier sans autre précision</p>
-<ul>
-<li>exemple : <em>voir en page d'accueil le type de fichier "Métadonnées" (case cochée par défaut)</em></li>
+<li>si l'on souhaite extraire tous les formats pour un type de fichier particulier, il suffit de cocher ce type de fichier sans autre précision<ul>
+<li><em><strong>Exemple :</strong> voir en page d'accueil le type de fichier "Métadonnées" (case cochée par défaut)</em></li>
 </ul>
 </li>
 </ul>
@@ -267,22 +265,25 @@
 <h2 id="fonction-extract">Fonction « Extract »<a class="headerlink" href="#fonction-extract" title="Permanent link">&para;</a></h2>
 <p>Il s'agit d'une fonction du moteur de recherche de l'API ISTEX permettant d’extraire un corpus correspondant à des critères de recherche. Celle-ci s’utilise directement dans l’URL de requêtage sur l’API.</p>
 <ul>
-<li>
-<p><strong>Avantages</strong> : simple à utiliser, elle ne nécessite aucune installation. Elle peut être utilisée en dehors de l’Inist car gère l’authentification par la fédération d’identité.  Elle offre également le téléchargement des annexes et couvertures disponibles. </p>
+<li><strong>Avantages :</strong><ul>
+<li>simple à utiliser, elle ne nécessite aucune installation</li>
+<li>elle peut être utilisée en dehors de l’Inist car gère l’authentification par la fédération d’identité</li>
+<li>elle offre également le téléchargement des annexes et couvertures disponibles. </li>
+</ul>
 </li>
-<li>
-<p><strong>Inconvénient : </strong>les corpus ne peuvent être extraits actuellement que dans la limite de 10 000 documents. L'extraction des annexes et des enrichissements n'est actuellement pas utilisable, mais le fichier JSON extrait par défaut reprend la totalité des enrichissements disponibles d'un document numérique donné.</p>
+<li><strong>Inconvénients :</strong> <ul>
+<li>les corpus ne peuvent être extraits actuellement que dans la limite de 10 000 documents</li>
+<li>l'extraction des annexes et des enrichissements n'est actuellement pas utilisable, mais le fichier JSON extrait par défaut reprend la totalité des enrichissements disponibles d'un document numérique donné.</li>
+</ul>
 </li>
-<li>
-<p><strong>Mode d'emploi :</strong> cette fonction et la syntaxe requise pour son utilisation sont décrites dans la rubrique <strong><a href="https://api.istex.fr/documentation/search/#extraction">"Extraction"</a></strong> de la documentation technique ISTEX.</p>
-</li>
+<li><strong>Mode d'emploi :</strong> cette fonction et la syntaxe requise pour son utilisation sont décrites dans la rubrique <strong><a href="https://api.istex.fr/documentation/search/#extraction">"Extraction"</a></strong> de la documentation technique ISTEX.</li>
 <li>
 <p><strong>Astuces :</strong> </p>
 <ul>
 <li>
-<p>pour que la fonction <code>extract</code> soit opérationnelle, il faut la faire suivre obligatoirement  par le signe "=" et une valeur quelconque, mais seuls les fichiers JSON sont extraits. Indiquer un (ou plusieurs) type de fichiers pour obtenir son extraction.</p>
+<p>pour que la fonction <code>extract</code> soit opérationnelle, il faut la faire suivre obligatoirement par le signe "=" et une valeur quelconque, mais seuls les fichiers JSON sont extraits. Indiquer un (ou plusieurs) type de fichiers pour obtenir leur extraction.</p>
 <ul>
-<li>Exemple</li>
+<li><em><strong>Exemple :</strong> moissonnage des métadonnées au format JSON pour les documents contenant l'expression "by draconis stars" dans le résumé</em></li>
 </ul>
 <p><em><a href="https://api.istex.fr/document/?q=abstract:%22by%20draconis%20stars%22&amp;extract=lhjd">https://api.istex.fr/document/?q=abstract:"by draconis stars"&amp;extract=lhjd</a></em></p>
 </li>
@@ -295,7 +296,7 @@
 <li>
 <p>indiquer une taille de corpus au moins égale au nombre de documents à extraire. Sans cette précision, 5 documents sont extraits par défaut.</p>
 <ul>
-<li>Exemple : <em>moissonnage du texte intégral au format pdf des 18 documents contenant le terme Groenland dans le titre</em></li>
+<li><em><strong>Exemple :</strong> moissonnage du texte intégral au format pdf des 18 documents contenant le terme Groenland dans le titre</em></li>
 </ul>
 <p><em><a href="https://api.istex.fr/document/?q=title:groenland&amp;size=20&amp;extract=fulltext[pdf]">https://api.istex.fr/document/?q=title:groenland&amp;size=20&amp;extract=fulltext[pdf]</a></em></p>
 </li>
@@ -318,8 +319,8 @@
 <li>
 <p><strong>Installations :</strong> </p>
 <ul>
-<li>installation de Git pour Windows : https://git-for-windows.github.io/</li>
-<li>installation de NodeJS pour Windows : https://nodejs.org/en/download/</li>
+<li>installation de Git pour Windows : <a href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a></li>
+<li>installation de NodeJS pour Windows : <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></li>
 <li>lancement du terminal Git Bash : <code>Démarrer /Toutes les Applications / Git Bash</code></li>
 <li>installation du moissonneur : <code>npm install -g istex-api-harvester</code></li>
 </ul>
@@ -333,30 +334,20 @@
 <li>
 <p>les métadonnées étant extraites par défaut, si on ne souhaite que les fichiers textes, utiliser l'option -M avec une chaîne vide, c’est-à-dire un blanc entre doubles quotes : -M <strong>""</strong> </p>
 <ul>
-<li>Exemple : <em>moissonnage du texte intégral au format txt, sans les métadonnées, de 590 documents correspondants à la requête querya1.txt, à télécharger dans le répertoire « corpusAncien»</em> </li>
+<li><em><strong>Exemple :</strong> moissonnage du texte intégral au format txt, sans les métadonnées, de 590 documents correspondant à la requête querya1.txt, à télécharger dans le répertoire « corpusAncien»</em> </li>
 </ul>
+<p><code>istex-api-harvester  -F txt -M "" -o corpusAncien -s 600 --query="'cat querya1.txt'"</code></p>
 </li>
-</ul>
-</li>
-</ul>
-<pre><code class="bash">    ​    `istex-api-harvester  -F txt -M &quot;&quot; -o corpusAncien -s 600 --query=&quot;cat querya1.txt&quot;`
-</code></pre>
-
-<ul>
 <li>
 <p>Si le corpus est volumineux, il faut augmenter la durée de vie de la fonction Scroll qui est de 30 s par défaut. Avec un tel délai, le parcours des 100 résultats de la "page courante" peut s’avérer trop long et entraîner une erreur 404 renvoyée par l'API.</p>
 <ul>
-<li>Exemple : <em>moissonnage du texte intégral au format pdf et des métadonnées associées de 17 257 documents contenant le terme "arctic" dans le titre ou le résumé, à télécharger dans le répertoire Polaris (la durée de vie de la fonction Scroll a été portée à 5 mn)</em>
-​</li>
+<li><em><strong>Exemple :</strong> moissonnage du texte intégral au format pdf et des métadonnées associées de 17 257 documents contenant le terme "arctic" dans le titre ou le résumé, à télécharger dans le répertoire Polaris (la durée de vie de la fonction Scroll a été portée à 5 mn)</em></li>
+</ul>
+<p><code>istex-api-harvester -t 5m -F pdf -o Polaris -s 17500 -q "title:arctic OR abstract:arctic"</code></p>
+</li>
 </ul>
 </li>
 </ul>
-<pre><code class="bash">        istex-api-harvester  -F txt -M &quot;&quot; -o corpusAncien -s 600 --query=&quot;`cat querya1.txt`&quot;
-</code></pre>
-
-<pre><code class="bash">        istex-api-harvester -t 5m -F pdf -o Polaris -s 17500 -q &quot;title:arctic OR abstract:arctic&quot;
-</code></pre>
-
 <h2 id="programme-harvestcorpuspl">Programme « harvestCorpus.pl »<a class="headerlink" href="#programme-harvestcorpuspl" title="Permanent link">&para;</a></h2>
 <p>Il s'agit d'un outil d’extraction de corpus ISTEX en ligne de commande. Il est écrit en Perl.</p>
 <p>Il permet de décharger un corpus depuis la base ISTEX à partir d’une requête ou d’un fichier <code>.corpus</code>. </p>
@@ -369,7 +360,7 @@
 <li>De plus, il est associé à plusieurs <a href="https://git.istex.fr/scodex/harvest-corpus/tree/master/outils">outils</a> dont <code>statsCorpus.pl</code>, un programme de réalisation de statistiques sur le corpus, et <code>extraitXmlEditeur.pl</code>, un programme pour extraire à partir des archives ZIP les fichiers XML fournis par les éditeurs . </li>
 <li>Comme ce programme extrait d'abord la liste des identifiants des documents pertinents avant de décharger les fichiers correspondants, il ne devrait pas être affecté par les limitations de la méthode  <code>scroll</code>. Donc, même si la connexion Internet a un faible débit, l'extraction se déroulera sans problème. </li>
 <li>Il gère l'authentification au serveur en dehors du réseau interne de l'Inist. </li>
-<li>Il vérifie le type des fichiers déchargés, signale les problèmes d'authentification et relance le déchargement des fichiers concernés (pour plus de détails, voir la rubrique Détecter les problèmes d'authentification dans le chapitre Vérification et mise en forme des résultats). </li>
+<li>Il vérifie le type des fichiers déchargés, signale les problèmes d'authentification et relance le déchargement des fichiers concernés (pour plus de détails, voir la rubrique Détecter les problèmes d'authentification dans le chapitre <strong><a href="../verification/">Vérification et la mise en forme des résultats</a></strong>). </li>
 </ul>
 </li>
 <li>
@@ -386,7 +377,7 @@
 <p><strong>Installations :</strong> </p>
 <ul>
 <li>
-<p>si besoin, installer GIT pour Windows : https://git-for-windows.github.io/</p>
+<p>si besoin, installer Git pour Windows : https://git-for-windows.github.io/</p>
 </li>
 <li>
 <p>cloner la distribution <code>harvest-corpus</code> :</p>

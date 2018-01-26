@@ -33,6 +33,27 @@
     color: #16B84E;
 }
 
+.lavandegras {
+    font-weight: bold;
+    color: #9683EC;
+}
+
+.bleugras {
+    font-weight: bold;
+    color: #2C75FF;
+}
+
+.orangegras {
+    font-weight: bold;
+    color: #ED7F10;
+}
+
+.marrongras {
+    font-weight: bold;
+    font-size: 130%;
+    color: #87591A;
+}
+
 .optParam {
     font-weight: bold;
     color: #6EA9FF;
