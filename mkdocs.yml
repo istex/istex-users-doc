@@ -5,7 +5,7 @@ pages:
 #  - Recherche documentaire:
 #    - Explorer ISTEX: blank.md
     - Bouton ISTEX: usage/button.md
-    - Google Scholar: usage/google.md
+    - Google Scholar: usage/googlescholar.md
     - Logiciel de Gestion Bib: usage/bib.md
 #  - Fouille de text, TDM:
 #    - Télécharger un corpus ISTEX: blank.md
