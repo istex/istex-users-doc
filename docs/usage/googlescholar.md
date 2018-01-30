@@ -12,33 +12,38 @@ Google Scholar indique que l'activation (et la mise à jour) prend une à deux s
 
 ## Paramètrage pour l'utilisateur 
 
-Le paramètrage est à faire une seule fois.
+**<span class="vertgras">Paramètrage à faire une seule fois</a>**
 
-=> Aller sur Google Scholar
+- Aller sur Google Scholar
 
-=> Cliquer en haut à gauche pour voir les paramètrages
+- Cliquer en haut à gauche pour voir les paramètrages
 
 ![google1](../img/google1.JPG) 
 
-=> Choisir "Paramètres"
+- Choisir "Paramètres"
 
-=> Puis "Liens vers des bibliothèques"
+- Puis "Liens vers des bibliothèques"
  
 ![google2](../img/google2.JPG)
 
-=> Rechercher ISTEX
+- Rechercher ISTEX
 
-=> Sélectionner 
+- Sélectionner 
 
-=> Retourner à votre recherche
+- Retourner à votre recherche
 
 ![google3](../img/google3.JPG)
 
-=> [PDF]ISTEX signale un lien disponible
+- [PDF]ISTEX signale un lien disponible
 
 ![google4](../img/google4.JPG)
 
-=> Choisir de coupler ce paramètrage avec l'installation du bouton ISTEX voir **[Bouton ISTEX](https://doc.istex.fr/users/usage/button/)**
+- Accèder au PDFdisponible sur la plateforme ISTEX
+
+
+**<span class="vertgras">Autre possibilité</a>**
+
+L'option de sélectionner le lien vers la bibliothèque ISTEX est proposée automatiquement au moment de l'installation du bouton ISTEX voir **[Bouton ISTEX](https://doc.istex.fr/users/usage/button/)**
 
 
 
