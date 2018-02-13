@@ -337,17 +337,13 @@ Les typologies de sites web visés sont :</p>
 </li>
 <li>
 <p><a href="https://hal.archives-ouvertes.fr/">Archive ouverte HAL</a>
-Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque celui-ci est disponible en libre accès sur une autre plateforme comme arXiv ou PubMed Central.</p>
+  Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque celui-ci est disponible en libre accès sur une autre plateforme comme arXiv ou PubMed Central. Le bouton d'accès ISTEX s’affiche si la ressource n’existe pas en libre accès mais est disponible sur la plateforme ISTEX (cf <a href="https://www.ccsd.cnrs.fr/2018/02/faciliter-acces-au-texte-integral-en-signalant-les-ressources-en-libre-acces/">billet de blog HAL</a> et <a href="http://blog.istex.fr/une-nouvelle-integration-du-bouton-istex-hal/">billet de blog ISTEX</a>)
+  <img alt="interrogationhal" src="./../../img/istexhal1.JPG" />
+  Un grand merci à Yannick Barborini et toute son équipe pour cette intégration !</p>
 </li>
-</ul>
-<p>Le bouton d'accès ISTEX s’affiche si la ressource n’existe pas en libre accès mais est disponible sur la plateforme ISTEX.</p>
-<p><img alt="interrogationhal" src="./../../img/istexhal1.JPG" /></p>
-<p>"Thermodynamic modeling for petroleum fluid III...."</p>
-<p><img alt="noticehal" src="./../../img/istexhal2.JPG" /></p>
-<p><em>Le lien vers ISTEX n’est pas privilégié car l’accès aux ressources ISTEX est limité aux personnels de l’Enseignement Supérieur et de la Recherche et  l'archive ouverte pluridisciplinaire HAL concerne les établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.</em></p>
-<p>Un grand merci à Yannick Barborini et toute son équipe pour cette intégration !</p>
-<ul>
-<li>Vous très bientôt ? <a href="mailto:contact@listes.istex.fr">dites-le à l'équipe ISTEX</a>, savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.</li>
+<li>
+<p>Vous très bientôt ? <a href="mailto:contact@listes.istex.fr">dites-le à l'équipe ISTEX</a>, savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.</p>
+</li>
 </ul>
 <h1 id="metadonnees-pour-le-bouton-istex">Métadonnées pour le bouton ISTEX<a class="headerlink" href="#metadonnees-pour-le-bouton-istex" title="Permanent link">&para;</a></h1>
 <p>L'<a href="./../../usage/button/">extension pour navigateur ISTEX</a> permet de venir afficher des boutons ISTEX <img alt="" src="./../../img/istex-button.png" /> au sein de vos pages web lorsque des références bibliographiques y sont trouvées et qu'elles correspondent à des ressources présentes dans la plateforme ISTEX. Pour que cette technique fonctionne cela nécessite d'<a href="./../../usage/button/">installer dans son navigateur web l'extension ISTEX</a>.</p>
@@ -360,12 +356,10 @@ Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque ce
 <pre><code class="html">&lt;a rel=&quot;nofollow&quot; href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/14534579&quot;&gt;
 14534579
 &lt;/a&gt;
- ```
+</code></pre>
 
-Ou bien par la présence d'un DOI directement dans le texte d'un paragraphe :
-
-```html
-&lt;p&gt;
+<p>Ou bien par la présence d'un DOI directement dans le texte d'un paragraphe :</p>
+<pre><code class="html">&lt;p&gt;
   Texte de mon article citant un DOI : 10.1016/S0248-8663(00)00250-2
 &lt;/p&gt;
 </code></pre>
