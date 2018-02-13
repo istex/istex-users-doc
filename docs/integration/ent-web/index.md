@@ -102,6 +102,24 @@ Des intégrations similaires sont réalisées dans différents établissements e
 
 - [LiSSa](http://www.lissa.fr) "Base de donnée bibliographique en Santé". Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !
 
+
+
+- [Archive ouverte HAL](https://hal.archives-ouvertes.fr/)
+Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque celui-ci est disponible en libre accès sur une autre plateforme comme arXiv ou PubMed Central.
+
+Le bouton d'accès ISTEX s’affiche si la ressource n’existe pas en libre accès mais est disponible sur la plateforme ISTEX.
+ 
+![interrogationhal](../../img/istexhal1.JPG)
+
+"Thermodynamic modeling for petroleum fluid III...."
+
+![noticehal](../../img/istexhal2.JPG)
+
+*Le lien vers ISTEX n’est pas privilégié car l’accès aux ressources ISTEX est limité aux personnels de l’Enseignement Supérieur et de la Recherche et  l'archive ouverte pluridisciplinaire HAL concerne les établissements d'enseignement et de recherche français ou étrangers, des laboratoires publics ou privés.*
+
+Un grand merci à Yannick Barborini et toute son équipe pour cette intégration !
+
+
 - Vous très bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.
 
 # Métadonnées pour le bouton ISTEX
