@@ -194,9 +194,9 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 
 Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 
-19 négociations mais 20 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
+20 négociations mais 21 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
 
-![bouquetsept2017](../../img/hlm20bouquets.JPG)
+![bouquetfevrier2018](../../img/tableauavecedp.JPG)
 
 
 #### 2- EDS/Customlinks  
