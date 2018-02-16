@@ -196,7 +196,7 @@ Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 
 20 négociations mais 21 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
 
-![bouquetfevrier2018](../../img/tableauavecedp.JPG)
+![bouquetfevrier2018](../../img/hlmedp.JPG)
 
 
 #### 2- EDS/Customlinks  
