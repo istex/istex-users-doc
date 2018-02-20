@@ -216,16 +216,10 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 1. Cliquer sur SetUp/Maintain CustomLinks
 2. Descendre jusqu’au lien ISTEX plateforme et cliquer sur le lien
 3. Descendre jusqu’à la fonction Local Collections for Filter
-
 ![Schéma customlink2](../../img/custom2.JPG)
-
-
 4. Appuyer sur la touche ctrl du clavier et en même temps cliquer sur la source  déjà sélectionnée (si elle se désélectionne, la cocher de nouveau sans lâcher la touche ctrl)
 5. Toujours en appuyant sur la touche ctrl, appuyer sur la touche F du clavier pour ouvrir le champ de recherche dans la page et tapez ISTEX pour aller à toutes les occurrences du mot.
-
 ![Schéma customlink3](../../img/custom3.JPG)
-
-
 6. Utiliser les flèches du champ de recherche pour naviguer d’occurrence en occurrence.
 7. Sans lâcher la touche ctrl, sélectionner la/les nouvelle(s) source(s) choisie(s) puis valider.
 
