@@ -9,7 +9,7 @@ Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement so
 
 - **EDS** et son résolveur FTF (EBSCO Discovery Service)
 
-- **Primo** et son résolveur SFX (ExLibris/Proquest)_***Une documentation bientôt disponible***_
+- **Primo** et son résolveur SFX (ExLibris/Proquest
 
 - **Summon** et son résolveur de liens 360 links (Serial Solution/ Proquest) _***En attente contact Ex-Libris USA***_ 
 
@@ -249,20 +249,76 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 
 
 
-## PRIMO et SUMMON ##
-
-
-Actuellement il est impossible de proposer le même service avec ces deux solutions de découvertes, leurs résolveurs de liens ne permettant pas de sélectionner des bouquets de ressources "Licences nationales ISTEX" et d'y associer un lien vers l'éditeur et un lien vers la plateforme ISTEX. 
-Ex-Libris USA a été contacté et étudie une solution.
+## PRIMO - ExLibris ##
 
 
 
+#### 1-Paramétrage du résolveur SFX vers la plateforme ISTEX
+
+- Se rendre dans l'interface d'administration SFX
+- Dans l'écran de recherche chercher les Targets ISTEX
+- Une liste s'affiche
+
+![Schéma exlibris1](../../img/exlibris1.png)
+
+ Pour info une **Target** peut être associée à **un bouquet** de ressources plus **un service** comme "l'accès au texte intégral" ou être associé uniquement à **un service** rebond vers un fournisseur de texte intégal sans bouquet associé 
+
+Dans notre interface d'administration : 20 Targets sont associées à des bouquets (bouton “P”)
+1 Target ne contient pas de bouquet : elle pointe vers la plateforme ISTEX
+
+- Activer la target ISTEX en cliquant sur la marque de coche à droite de l'écran
+
+![Schéma exlibris2](../../img/exlibris2.png)
+
+- Cliquer sur le bouton S pour sélectionner un service 
+
+![Schéma exlibris3](../../img/exlibris3.png)
+
+- Cliquer sur la marque de coche pour activer le service comme indiquer sur la capture d'écran
+
+
+ _le service getDOI ajoute alors un DOI à l’OpenURL du parseur ISTEX à condition que l’objet (les métadonnées d’une ressource) comporte un DOI._
+che le service :
+
+- Cliquer sur le bouton “E” (edit) pour afficher le service 
+
+![Schéma exlibris4](../../img/exlibris4.png)
+
+- La Target est activée
+
+
+####2-Résultat 
+
+
+- Rechercher l’article _Disenchantment and the Environmental Crisis_ dans l’outil de découverte
+
+
+![Schéma exlibris5](../../img/exlibris5.png)
+
+- Cliquer sur l’onglet “Ressource en ligne” (résolveur de liens SFX)
+
+_Le texte intégral disponible chez l’éditeur est affiché dans la partie gauche alors que les services supplémentaires sont accessibles avec le bouton “Plus” situé à droite_
+
+![Schéma exlibris6](../../img/exlibris6.png)
+
+- Cliquer sur “Accès au texte intégral” sur la plateforme ISTEX
+
+![Schéma exlibris7](../../img/exlibris7.png)
+
+![Schéma exlibris8](../../img/exlibris8.png)
+
+
+
+Un grand merci à Laurent Aucher (Université PSL/ACEF)
 
 
 
 
 
+## SUMMON ##
 
+
+Actuellement il est impossible de proposer le même service avec cette solution de découverte. 
 
 
 
