@@ -153,7 +153,14 @@
                     <li><a class="toctree-l4" href="#2-edscustomlinks">2- EDS/Customlinks</a></li>
                 
             
-                <li class="toctree-l3"><a href="#primo-et-summon">PRIMO et SUMMON</a></li>
+                <li class="toctree-l3"><a href="#primo-exlibris">PRIMO - ExLibris</a></li>
+                
+                    <li><a class="toctree-l4" href="#1-parametrage-du-resolveur-sfx-vers-la-plateforme-istex">1-Paramétrage du résolveur SFX vers la plateforme ISTEX</a></li>
+                
+                    <li><a class="toctree-l4" href="#2-resultat">2-Résultat</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#summon">SUMMON</a></li>
                 
             
             </ul>
@@ -250,7 +257,7 @@
 <p><strong>EDS</strong> et son résolveur FTF (EBSCO Discovery Service)</p>
 </li>
 <li>
-<p><strong>Primo</strong> et son résolveur SFX (ExLibris/Proquest)<em><strong><em>Une documentation bientôt disponible</em></strong></em></p>
+<p><strong>Primo</strong> et son résolveur SFX (ExLibris/Proquest)</p>
 </li>
 <li>
 <p><strong>Summon</strong> et son résolveur de liens 360 links (Serial Solution/ Proquest) <em><strong><em>En attente contact Ex-Libris USA</em></strong></em> </p>
@@ -374,9 +381,53 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 <li>Descendre jusqu’à la fonction Local Collections for Filter</li>
 <li>Suivre les étapes 4 à 7 de du Cas N°1</li>
 </ol>
-<h2 id="primo-et-summon">PRIMO et SUMMON<a class="headerlink" href="#primo-et-summon" title="Permanent link">&para;</a></h2>
-<p>Actuellement il est impossible de proposer le même service avec ces deux solutions de découvertes, leurs résolveurs de liens ne permettant pas de sélectionner des bouquets de ressources "Licences nationales ISTEX" et d'y associer un lien vers l'éditeur et un lien vers la plateforme ISTEX. 
-Ex-Libris USA a été contacté et étudie une solution.</p>
+<h2 id="primo-exlibris">PRIMO - ExLibris<a class="headerlink" href="#primo-exlibris" title="Permanent link">&para;</a></h2>
+<h4 id="1-parametrage-du-resolveur-sfx-vers-la-plateforme-istex">1-Paramétrage du résolveur SFX vers la plateforme ISTEX<a class="headerlink" href="#1-parametrage-du-resolveur-sfx-vers-la-plateforme-istex" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Se rendre dans l'interface d'administration SFX</li>
+<li>Dans l'écran de recherche chercher les Targets ISTEX</li>
+<li>Une liste s'affiche</li>
+</ul>
+<p><img alt="Schéma exlibris1" src="./../../img/exlibris1.png" /></p>
+<p><em>Pour info une Target peut être associée à un bouquet de ressources plus un service comme "l'accès au texte intégral" ou <strong>être associée uniquement à un service rebond vers un fournisseur de texte intégal sans bouquet associé</strong>.</em> </p>
+<p>Dans notre interface d'administration : 20 Targets sont associées à des bouquets (bouton “P”) et <strong>1 Target qui n'est pas associée à un bouquet et qui pointe vers la plateforme ISTEX</strong></p>
+<ul>
+<li>Activer la target ISTEX en cliquant sur la marque de coche à droite de l'écran</li>
+</ul>
+<p><img alt="Schéma exlibris2" src="./../../img/exlibris2.png" /></p>
+<ul>
+<li>Cliquer sur le bouton S pour sélectionner un service </li>
+</ul>
+<p><img alt="Schéma exlibris3" src="./../../img/exlibris3.png" /></p>
+<ul>
+<li>Cliquer sur la marque de coche pour activer le service comme indiquer sur la capture d'écran</li>
+</ul>
+<p><em>le service getDOI ajoute alors un DOI à l’OpenURL du parseur ISTEX à condition que l’objet (les métadonnées d’une ressource) comporte un DOI.</em></p>
+<ul>
+<li>Cliquer sur le bouton “E” (edit) pour afficher le service </li>
+</ul>
+<p><img alt="Schéma exlibris4" src="./../../img/exlibris4.png" /></p>
+<ul>
+<li>La Target est activée</li>
+</ul>
+<h4 id="2-resultat">2-Résultat<a class="headerlink" href="#2-resultat" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Rechercher l’article <em>"Disenchantment and the Environmental Crisis"</em> dans l’outil de découverte</li>
+</ul>
+<p><img alt="Schéma exlibris5" src="./../../img/exlibris5.png" /></p>
+<ul>
+<li>Cliquer sur l’onglet “Ressource en ligne” (résolveur de liens SFX)</li>
+</ul>
+<p><em>Le texte intégral disponible chez l’éditeur est affiché dans la partie gauche alors que les services supplémentaires sont accessibles avec le bouton “Plus” situé à droite</em></p>
+<p><img alt="Schéma exlibris6" src="./../../img/exlibris6.png" /></p>
+<ul>
+<li>Cliquer sur “Accès au texte intégral” sur la plateforme ISTEX</li>
+</ul>
+<p><img alt="Schéma exlibris7" src="./../../img/exlibris7.png" /></p>
+<p><img alt="Schéma exlibris8" src="./../../img/exlibris8.png" /></p>
+<p>Un grand merci à Laurent Aucher (Université PSL/ACEF)</p>
+<h2 id="summon">SUMMON<a class="headerlink" href="#summon" title="Permanent link">&para;</a></h2>
+<p>Actuellement il est impossible de proposer le même service avec cette solution de découverte.</p>
               
             </div>
           </div>
