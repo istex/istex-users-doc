@@ -109,7 +109,9 @@ Des intégrations similaires sont réalisées dans différents établissements e
   [![interrogationhal](../../img/istexhal1.JPG)](https://hal.archives-ouvertes.fr/hal-01705904)
   Un grand merci à Yannick Barborini et toute son équipe pour cette intégration !
 
-
+- [BRISE-ES](https://catalogue-brisees.univ-st-etienne.fr/accueil.html#) "Portail des ressources des bibliothèques de l'enseignement supérieur de Saint Etienne" 
+![intégration st Etienne](../../img/SaintEtienne.JPG)
+ Un grand merci à Dominique Rouger pour cette intégration !
 
 - Vous très bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.
 
