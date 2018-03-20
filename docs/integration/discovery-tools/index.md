@@ -194,9 +194,34 @@ Une fois le lien créé il faut l’assigner à tous les bouquets  Licences Nati
 
 Seuls les bouquets suivants sont déjà disponibles sur la plateforme ISTEX.
 
-20 négociations mais 21 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
+21 négociations mais 22 bouquets à sélectionner car la négociation "Numérique Premium" comporte 2 bouquets "Révolution française-Premier Empire" et "Littérature française et francophone".
 
-![bouquetfevrier2018](../../img/hlmedp.JPG)
+###### 22 bouquets à associer
+
+- BMJ Journals (ISTEX - Licences Nationales)
+- BRILL (ISTEX - Licences Nationales)
+- Brill Recueils des cours de l’Académie de La Haye (ISTEX -Licences Nationales)
+- Cambridge University Press (ISTEX - Licences Nationales)
+- De Gruyter (ISTEX - Licences Nationales)
+- EarlyEnglish Books Online (EEBO)
+- EDP Sciences (ISTEX - Licences Nationales)
+- EighteenthCentury Collections Online
+- Elsevier (ISTEX - Licences Nationales)
+- Emerald(ISTEX - Licences Nationales)
+- Geologicalsociety of London Publishing – ebooks (ISTEX - Licences Nationales)
+- Institute of Physics (ISTEX - Licences Nationales)
+- Littérature française et francophone (ISTEX - LicencesNationales)
+- Nature Publishing Group (ISTEX - Licences Nationales)
+- OxfordUniversity Press (ISTEX - Licences Nationales)
+- Révolution française – Premier Empire (ISTEX - LicencesNationales)
+- RoyalSociety of Chemistry (ISTEX - Licences Nationales)
+- RoyalSociety of Chemistry eBooks (ISTEX - Licences Nationales)
+- SAGE (ISTEX - Licences Nationales)
+- Springer Nature eBooks (ISTEX - Licences Nationales)
+- SpringerLINK (ISTEX - Licences Nationales)
+- Wiley Online Library (ISTEX - Licences Nationales)
+
+
 
 
 #### 2- EDS/Customlinks  
