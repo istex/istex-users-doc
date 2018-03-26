@@ -261,7 +261,27 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 6. Descendre jusqu’à la fonction Local Collections for Filter
 7. Suivre les étapes 4 à 7 de du Cas N°1
 
+** C - Précautions**
 
+- Au moment de créer un Custom Link, si on veut pouvoir rajouter des corpus, il faut qu'EBSCO nous les propose et pour cela il faut impérativement sélectionner:
+
+"leave as an EBSCO-managed link..."
+
+![Schéma ebscogestion](../../img/ebscogestion.PNG)
+
+- Il est possible de vérifier les corpus présents dans le custom link ISTEX plateforme en sélectionnant:
+
+Linking/Add New CustomLinks 
+
+![Schéma setup](../../img/setup.png)
+
+Chercher ISTEX plateforme et cliquer sur Go
+
+![Schéma controlecustom](../../img/controlecustom.JPG)
+
+Voir la rubrique : Local Collections for Filter
+
+![Schéma customcomplet](../../img/customcomplet.PNG)
 
 ## PRIMO - ExLibris ##
 
