@@ -287,7 +287,7 @@ Voir la rubrique : Local Collections for Filter
 
 
 
-#### 1-Paramétrage du résolveur SFX vers la plateforme ISTEX
+#### 1-Paramétrage du résolveur SFXv1 vers la plateforme ISTEX
 
 - Se rendre dans l'interface d'administration SFX
 - Dans l'écran de recherche chercher les Targets ISTEX
@@ -320,7 +320,7 @@ Dans notre interface d'administration : 20 Targets sont associées à des bouque
 - La Target est activée
 
 
-####2-Résultat 
+##### Résultat 
 
 
 - Rechercher l’article _"Disenchantment and the Environmental Crisis"_ dans l’outil de découverte
@@ -344,6 +344,74 @@ _Le texte intégral disponible chez l’éditeur est affiché dans la partie gau
 
 Un grand merci à Laurent Aucher (Université PSL/ACEF)
 
+#### 2-Paramétrage du résolveur SFXv2 vers la plateforme ISTEX
+
+Comme on ne peut pas associer à une Target ISTEX un service et un bouquet, cette solution est un mixe de création de Target et de bouton intégré ISTEX.
+
+Un grand merci à Julien Sicot (Université de Rennes 2) pour ce développement à partir de la **Target Unpaywall (ex oaDOI)**
+
+#####**!!!ATTENTION!!!**
+
+ Cette intégration nécessite un accès SSH à l’instance locale SFX.
+
+** A- Récupérer le code sur le site** : [https://github.com/jsicot/sfxbur2](https://github.com/jsicot/sfxbur2)
+
+- Parseur :	 [https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/TargetParser/ISTEX](https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/TargetParser/ISTEX)
+- Plugin :  	 [https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/PlugIn](https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/PlugIn)
+- Configuration :  [https://github.com/jsicot/sfxbur2/tree/master/config](https://github.com/jsicot/sfxbur2/tree/master/config)
+
+
+** B- Création du parseur ISTEX v2**
+
+- Créer un dossier ISTEX2 dans le dossier TargetParser de l’instance locale :`/exlibris/sfx_ver/sfx4_1/[instance]/lib/Parsers/TargetParser/ISTEX2`
+- Dans ce dossier, créer un fichier`istexapi.pm` et y copier le code du [Parseur](https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/TargetParser/ISTEX)
+
+** C- Création du plugin**
+
+- Se déplacer dans le dossier PlugIn de l’instance locale :`/exlibris/sfx_ver/sfx4_1/[instance]/lib/Parsers/PlugIn`
+- Dans ce dossier, créer un fichier `istexapi.pm` et y copier le code du [Plugin](https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/PlugIn)
+
+** D- Créer le fichier de configuration**
+
+- Se déplacer dans le dossier config de l’instance locale :`/exlibris/sfx_ver/sfx4_1/[instance]/config/`
+- Dans ce dossier, créer un fichier `istex.config`  et y copier le code du fichier de [Configuration](https://github.com/jsicot/sfxbur2/tree/master/config)
+
+
+#####**!!!ATTENTION!!!**
+
+
+les établissements qui utilisent plusieurs instances SFX doivent déposer le parseur,
+le plugin et le fichier de configuration dans l’instance globale puis créer des liens symboliques pour chaque instance locale vers l’instance globale
+`ln -s /exlibris/sfx_ver/sfx4_1/sfxglb41/lib/Parsers/TargetParser/ISTEX2/istexapi.pm` 
+`ln –s /exlibris/sfx_ver/sfx4_1/sfxglb41/lib/Parsers/PlugIn/istexapi.pm` 
+`ln -s /exlibris/sfx_ver/sfx4_1/sfxglb41/config/istex.config`
+
+
+** E- Création de la target ISTEX2**
+ 
+- Dans l’interface admin SFX, aller dans Targets, cliquer sur le bouton Add New Target :
+
+![Schéma sfxv2-1](../../img/sfxv2-1.png)
+
+- Renseigner les champs, cliquer sur le bouton Submit :
+
+![Schéma sfxv2-2](../../img/sfxv2-2.png)
+
+**F- Création du service**
+
+- Cliquer sur le bouton S :
+
+![Schéma sfxv2-3](../../img/sfxv2-3.png)
+
+- Dans l’écran des services, cliquer sur le bouton Add New Service :
+
+![Schéma sfxv2-4](../../img/sfxv2-4.png)
+
+- Renseigner les champs des deux onglets (personnaliser le sid) puis cliquer sur le bouton Submit :
+
+![Schéma sfxv2-5](../../img/sfxv2-5.png)
+
+![Schéma sfxv2-6](../../img/sfxv2-6.png)
 
 ## SUMMON ##
 
