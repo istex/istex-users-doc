@@ -155,9 +155,9 @@
             
                 <li class="toctree-l3"><a href="#primo-exlibris">PRIMO - ExLibris</a></li>
                 
-                    <li><a class="toctree-l4" href="#1-parametrage-du-resolveur-sfx-vers-la-plateforme-istex">1-Paramétrage du résolveur SFX vers la plateforme ISTEX</a></li>
+                    <li><a class="toctree-l4" href="#1-parametrage-du-resolveur-sfxv1-vers-la-plateforme-istex">1-Paramétrage du résolveur SFXv1 vers la plateforme ISTEX</a></li>
                 
-                    <li><a class="toctree-l4" href="#2-resultat">2-Résultat</a></li>
+                    <li><a class="toctree-l4" href="#2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex">2-Paramétrage du résolveur SFXv2 vers la plateforme ISTEX</a></li>
                 
             
                 <li class="toctree-l3"><a href="#summon">SUMMON</a></li>
@@ -421,7 +421,7 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 <p>Voir la rubrique : Local Collections for Filter</p>
 <p><img alt="Schéma customcomplet" src="./../../img/customcomplet.PNG" /></p>
 <h2 id="primo-exlibris">PRIMO - ExLibris<a class="headerlink" href="#primo-exlibris" title="Permanent link">&para;</a></h2>
-<h4 id="1-parametrage-du-resolveur-sfx-vers-la-plateforme-istex">1-Paramétrage du résolveur SFX vers la plateforme ISTEX<a class="headerlink" href="#1-parametrage-du-resolveur-sfx-vers-la-plateforme-istex" title="Permanent link">&para;</a></h4>
+<h4 id="1-parametrage-du-resolveur-sfxv1-vers-la-plateforme-istex">1-Paramétrage du résolveur SFXv1 vers la plateforme ISTEX<a class="headerlink" href="#1-parametrage-du-resolveur-sfxv1-vers-la-plateforme-istex" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Se rendre dans l'interface d'administration SFX</li>
 <li>Dans l'écran de recherche chercher les Targets ISTEX</li>
@@ -449,7 +449,7 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 <ul>
 <li>La Target est activée</li>
 </ul>
-<h4 id="2-resultat">2-Résultat<a class="headerlink" href="#2-resultat" title="Permanent link">&para;</a></h4>
+<h5 id="resultat">Résultat<a class="headerlink" href="#resultat" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Rechercher l’article <em>"Disenchantment and the Environmental Crisis"</em> dans l’outil de découverte</li>
 </ul>
@@ -465,6 +465,61 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 <p><img alt="Schéma exlibris7" src="./../../img/exlibris7.png" /></p>
 <p><img alt="Schéma exlibris8" src="./../../img/exlibris8.png" /></p>
 <p>Un grand merci à Laurent Aucher (Université PSL/ACEF)</p>
+<h4 id="2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex">2-Paramétrage du résolveur SFXv2 vers la plateforme ISTEX<a class="headerlink" href="#2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex" title="Permanent link">&para;</a></h4>
+<p>Comme on ne peut pas associer à une Target ISTEX un service et un bouquet, cette solution est un mixe de création de Target et de bouton intégré ISTEX.</p>
+<p>Un grand merci à Julien Sicot (Université de Rennes 2) pour ce développement à partir de la <strong>Target Unpaywall (ex oaDOI)</strong></p>
+<h5 id="attention_1"><strong>!!!ATTENTION!!!</strong><a class="headerlink" href="#attention_1" title="Permanent link">&para;</a></h5>
+<p>Cette intégration nécessite un accès SSH à l’instance locale SFX.</p>
+<p><strong> A- Récupérer le code sur le site</strong> : <a href="https://github.com/jsicot/sfxbur2">https://github.com/jsicot/sfxbur2</a></p>
+<ul>
+<li>Parseur :  <a href="https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/TargetParser/ISTEX">https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/TargetParser/ISTEX</a></li>
+<li>Plugin :       <a href="https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/PlugIn">https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/PlugIn</a></li>
+<li>Configuration :  <a href="https://github.com/jsicot/sfxbur2/tree/master/config">https://github.com/jsicot/sfxbur2/tree/master/config</a></li>
+</ul>
+<p><strong> B- Création du parseur ISTEX v2</strong></p>
+<ul>
+<li>Créer un dossier ISTEX2 dans le dossier TargetParser de l’instance locale :<code>/exlibris/sfx_ver/sfx4_1/[instance]/lib/Parsers/TargetParser/ISTEX2</code></li>
+<li>Dans ce dossier, créer un fichier<code>istexapi.pm</code> et y copier le code du <a href="https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/TargetParser/ISTEX">Parseur</a></li>
+</ul>
+<p><strong> C- Création du plugin</strong></p>
+<ul>
+<li>Se déplacer dans le dossier PlugIn de l’instance locale :<code>/exlibris/sfx_ver/sfx4_1/[instance]/lib/Parsers/PlugIn</code></li>
+<li>Dans ce dossier, créer un fichier <code>istexapi.pm</code> et y copier le code du <a href="https://github.com/jsicot/sfxbur2/tree/master/lib/Parsers/PlugIn">Plugin</a></li>
+</ul>
+<p><strong> D- Créer le fichier de configuration</strong></p>
+<ul>
+<li>Se déplacer dans le dossier config de l’instance locale :<code>/exlibris/sfx_ver/sfx4_1/[instance]/config/</code></li>
+<li>Dans ce dossier, créer un fichier <code>istex.config</code>  et y copier le code du fichier de <a href="https://github.com/jsicot/sfxbur2/tree/master/config">Configuration</a></li>
+</ul>
+<h5 id="attention_2"><strong>!!!ATTENTION!!!</strong><a class="headerlink" href="#attention_2" title="Permanent link">&para;</a></h5>
+<p>les établissements qui utilisent plusieurs instances SFX doivent déposer le parseur,
+le plugin et le fichier de configuration dans l’instance globale puis créer des liens symboliques pour chaque instance locale vers l’instance globale
+<code>ln -s /exlibris/sfx_ver/sfx4_1/sfxglb41/lib/Parsers/TargetParser/ISTEX2/istexapi.pm</code> 
+<code>ln –s /exlibris/sfx_ver/sfx4_1/sfxglb41/lib/Parsers/PlugIn/istexapi.pm</code> 
+<code>ln -s /exlibris/sfx_ver/sfx4_1/sfxglb41/config/istex.config</code></p>
+<p><strong> E- Création de la target ISTEX2</strong></p>
+<ul>
+<li>Dans l’interface admin SFX, aller dans Targets, cliquer sur le bouton Add New Target :</li>
+</ul>
+<p><img alt="Schéma sfxv2-1" src="./../../img/sfxv2-1.png" /></p>
+<ul>
+<li>Renseigner les champs, cliquer sur le bouton Submit :</li>
+</ul>
+<p><img alt="Schéma sfxv2-2" src="./../../img/sfxv2-2.png" /></p>
+<p><strong>F- Création du service</strong></p>
+<ul>
+<li>Cliquer sur le bouton S :</li>
+</ul>
+<p><img alt="Schéma sfxv2-3" src="./../../img/sfxv2-3.png" /></p>
+<ul>
+<li>Dans l’écran des services, cliquer sur le bouton Add New Service :</li>
+</ul>
+<p><img alt="Schéma sfxv2-4" src="./../../img/sfxv2-4.png" /></p>
+<ul>
+<li>Renseigner les champs des deux onglets (personnaliser le sid) puis cliquer sur le bouton Submit :</li>
+</ul>
+<p><img alt="Schéma sfxv2-5" src="./../../img/sfxv2-5.png" /></p>
+<p><img alt="Schéma sfxv2-6" src="./../../img/sfxv2-6.png" /></p>
 <h2 id="summon">SUMMON<a class="headerlink" href="#summon" title="Permanent link">&para;</a></h2>
 <p>Actuellement il est impossible de proposer le même service avec cette solution de découverte.</p>
               
