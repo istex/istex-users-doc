@@ -1,5 +1,6 @@
 ﻿
- **OpenURL et Discovery Tool**
+#OpenURL et Outils de découverte
+ 
 
 Cette documentation est à destination des gestionnaires de documentation (ex : SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.
 

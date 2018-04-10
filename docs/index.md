@@ -11,4 +11,5 @@ La documentation est répartie selon les chapitres suivants :
 * [Configurer Google Scholar pour un accès direct aux documents ISTEX](usage/googlescholar/) ("Google Scholar")
 * [Configurer votre logiciel de Gestion Bibliographique](usage/bib/)
 * [Configurer votre Discovery Tool](integration/discovery-tools/) (à destination des gestionnaires de la documentation)
+* [Exemples d'intégration d'ISTEX](integration/"Ils l'ont intégré"/) 
 * [Constituer votre corpus](tdm/introduction/) (à destination des utilisateurs TAL/TDM, entre autres)
