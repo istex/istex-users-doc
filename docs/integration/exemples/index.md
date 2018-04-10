@@ -1,4 +1,4 @@
-# "Ils l'ont intégré : Exemples"
+#Ils ont intégré ISTEX : exemples
 
 ## [LiSSa](http://www.lissa.fr) "Base de donnée bibliographique en Santé". Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !
 
