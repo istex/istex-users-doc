@@ -33,7 +33,7 @@ pages:
 #  - OpenURL 1.0: blank.md
 #  - OpenURL et Discovery Tool: blank.md
 #  - FAQ: blank.md
-  - Exemples d'intégrations: integration/exempls/index.md
+  - Exemples d'intégrations: integration/exemples/index.md
 - FAQ:
   - A quoi sert ISTEX ?: faq/aquoisertISTEX.md
   - Mais pourquoi mettre un ARK ?: faq/ark.md
