@@ -1,4 +1,6 @@
-**ls ont intégré ISTEX**
+**Ils ont intégré ISTEX  et vous?  c'est pour bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr).**
+
+_C'est très important de savoir que la plateforme ISTEX est utilisée et de quelle façon, par la communauté._ 
 
 ## [LiSSa](http://www.lissa.fr)
 
@@ -43,7 +45,7 @@ Portail des ressources des bibliothèques de l'enseignement supérieur de Saint 
 ![intégration inra](../../img/inra.PNG)
 
 
-- Vous très bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.
+
 
 
 
