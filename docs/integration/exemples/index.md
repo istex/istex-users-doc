@@ -25,6 +25,20 @@ Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque ce
 
 [Voir la documentation technique](https://doc.istex.fr/users/integration/ent-web/#bouton-istex-integre)
 
+
+## [Université Aix Marseille](https://bu.univ-amu.fr/)
+
+- Intégration du bouton ISTEX dans un résolveur de liens SMASH pour une solution de découverte"Summon"
+- Un grand merci à Laurent Lhuillier pour cette intégration !
+
+[![Intégration avec création du résolveur de lien SMASH](../../img/AMU.png)](http://sh2hh6qx2e.search.serialssolutions.com/?url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info%3Asid%2Fzotero.org%3A2&rft_id=info%3Adoi%2F10.1002%2Fanie.201306656&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.atitle=Enantioselective%20Organocatalytic%20Multicomponent%20Synthesis%20of%202%2C6-Diazabicyclo%5B2.2.2%5Doctanones&rft.jtitle=Angewandte%20Chemie%20International%20Edition&rft.stitle=Angew.%20Chem.%20Int.%20Ed.&rft.volume=52&rft.issue=52&rft.aufirst=Maria%20del%20Mar&rft.aulast=Sanchez%E2%80%85Duque&rft.au=Maria%20del%20Mar%20Sanchez%E2%80%85Duque&rft.au=Olivier%20Basl%C3%A9&rft.au=Yves%20G%C3%A9nisson&rft.au=Jean-Christophe%20Plaquevent&rft.au=Xavier%20Bugaut&rft.au=Thierry%20Constantieux&rft.au=Jean%20Rodriguez&rft.date=2013-12-23&rft.pages=14143-14146&rft.spage=14143&rft.epage=14146&rft.issn=1521-3773&rft.language=en)
+
+[code source](https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746))
+
+
+[résolveur de lien SMASH](http://sh2hh6qx2e.search.serialssolutions.com/?url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info%3Asid%2Fzotero.org%3A2&rft_id=info%3Adoi%2F10.1108%2F17465261011016531&rft_val_fm]=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.atitle=Post%E2%80%90merger%20integration%20and%20change%20processes%20from%20a%20complexity%20perspective&rft.jtitle=Baltic%20Journal%20of%20Management&rft.volume=5&rft.issue=1&rft.aufirst=B%C3%A4rbel&rft.aulast=Lauser&rft.au=B%C3%A4rbel%20Lauser&rft.date=2010-01-12&rft.pages=6-27&rft.spage=6&rft.epage=27&rft.issn=1746-5265&rft.language=en).  Un grand merci à Laurent Lhuillier pour cette intégration ! (
+  [![](../../img/istex-smash-small.png)](http://sh2hh6qx2e.search.serialssolutions.com/?url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info%3Asid%2Fzotero.org%3A2&rft_id=info%3Adoi%2F10.1002%2Fanie.201306656&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.atitle=Enantioselective%20Organocatalytic%20Multicomponent%20Synthesis%20of%202%2C6-Diazabicyclo%5B2.2.2%5Doctanones&rft.jtitle=Angewandte%20Chemie%20International%20Edition&rft.stitle=Angew.%20Chem.%20Int.%20Ed.&rft.volume=52&rft.issue=52&rft.aufirst=Maria%20del%20Mar&rft.aulast=Sanchez%E2%80%85Duque&rft.au=Maria%20del%20Mar%20Sanchez%E2%80%85Duque&rft.au=Olivier%20Basl%C3%A9&rft.au=Yves%20G%C3%A9nisson&rft.au=Jean-Christophe%20Plaquevent&rft.au=Xavier%20Bugaut&rft.au=Thierry%20Constantieux&rft.au=Jean%20Rodriguez&rft.date=2013-12-23&rft.pages=14143-14146&rft.spage=14143&rft.epage=14146&rft.issn=1521-3773&rft.language=en)
+
  
 ## [Université Jean Monnet St Etienne](https://catalogue-brisees.univ-st-etienne.fr/accueil.html#) 
 
