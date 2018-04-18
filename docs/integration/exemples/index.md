@@ -1,11 +1,15 @@
-**Ils ont intégré ISTEX  et vous?  c'est pour bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr).**
+**Ils ont intégré ISTEX dans leurs outils documentaires et vous?  c'est pour bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr).**
 
 _C'est très important de savoir que la plateforme ISTEX est utilisée et de quelle façon, par la communauté._ 
 
-## [LiSSa](http://www.lissa.fr)
+## [CHU ROUEN NORMANDIE](http://www.lissa.fr)
 
-- Base de données bibliographiques en santé
+- Lissa Base de données bibliographiques en santé
 - Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !
+
+![Bouton ISTEX intégré dans LiSSa](http://www.lissa.fr/fr/rep/articles/11109591))
+
+[Voir la documentation technique](https://doc.istex.fr/users/integration/ent-web/#bouton-istex-integre)
 
 
 ## [Archive ouverte HAL](https://hal.archives-ouvertes.fr/)
@@ -18,7 +22,7 @@ Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque ce
 [![interrogationhal](../../img/istexhal1.JPG)](https://hal.archives-ouvertes.fr/hal-01705904)
 
 
-## [BRISE-ES](https://catalogue-brisees.univ-st-etienne.fr/accueil.html#) 
+## [Université St Etienne](https://catalogue-brisees.univ-st-etienne.fr/accueil.html#) 
 
 - Portail des ressources des bibliothèques de l'enseignement supérieur de Saint Etienne
 - Un grand merci à Dominique Rouger pour cette intégration !
