@@ -63,9 +63,9 @@ En recherchant un article dans le BRISE-ES, le portail des ressources des biblio
 [Voir la documentation technique](https://doc.istex.fr/users/integration/ent-web/#bouton-istex-integre)
 
 
-##[Univeristé Paris Saclay](https://focus.universite-paris-saclay.fr/primo-explore/search?vid=33PUP_VU1&lang=fr_FR&sortby=rank)
+##[Université Paris Saclay](https://focus.universite-paris-saclay.fr/primo-explore/search?vid=33PUP_VU1&lang=fr_FR&sortby=rank)
 
-[![intégration Paris Saclay](../../img/parissaclay.png)](https://https://focus.universite-paris-saclay.fr/primo-explore/search?query=any,contains,The%20French%20horse%20feed%20evaluation%20systems%20and%20recommended%20allowances%20for%20energy%20and%20protein&tab=default_tab&search_scope=default_scope&vid=33PUP_VU1&lang=fr_FR&offset=0)
+[![intégration Paris Saclay](../../img/parissaclay.png)](https://focus.universite-paris-saclay.fr/primo-explore/search?query=any,contains,The%20French%20horse%20feed%20evaluation%20systems%20and%20recommended%20allowances%20for%20energy%20and%20protein&tab=default_tab&search_scope=default_scope&vid=33PUP_VU1&lang=fr_FR&offset=0)
 
 
 - Intégration du bouton ISTEX dans Primo l'outil de découverte du portail FOCUS de Paris-Saclay
