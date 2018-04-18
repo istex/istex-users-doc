@@ -2,12 +2,12 @@
 
 _C'est très important de savoir que la plateforme ISTEX est utilisée et de quelle façon, par la communauté._ 
 
-## [CHU ROUEN NORMANDIE](http://www.lissa.fr)
+## [CHU Rouen Normandie](http://www.lissa.fr)
 
-- Lissa Base de données bibliographiques en santé
+- Intégration du bouton ISTEX dans la base de données bibliographiques en santé LiSSa
 - Un grand merci à Gaétan Kerdelhué et Julien Grosjean pour cette intégration !
 
-![Bouton ISTEX intégré dans LiSSa](http://www.lissa.fr/fr/rep/articles/11109591))
+[![Bouton ISTEX intégré dans LiSSa](../../img/lissaexemple.png)](http://www.lissa.fr/fr/rep/articles/11109591)
 
 [Voir la documentation technique](https://doc.istex.fr/users/integration/ent-web/#bouton-istex-integre)
 
