@@ -339,11 +339,9 @@ _Le texte intégral disponible chez l’éditeur est affiché dans la partie gau
 
 ![Schéma exlibris7](../../img/exlibris7.png)
 
-![Schéma exlibris8](../../img/exlibris8.png)
 
+Un grand merci à Laurent Aucher pour la création de la target Istex et les contacts avec Ex-libris(Université PSL/ACEF)
 
-
-Un grand merci à Laurent Aucher (Université PSL/ACEF)
 
 #### 2-Paramétrage du résolveur SFXv2 vers la plateforme ISTEX
 
@@ -413,6 +411,21 @@ le plugin et le fichier de configuration dans l’instance globale puis créer d
 ![Schéma sfxv2-5](../../img/sfxv2-5.png)
 
 ![Schéma sfxv2-6](../../img/sfxv2-6.png)
+
+
+**Des intégrations similaires sont réalisées dans différents établissements en France :**
+
+- [L'INRA l'a intégré](https://doc.istex.fr/users/integration/exemples/#inra)
+
+- [L'Université Rennes2 l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-rennes2)
+
+=> [Code source disponible sur github](https://github.com/jsicot/sfxbur2)
+
+- [L'Université Paris Sciences Lettres l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-paris-sciences-lettres)
+
+
+
+- Vous très bientôt ? [dites-le à l'équipe ISTEX](mailto:contact@listes.istex.fr), savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.
 
 ## SUMMON ##
 
