@@ -32,9 +32,9 @@ Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque ce
 - Intégration du bouton ISTEX dans un parseurv2 créé dans SFX résolveur de liens de Reselec, portail en IST des ressources électroniques de l'INRA
 - Un grand merci à Odile Viseux pour cette intégration !
 
-[![intégration inra](../../img/resolverinra.PNG)](
+[![intégration INRA](../../img/sfxinra.png)](http://openurl.ist.inra.fr:3410/sfxlcl41?ctx_enc=info%3Aofi%2Fenc%3AUTF-8&ctx_id=10_1&ctx_tim=2018-04-20T11%3A23%3A13CEST&ctx_ver=Z39.88-2004&rfr_id=info%3Asid%2Fsfxit.com%3Acitation&rft.genre=article&rft_id=info%3Apmid%2F22101785&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&sfx.title_search=contains&url_ctx_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Actx&url_ver=Z39.88-2004)
 
-![intégration inra](../../img/inra.PNG)
+
 
 [Voir la documentation technique](https://doc.istex.fr/users/integration/discovery-tools/#2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex)
 
@@ -46,7 +46,7 @@ Dans HAL, la notice est enrichie avec un lien vers le texte intégral lorsque ce
 
 [![Intégration avec création du résolveur de lien SMASH](../../img/AMU.png)](http://sh2hh6qx2e.search.serialssolutions.com/?url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info%3Asid%2Fzotero.org%3A2&rft_id=info%3Adoi%2F10.1002%2Fanie.201306656&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.atitle=Enantioselective%20Organocatalytic%20Multicomponent%20Synthesis%20of%202%2C6-Diazabicyclo%5B2.2.2%5Doctanones&rft.jtitle=Angewandte%20Chemie%20International%20Edition&rft.stitle=Angew.%20Chem.%20Int.%20Ed.&rft.volume=52&rft.issue=52&rft.aufirst=Maria%20del%20Mar&rft.aulast=Sanchez%E2%80%85Duque&rft.au=Maria%20del%20Mar%20Sanchez%E2%80%85Duque&rft.au=Olivier%20Basl%C3%A9&rft.au=Yves%20G%C3%A9nisson&rft.au=Jean-Christophe%20Plaquevent&rft.au=Xavier%20Bugaut&rft.au=Thierry%20Constantieux&rft.au=Jean%20Rodriguez&rft.date=2013-12-23&rft.pages=14143-14146&rft.spage=14143&rft.epage=14146&rft.issn=1521-3773&rft.language=en)
 
-[Code source disponible sur github](https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746)
+[Code source disponible sur GitHub](https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746)
 
 
 ## [Université Jean Monnet St Etienne](https://catalogue-brisees.univ-st-etienne.fr/accueil.html#) 
@@ -70,7 +70,7 @@ En recherchant un article dans le BRISE-ES, le portail des ressources des biblio
 - Un grand merci à Camille Maze et son équipe pour cette intégration !
 
 
-[Code source disponible sur github](https://github.com/istex/istex-button-primo)
+[Code source disponible sur GitHub](https://github.com/istex/istex-button-primo)
 
 
 ## [Université Paris Sciences Lettres](https://explore.univ-psl.fr/fr/page/loutil-de-recherche) 
@@ -94,7 +94,7 @@ _Cliquer sur RESSOURCE EN LIGNE_
 [![intégration rennes2](../../img/burennes2.png)](http://acceder.bu.univ-rennes2.fr.distant.bu.univ-rennes2.fr/sfx_33puedb?sid=google&auinit=L&aulast=Yuan&atitle=Prolate+and+oblate+shape+coexistence+in+188Pt&id=doi:10.1088/0256-307X/25/5/030&title=Chinese+Physics+Letters&volume=25&issue=5&date=2008&spage=1633&issn=0256-307X)
 
 
-[Code source disponible sur github](https://github.com/jsicot/sfxbur2)
+[Code source disponible sur GitHub](https://github.com/jsicot/sfxbur2)
 
 
 

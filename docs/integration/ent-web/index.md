@@ -98,19 +98,17 @@ Si possible, merci également d'indiquer ``sid=lissa`` à la fin de l'appel à l
 
 **Des intégrations similaires sont réalisées dans différents établissements en France :**
 
-- [L'Archive ouverte HAL l'a intégré](https://doc.istex.fr/users/integration/exemples/#archive-ouverte-hal)
+- [Archive ouverte HAL](https://doc.istex.fr/users/integration/exemples/#archive-ouverte-hal)
 
-- [Le CHU Rouen l'a intégré](https://doc.istex.fr/users/integration/exemples/#chu-rouen-normandie)
+- [CHU Rouen](https://doc.istex.fr/users/integration/exemples/#chu-rouen-normandie)
 
-- [L'université d'Aix Marseille l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-aix-marseille)
+- [Université Aix Marseille](https://doc.istex.fr/users/integration/exemples/#universite-aix-marseille)
+=> [Code source disponible sur GitHub](https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746)
 
-=> ([code source](https://github.com/SCD-Aix-Marseille-Universite/SMASH/blob/master/resolver.js#L726-L746))
+- [Université de Jean Monnet St Etienne](https://doc.istex.fr/users/integration/exemples/#universite-jean-monnet-st-etienne)
 
-- [L'université de Jean Monnet St Etienne l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-jean-monnet-st-etienne)
-
-- [L'université de Paris Saclay l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-paris-saclay)
-
-=>[Code source disponible sur github](https://github.com/istex/istex-button-primo)
+- [Université de Paris Saclay](https://doc.istex.fr/users/integration/exemples/#universite-paris-saclay)
+=>[Code source disponible sur GitHub](https://github.com/istex/istex-button-primo)
 
 
 

@@ -415,13 +415,12 @@ le plugin et le fichier de configuration dans l’instance globale puis créer d
 
 **Des intégrations similaires sont réalisées dans différents établissements en France :**
 
-- [L'INRA l'a intégré](https://doc.istex.fr/users/integration/exemples/#inra)
+- [INRA](https://doc.istex.fr/users/integration/exemples/#inra)
 
-- [L'Université Rennes2 l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-rennes2)
+- [Université Rennes2](https://doc.istex.fr/users/integration/exemples/#universite-rennes2)
+=> [Code source disponible sur GitHub](https://github.com/jsicot/sfxbur2)
 
-=> [Code source disponible sur github](https://github.com/jsicot/sfxbur2)
-
-- [L'Université Paris Sciences Lettres l'a intégré](https://doc.istex.fr/users/integration/exemples/#universite-paris-sciences-lettres)
+- [Université Paris Sciences Lettres](https://doc.istex.fr/users/integration/exemples/#universite-paris-sciences-lettres)
 
 
 
