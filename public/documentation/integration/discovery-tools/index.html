@@ -146,21 +146,13 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#eds-ebsco">EDS - EBSCO</a></li>
+                <li class="toctree-l3"><a href="#openurl-et-outils-de-decouverte">OpenURL et Outils de découverte</a></li>
                 
-                    <li><a class="toctree-l4" href="#1-ftfresolveur-de-lien">1- FTF/Résolveur de lien</a></li>
+                    <li><a class="toctree-l4" href="#eds-ebsco">EDS - EBSCO</a></li>
                 
-                    <li><a class="toctree-l4" href="#2-edscustomlinks">2- EDS/Customlinks</a></li>
+                    <li><a class="toctree-l4" href="#primo-exlibris">PRIMO - ExLibris</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#primo-exlibris">PRIMO - ExLibris</a></li>
-                
-                    <li><a class="toctree-l4" href="#1-parametrage-du-resolveur-sfxv1-vers-la-plateforme-istex">1-Paramétrage du résolveur SFXv1 vers la plateforme ISTEX</a></li>
-                
-                    <li><a class="toctree-l4" href="#2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex">2-Paramétrage du résolveur SFXv2 vers la plateforme ISTEX</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#summon">SUMMON</a></li>
+                    <li><a class="toctree-l4" href="#summon">SUMMON</a></li>
                 
             
             </ul>
@@ -171,6 +163,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../ent-web/">ENT et/ou site web</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../exemples/">Ils ont intégré ISTEX</a>
         
     </li>
 
@@ -247,8 +246,8 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿
- <strong>OpenURL et Discovery Tool</strong></p>
+                <p>﻿</p>
+<h1 id="openurl-et-outils-de-decouverte">OpenURL et Outils de découverte<a class="headerlink" href="#openurl-et-outils-de-decouverte" title="Permanent link">&para;</a></h1>
 <p>Cette documentation est à destination des gestionnaires de documentation (ex : SCD) qui souhaitent paramétrer leur outil de découverte ("Discovery Tool") pour y ajouter les ressources ISTEX.</p>
 <p>Une fonctionnalité intéressante de l’API ISTEX est son résolveur de liens compatible avec la norme OpenURL. Cette fonctionnalité permet de savoir, à partir de métadonnées simples (titre, auteurs…) ou d’identifiants standards (DOI, PMID…) si un document est présent dans la base de documents ISTEX. Si le document est trouvé, un rebond vers le texte plein est possible.</p>
 <p>Les 3  Discovery Tool ou Outil de Découverte les plus utilisés actuellement sont :</p>
@@ -463,8 +462,7 @@ Exemple le plus fréquent, Group Main, profil (eds), onglet Linking, puis Custom
 <li>Cliquer sur “Accès au texte intégral” sur la plateforme ISTEX</li>
 </ul>
 <p><img alt="Schéma exlibris7" src="./../../img/exlibris7.png" /></p>
-<p><img alt="Schéma exlibris8" src="./../../img/exlibris8.png" /></p>
-<p>Un grand merci à Laurent Aucher (Université PSL/ACEF)</p>
+<p>Un grand merci à Laurent Aucher pour la création de la target Istex et les contacts avec Ex-libris(Université PSL/ACEF)</p>
 <h4 id="2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex">2-Paramétrage du résolveur SFXv2 vers la plateforme ISTEX<a class="headerlink" href="#2-parametrage-du-resolveur-sfxv2-vers-la-plateforme-istex" title="Permanent link">&para;</a></h4>
 <p>Comme on ne peut pas associer à une Target ISTEX un service et un bouquet, cette solution est un mixe de création de Target et de bouton intégré ISTEX.</p>
 <p>Un grand merci à Julien Sicot (Université de Rennes 2) pour ce développement à partir de la <strong>Target Unpaywall (ex oaDOI)</strong></p>
@@ -520,6 +518,22 @@ le plugin et le fichier de configuration dans l’instance globale puis créer d
 </ul>
 <p><img alt="Schéma sfxv2-5" src="./../../img/sfxv2-5.png" /></p>
 <p><img alt="Schéma sfxv2-6" src="./../../img/sfxv2-6.png" /></p>
+<p><strong>Des intégrations similaires sont réalisées dans différents établissements en France :</strong></p>
+<ul>
+<li>
+<p><a href="https://doc.istex.fr/users/integration/exemples/#inra">INRA</a></p>
+</li>
+<li>
+<p><a href="https://doc.istex.fr/users/integration/exemples/#universite-rennes2">Université Rennes2</a>
+=&gt; <a href="https://github.com/jsicot/sfxbur2">Code source disponible sur GitHub</a></p>
+</li>
+<li>
+<p><a href="https://doc.istex.fr/users/integration/exemples/#universite-paris-sciences-lettres">Université Paris Sciences Lettres</a></p>
+</li>
+<li>
+<p>Vous très bientôt ? <a href="mailto:contact@listes.istex.fr">dites-le à l'équipe ISTEX</a>, savoir que la plateforme ISTEX est utilisée par la communauté et comment est très important.</p>
+</li>
+</ul>
 <h2 id="summon">SUMMON<a class="headerlink" href="#summon" title="Permanent link">&para;</a></h2>
 <p>Actuellement il est impossible de proposer le même service avec cette solution de découverte.</p>
               
