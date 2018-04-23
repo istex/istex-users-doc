@@ -65,7 +65,7 @@ En recherchant un article dans le BRISE-ES, le portail des ressources des biblio
 
 
 - Intégration du bouton ISTEX dans l'outil de découverte Primo, renommé FOCUS à l'Université Paris-Saclay
-- Un grand merci à Camille Maze et son équipe pour cette intégration !
+- Un grand merci à Camille Maze et Vincent Thébault pour cette intégration !
 
 
 [Code source disponible sur GitHub](https://github.com/istex/istex-button-primo)
