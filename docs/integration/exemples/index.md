@@ -73,7 +73,7 @@ En recherchant un article dans le BRISE-ES, le portail des ressources des biblio
 
 ## [Université Paris Sciences Lettres](https://explore.univ-psl.fr/fr/page/loutil-de-recherche) 
 
-- Création d'un parseurv1 dans SFX pour [intégration d'ISTEX dans solution de découverte](https://doc.istex.fr/users/integration/discovery-tools/#primo-exlibris) dans un outil découverte Primo du portail PSL-Explore
+- Création d'un parseurv1 dans SFX pour [intégration d'ISTEX dans solution de découverte](https://doc.istex.fr/users/integration/discovery-tools/#primo-exlibris) Primo du portail PSL-Explore
 - Un grand merci à Laurent Aucher pour cette intégration !
 
 _Cliquer sur RESSOURCE EN LIGNE_
